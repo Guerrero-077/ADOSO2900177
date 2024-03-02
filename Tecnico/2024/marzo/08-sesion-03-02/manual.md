@@ -50,8 +50,11 @@ Usar `git status` para enumerar todos los archivos nuevos o modificados que aún
 Para formatear código o texto en su propio bloque distintivo, usa comillas triples.
 
 
-* Some basic Git commands are:
-  - ejemplo 
+
+- Ejemplo
+
+* Algunos comandos básicos de Git son:
+  
 ````
 ```
 git status
@@ -66,5 +69,4 @@ git add
 git commit
 ```
 
-The background color is `#ffffff` for light mode and `#000000` for dark mode.
 
