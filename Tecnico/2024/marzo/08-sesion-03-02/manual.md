@@ -18,13 +18,13 @@
   
    Estilos de textos: Puedes indicar énfasis con texto en negrita, cursiva, tachado, o de subíndice o superíndice en los campos de comentarios y archivos .md.
 
-  1
-2
-3
-4
-5
-| Column 1 | Column 2 | Column 3 |
-|----------|----------|----------|
-| Row 1    | Cell 2   | Cell 3   |
-| Row 2    | Cell 5   | Cell 6   |
-| Row 3    | Cell 8   | Cell 9   |
+ 
+| Estilos | Sintaxis  | Metodos abreviados de teclado | Ejemplos | Resultados |
+|----------|----------|----------|----------|----------|
+| Bold    | ** ** o __ __ |  0  | ** esta **| **esta en negrita** |
+| Cursiva | * * o _ _   | 0 | * esta * | *esta en cursiva* |
+| Tachado | ~~ ~~ | 0 |~~ esta ~~| ~~esta tachado~~  |
+| Cursiva en negrita y anidada | ** ** y _ _ | 0 | ** esta _ ectremely _important **| **esta _extremely_ important**|
+| Todo en negrita y cursiva | *** *** | 0 |*** esta *** | ***esta negrita y cursiva*** |
+| Subscript | <sub> </sub> | 0 | esta <sub> importante </sub> | esta con <sub>subindice</sub> |
+| Superscript | <sup> </sup> | 0 | esta <sup> superficie </sup> | esta con <sup>superindice</sup> |
