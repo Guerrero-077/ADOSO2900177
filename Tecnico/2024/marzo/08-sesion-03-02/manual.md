@@ -3,7 +3,7 @@
 ### Tabla de contenido
 
 1. [Qué son los comandos md?](#qué-son-los-comandos-md)
-2. [Funciones](#funciones)
+2. [Caracteres Especiales](#caracteres-especiales)
    - [Encabezados](#encabezados)
    - [Estilos de texto](#estilos-de-texto)
    - [Entrecomillado del texto](#entrecomillado-del-texto)
@@ -16,7 +16,8 @@
 
 *Crea un directorio o subdirectorio. Las extensiones de comandos, que están habilitadas de forma predeterminada, permiten usar un único comando md para crear directorios intermedios en una ruta de acceso especificada.
 
-## Funciones
+## Títulos y Encabezados
+
 * Encabezados: Para crear un encabezado, agrega entre uno y seis símbolos # antes del encabezado del texto. El número de # que utilices determinará el nivel jerárquico y el tamaño tipográfico del encabezado. Al usar dos o más encabezados, GitHub genera automáticamente una tabla de contenido a la que puede acceder haciendo clic en  dentro del encabezado del archivo. Todos los títulos de encabezado aparecen en la tabla de contenido, y puede hacer clic en un título para ir a la sección seleccionada.
 
 # ejemplos 
