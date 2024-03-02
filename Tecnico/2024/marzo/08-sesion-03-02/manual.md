@@ -26,8 +26,8 @@
 | Tachado | ~~ ~~ | 0 |~~ esta ~~| ~~esta tachado~~  |
 | Cursiva en negrita y anidada | ** ** y _ _ | 0 | ** esta _ ectremely _important **| **esta _extremely_ important**|
 | Todo en negrita y cursiva | *** *** | 0 |*** esta *** | ***esta negrita y cursiva*** |
-| Subscript | <sub> </sub> | 0 | esta <sub> importante </sub> | esta con <sub>subindice</sub> |
-| Superscript | <sup> </sup> | 0 | esta <sup> superficie </sup> | esta con <sup>superindice</sup> |
+| Subscript | <sub > < /sub> | 0 | esta <sub> importante </sub> | esta con <sub>subindice</sub> |
+| Superscript | <sup > < /sup> | 0 | esta <sup> superficie </sup> | esta con <sup>superindice</sup> |
 
 ## Entrecomillado del texto
 
