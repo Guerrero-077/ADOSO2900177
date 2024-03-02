@@ -1,20 +1,20 @@
 # Manual de los comandos MD
 
-1. ##  que son los comados md?
+1. ##  Qué son los comados md?
    
    Crea un directorio o subdirectorio. Las extensiones de comandos, que están habilitadas de forma predeterminada, permiten usar un único comando md para crear directorios intermedios en una ruta de acceso especificada.
 
-  # ejemplos 
+
+1. ## Funciones
+    Encabezados: Para crear un encabezado, agrega entre uno y seis símbolos # antes del encabezado del texto. El número de # que utilices determinará el nivel jerárquico y el tamaño tipográfico del encabezado. Al usar dos o más encabezados, GitHub genera automáticamente una tabla de contenido a la que puede acceder haciendo clic en  dentro del encabezado del archivo. Todos los títulos de encabezado aparecen en la tabla de contenido, y puede hacer clic en un título para ir a la sección seleccionada.
+
+# ejemplos 
 
 ```
 # A first-level heading
 ## A second-level heading
 ### A third-level heading
 ```
-
-1. ## Funcioes
-    Encabezados: Para crear un encabezado, agrega entre uno y seis símbolos # antes del encabezado del texto. El número de # que utilices determinará el nivel jerárquico y el tamaño tipográfico del encabezado
-   Al usar dos o más encabezados, GitHub genera automáticamente una tabla de contenido a la que puede acceder haciendo clic en  dentro del encabezado del archivo. Todos los títulos de encabezado aparecen en la tabla de contenido, y puede hacer clic en un título para ir a la sección seleccionada.
   
    Estilos de textos: Puedes indicar énfasis con texto en negrita, cursiva, tachado, o de subíndice o superíndice en los campos de comentarios y archivos .md.
 
@@ -28,3 +28,16 @@
 | Todo en negrita y cursiva | *** *** | 0 |*** esta *** | ***esta negrita y cursiva*** |
 | Subscript | <sub> </sub> | 0 | esta <sub> importante </sub> | esta con <sub>subindice</sub> |
 | Superscript | <sup> </sup> | 0 | esta <sup> superficie </sup> | esta con <sup>superindice</sup> |
+
+## Entrecomillado del texto
+
+Puedes entrecomillar texto con `>`.
+
+
+### Ejemplos
+Texto sin entrecomillado.
+>`Texto entrecomillado.`
+
+## Código de citas 
+
+Puedes indicar un código o un comando dentro de un enunciado con comillas simples. El texto dentro de las comillas simples no será formateado
