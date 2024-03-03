@@ -2,7 +2,7 @@
 
 ## Tabla de contenido
 
-1. [Qué son los comandos md?](#qué-son-los-comandos-md)
+1. [Qué son los comandos md](#qué-son-los-comandos-md)
 2. [Caracteres Especiales](#caracteres-especiales)
    - [Encabezados](#encabezados)
    - [Listas](#listas)
@@ -14,7 +14,7 @@
 
 
 
-# Qué son los comandos md?
+# Qué son los comandos md
 
 Crea un directorio o subdirectorio. Las extensiones de comandos, que están habilitadas de forma predeterminada, permiten usar un único comando md para crear directorios intermedios en una ruta de acceso especificada.Markdown es un lenguaje de marcado ligero utilizado comúnmente para dar formato a documentos de texto plano. Los caracteres especiales desempeñan un papel importante en la estructura y la presentación del texto en Markdown.
 
