@@ -7,7 +7,7 @@
    - [Encabezados](#encabezados)
    - [Listas](#listas)
    - [Código de citas](#código-de-citas)
-   - [Estilos de texto](#estilos-de-texto)
+   - [Estilos de textos](#estilos-de-textos)
    - [Escape de Caracteres](#escape-de-caracteres)
    - [Enlaces](#enlaces)
    - [Imagenes](#imagenes)
