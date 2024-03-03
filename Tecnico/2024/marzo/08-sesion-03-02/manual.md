@@ -1,36 +1,83 @@
 # Manual de los comandos MD
 
-### Tabla de contenido
+## Tabla de contenido
 
 1. [Qué son los comandos md?](#qué-son-los-comandos-md)
 2. [Caracteres Especiales](#caracteres-especiales)
-   - [Títulos y Encabezados](#títulos-y-encabezados)
    - [Encabezados](#encabezados)
-   - [Estilos de texto](#estilos-de-texto)
-   - [Entrecomillado del texto](#entrecomillado-del-texto)
+   - [Listas](#listas)
    - [Código de citas](#código-de-citas)
+   - [Estilos de texto](#estilos-de-texto)
+   - [Escape de Caracteres](#escape-de-caracteres)
+   - [Enlaces](#enlaces)
+   - [Imagenes](#imagenes)
 
 
 
-## Qué son los comandos md?
+# Qué son los comandos md?
 
-*Crea un directorio o subdirectorio. Las extensiones de comandos, que están habilitadas de forma predeterminada, permiten usar un único comando md para crear directorios intermedios en una ruta de acceso especificada.
+Crea un directorio o subdirectorio. Las extensiones de comandos, que están habilitadas de forma predeterminada, permiten usar un único comando md para crear directorios intermedios en una ruta de acceso especificada.Markdown es un lenguaje de marcado ligero utilizado comúnmente para dar formato a documentos de texto plano. Los caracteres especiales desempeñan un papel importante en la estructura y la presentación del texto en Markdown.
 
-## Caracteres Especiales
+# Caracteres Especiales
 
-### Títulos y Encabezados
+### Encabezados
 
-* Encabezados: Para crear un encabezado, agrega entre uno y seis símbolos # antes del encabezado del texto. El número de # que utilices determinará el nivel jerárquico y el tamaño tipográfico del encabezado. Al usar dos o más encabezados, GitHub genera automáticamente una tabla de contenido a la que puede acceder haciendo clic en  dentro del encabezado del archivo. Todos los títulos de encabezado aparecen en la tabla de contenido, y puede hacer clic en un título para ir a la sección seleccionada.
-
-# ejemplos 
+Para crear un encabezado, agrega entre uno y seis símbolos # antes del encabezado del texto. El número de # que utilices determinará el nivel jerárquico y el tamaño tipográfico del encabezado. Al usar dos o más encabezados, GitHub genera automáticamente una tabla de contenido a la que puede acceder haciendo clic en  dentro del encabezado del archivo. Todos los títulos de encabezado aparecen en la tabla de contenido, y puede hacer clic en un título para ir a la sección seleccionada.
 
 ```
-# A first-level heading
-## A second-level heading
-### A third-level heading
+# A primer-nivel
+## A segundo-nivel heading
+### A tercer-nevel heading
 ```
-  
-* Estilos de textos: Puedes indicar énfasis con texto en negrita, cursiva, tachado, o de subíndice o superíndice en los campos de comentarios y archivos .md.
+
+# A primer-nivel
+## A segundo-nivel heading
+### A tercer-nevel heading
+
+
+## Listas
+
+Los caracteres especiales 1,-, * y + se utilizan para crear listas no ordenadas.
+
+```
+1. primero
+* segundo
+- tercero
++ cuarto
+```
+
+1. `primero`
+* `segundo`
+- `tercero`
++ `cuarto`
+
+## Código de citas 
+
+*Puedes entrecomillar texto con `>`.
+
+```
+> Texto entrecomillado.
+```
+>`Texto entrecomillado.`
+
+
+Los caracteres especiales ` se utilizan para formatear texto como código en línea, mientras que los bloques de código se crean con triple acento invertido (```)
+
+\`Codigo\`
+`Codigo`
+
+\```
+Codigo
+\```
+
+```
+Codigo
+```
+
+
+## Estilos de textos
+
+Puedes indicar énfasis con texto en negrita, cursiva, tachado, o de subíndice o superíndice en los campos de comentarios y archivos .md
 
  
 | Estilos | Sintaxis  | Metodos abreviados de teclado | Ejemplos | Resultados |
@@ -43,46 +90,34 @@
 | Subscript | < sub > < /sub >| 0 | esta <sub> importante </sub> | esta con <sub>subindice</sub> |
 | Superscript | < sup > < /sup > | 0 | esta <sup> superficie </sup> | esta con <sup>superindice</sup> |
 
-## Entrecomillado del texto
+## Escape de Caracteres
 
-*Puedes entrecomillar texto con `>`.
+Para utilizar un carácter especial como texto literal, se puede escapar con el carácter \
 
-
-### Ejemplos
-Texto sin entrecomillado.
->`Texto entrecomillado.`
-
-## Código de citas 
-
-* Puedes indicar un código o un comando dentro de un enunciado con comillas simples. El texto dentro de las comillas simples no será formateado
-
-`` Usar `git status` para enumerar todos los archivos nuevos o modificados que aún no se han confirmado. ``
-
-Usar `git status` para enumerar todos los archivos nuevos o modificados que aún no se han confirmado.
-
-  
-Para formatear código o texto en su propio bloque distintivo, usa comillas triples.
+`\# Esto es un numeral no un titulo`
 
 
-
-- Ejemplo
-
-* Algunos comandos básicos de Git son:
-  
-````
-```
-git status
-git add
-git commit
-```
-````
-
-```
-git status
-git add
-git commit
-```
+\# Esto es un numeral no un titulo
 
 
-### primer 
-> para agregar fragmentos de texto tenemos que introducir `(>texto)` ponerlo en cada texto  del inicio. 
+## Enlaces
+
+La sintaxis Markdown para un vínculo en línea consiste en la parte [link text], que es el texto que se va a hipervincular, seguido de la parte (file-name.md), que es la URL o el nombre de archivo al que se va a vincular
+
+`[Enlace a Google](https://github.com/Guerrero-077)`
+
+[Enlace a github](https://github.com/Guerrero-077)
+
+## Imagenes
+
+Los caracteres especiales ![texto alternativo](url de la imagen) se utilizan para insertar imágenes.
+`![Logo de github](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBwhMOxO7xHV9OqhDZ585TTapui1-kcj3dA&usqp=CAU)`
+
+![Logo de github](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBwhMOxO7xHV9OqhDZ585TTapui1-kcj3dA&usqp=CAU)
+
+
+
+
+
+
+
