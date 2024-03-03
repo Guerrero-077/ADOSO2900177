@@ -111,6 +111,7 @@ La sintaxis Markdown para un vínculo en línea consiste en la parte [link text]
 ## Imagenes
 
 Los caracteres especiales ![texto alternativo](url de la imagen) se utilizan para insertar imágenes.
+
 `![Logo de github](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBwhMOxO7xHV9OqhDZ585TTapui1-kcj3dA&usqp=CAU)`
 
 ![Logo de github](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUBwhMOxO7xHV9OqhDZ585TTapui1-kcj3dA&usqp=CAU)
