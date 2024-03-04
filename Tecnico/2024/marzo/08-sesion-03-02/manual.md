@@ -16,7 +16,12 @@
 
 # Qué son los comandos md
 
-Crea un directorio o subdirectorio. Las extensiones de comandos, que están habilitadas de forma predeterminada, permiten usar un único comando md para crear directorios intermedios en una ruta de acceso especificada.Markdown es un lenguaje de marcado ligero utilizado comúnmente para dar formato a documentos de texto plano. Los caracteres especiales desempeñan un papel importante en la estructura y la presentación del texto en Markdown.
+MD o Markdown es un lenguaje de marcado ligero utilizado comúnmente para dar formato a documentos de texto plano. Los caracteres especiales desempeñan un papel importante en la estructura y la presentación del texto en Markdown.
+
+El lenguaje Markdown fue inventado en 2004 por John Gruber y Aaron Swartz, estos tuvieron la necesidad de tener una forma fácil de escribir y leer en formato de texto plano, así como convertirlo a HTML o XHTML.
+
+Los datos incluidos en los archivos MD se almacenan como texto sin formato. Sin embargo, este texto puede contener símbolos entre líneas que indican que parte del texto debería estar formateado, por ejemplo, con negrita, cursiva, tablas, etc. El desarrollador del formato de archivo MD, John Gruber, también desarrolló un programa con el lenguaje de programación Perl que permite convertir fácilmente los archivos MD a Markdown o HTML. Además de con la extensión MD, los archivos Markdown también pueden guardarse con la extensión MARKDOWN.
+
 
 # Caracteres Especiales
 
