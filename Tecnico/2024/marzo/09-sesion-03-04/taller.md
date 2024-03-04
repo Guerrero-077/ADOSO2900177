@@ -157,3 +157,80 @@ Inicio
     Escribir num, " Su número no se encuentra en el rango de 50 a 100 ";
 Fin
 ```
+
+# PYTHON 
+print("Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.")
+
+p1 = float(input("Digite la cantidad que invirtio la primera persona "))
+p2 = float(input("Digite la cantidad que invirtio la Segunda persona "))
+p3 = float(input("Digite la cantidad que invirtio la Tercera persona "))
+
+ope = p1+p2+p3
+p1  = (p1*100)/ope
+p2  = (p2*100)/ope
+p3  = (p3*100)/ope
+
+print("EL porcentaje que invirtio la Primera persona es ", p1, " %") 
+print("EL porcentaje que invirtio la Segunda persona es ", p2, " %") 
+print("EL porcentaje que invirtio la Tercera persona es ", p3, " %") 
+
+print("--------------------------------------------------------------------------------------------------------")
+
+print("Un alumno desea saber cuál será su promedio general en las tres materias más difíciles que cursa y cuál será el promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestra a continuación:")
+
+print("--------------------------------------------------------------------------------------------------------")
+
+print("La calificación de Matemáticas se obtiene de la siguiente manera: Examen 90% Promedio de tareas 10% En esta materia se pidió un total de tres tareas.")
+print("--------------------------------------------------------------------------------------------------------")
+Em= float(input("Digite la notade la Evaluación de Matemáticas "))
+print("--------------------------------------------------------------------------------------------------------")
+
+Tm1 =  float(input("Digite la notade la primera tarea de Matemáticas "))
+print("--------------------------------------------------------------------------------------------------------")
+Tm2 = float(input("Digite la notade la Segunda tarea de Matemáticas "))
+print("--------------------------------------------------------------------------------------------------------")
+Tm3 = float(input("Digite la notade la Tercera tarea de Matemáticas "))
+print("--------------------------------------------------------------------------------------------------------")
+
+ope = (Tm1+Tm2+Tm3)/3
+
+promMa = (Em*0.9)+(ope*0.1)
+
+print("El promedio de Matemáticas es: ", promMa)
+print("--------------------------------------------------------------------------------------------------------")
+
+print("La calificación de Física se obtiene de la siguiente manera: E   xamen 80% Promedio de tareas 20% En esta materia se pidió un total de dos tareas.")
+print("--------------------------------------------------------------------------------------------------------")
+Ef= float(input("Digite la notade la Evaluación de Física "))
+print("--------------------------------------------------------------------------------------------------------")
+Tf1 =  float(input("Digite la notade la primera tarea de Física "))
+print("--------------------------------------------------------------------------------------------------------")
+Tf2 = float(input("Digite la notade la Segunda tarea de Física "))
+print("--------------------------------------------------------------------------------------------------------")
+
+
+ope = (Tf1+Tf2)/2
+
+promF = (Em*0.8)+(ope*0.2)
+
+print("El promedio de Física es: ", promF)
+print("--------------------------------------------------------------------------------------------------------")
+
+print("La calificación de Química se obtiene de la siguiente manera: Examen 85% Promedio de tareas 15% En esta materia se pidió un promedio de tres tareas")
+print("--------------------------------------------------------------------------------------------------------")
+Em= float(input("Digite la notade la Evaluación de Matemáticas "))
+print("--------------------------------------------------------------------------------------------------------")
+
+Tm1 =  float(input("Digite la notade la primera tarea de Matemáticas "))
+print("--------------------------------------------------------------------------------------------------------")
+Tm2 = float(input("Digite la notade la Segunda tarea de Matemáticas "))
+print("--------------------------------------------------------------------------------------------------------")
+Tm3 = float(input("Digite la notade la Tercera tarea de Matemáticas "))
+print("--------------------------------------------------------------------------------------------------------")
+
+ope = (Tm1+Tm2+Tm3)/3
+
+promMa = (Em*0.9)+(ope*0.1)
+
+print("El promedio de Matemáticas es: ", promMa)
+print
