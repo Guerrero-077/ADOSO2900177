@@ -109,7 +109,7 @@ Para utilizar un carácter especial como texto literal, se puede escapar con el 
 
 La sintaxis Markdown para un vínculo en línea consiste en la parte [link text], que es el texto que se va a hipervincular, seguido de la parte (file-name.md), que es la URL o el nombre de archivo al que se va a vincular
 
-`[Enlace a Google](https://github.com/Guerrero-077)`
+`[Enlace a github](https://github.com/Guerrero-077)`
 
 [Enlace a github](https://github.com/Guerrero-077)
 
