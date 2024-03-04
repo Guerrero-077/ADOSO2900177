@@ -27,7 +27,6 @@ Inicio
   Escribir = "EL porcentaje que invirtio la tercera persona es ", p3
 
 Fin
-
 ```
 
 2. Un alumno desea saber cuál será su promedio general en las tres materias más difíciles que cursa y cuál será el promedio que obtendrá en cada una de ellas. Estas materias se evalúan como se muestra a continuación:
@@ -43,23 +42,23 @@ Inicio
 
   Definir a,b,c,d,f,g,h,i,j,k,l,m,n,o,p,q Con Real
 
-  a=0.0;
-  b=0.0;
-  c=0.0;
-  d=0.0;
-  e=0.0
-  f=0.0;
-  g=0.0;
-  h=0.0;
-  i=0.0;
-  j=0.0;
-  k=0.0;
-  l=0.0;
-  m=0.0;
-  n=0.0;
-  o=0.0;
-  p=0.0;
-  q=0.0;
+  a = 0.0;
+  b = 0.0;
+  c = 0.0;
+  d = 0.0;
+  e = 0.0
+  f = 0.0;
+  g = 0.0;
+  h = 0.0;
+  i = 0.0;
+  j = 0.0;
+  k = 0.0;
+  l = 0.0;
+  m = 0.0;
+  n = 0.0;
+  o = 0.0;
+  p = 0.0;
+  q = 0.0;
 
   Escribir "La calificación de Matemáticas se obtiene de la siguiente manera: Examen 90% Promedio de tareas 10% En esta materia se pidió un total de tres tareas. ";
 
@@ -91,11 +90,11 @@ Inicio
   leer i;
   j= (h+i)/2
   k= (g*0,8)+(j*0,2);
-  Escribir "El promedio de Física es; ", k;
+  Escribir "El promedio de Física es: ", k;
 
   Escribir "La calificación de Química se obtiene de la siguiente manera: Examen 85% Promedio de tareas 15% En esta materia se pidió un promedio de tres tareas.";
 
-  Escribir "Ingrese la nota de la evaluacion de Química";
+  Escribir "Ingrese la nota de la evaluacion de Química ";
   leer = l
   Escribir "Ingrese la nota de su primera tarea ";
   leer m;
@@ -109,7 +108,7 @@ Inicio
   o=(m+n+q);
   p= (l*0.85)+(o * 0.15);
 
-  Escribir "E promedio de Química es: ", p;
+  Escribir "El promedio de Química es: ", p;
   
 
 Fin
