@@ -234,3 +234,95 @@ promMa = (Em*0.9)+(ope*0.1)
 
 print("El promedio de Matemáticas es: ", promMa)
 print
+
+
+# CORRECCIÓN PYTHON 
+```
+try:
+        msgError = "Error, inversión no válida."
+        msgOk = "Inversión correcta, ok."
+        msgInput = "Favor, indique la nota de la Evaluacion "
+        msgInputT = "Favor, indique la nota de la Tarea "
+        msgOutput = "El promedio de "
+
+        p1 = float(input(msgInput + "Matemáticas: "))
+
+        
+        if p1 > 0:
+            print(msgOk)
+            t1 = float(input(msgInputT + "1: "))
+            if t1 >0:
+                  print(msgOk)
+                  
+                  t2 = float(input(msgInputT + "2: "))
+                  if t2 > 0:
+                             print(msgOk)
+                             t3 = float(input(msgInputT + "3: "))
+                            
+                             if t3 > 0:
+                                    print(msgOk) 
+                                    it = (t1+t2+t3)/3;
+                                    prom = (p1*0.9)+(it*0.1)
+                                    print(msgOutput + "Matemáticas es: " + str(prom))
+                                    p2 = float(input(msgInput + "Física: "))
+                                    if p2 > 0:
+                                                print(msgOk)
+                                                t1 = float(input(msgInputT + "1: "))
+                                                if t1 > 0:
+                                                        print(msgOk)
+                                                        t1 = float(input(msgInputT + "2: "))
+                                                        if t2 > 0:
+                                                                print(msgOk) 
+                                                                it = (t1+t2)/2;
+                                                                prom = (p2 * 0.8)+(it *0.2)
+                                                                print(msgOutput + "Física es: " + str(prom))
+                                                                p3 = float(input(msgInput + "Química: "))
+                                                                if p3 > 0:
+                                                                        print(msgOk)
+                                                                        t1 = float(input(msgInputT + "1: "))
+                                                                        if t1 > 0:
+                                                                                print(msgOk)
+                                                                                t2 = float(input(msgInputT + "2: "))
+                                    
+                                                                                if t2 > 0:
+                                                                                        print(msgOk)
+                                                                                        t3 = float(input(msgInputT + "3: "))
+                                                                                        if t3 > 0:
+                                                                                                print(msgOk)
+                                                                                                it = (t1+t2+t3)/3;
+                                                                                                prom = (p3*0.85)+(it*0.15)
+                                                                                                print(msgOutput + "Química es: " + str(prom))
+                                                                                                
+                                                                                        else: 
+                                                                                                print(msgError)  
+                                                                                else:
+                                                                                        print(msgError)                    
+                                                                                        
+                                                                        else: 
+                                                                                print(msgError)
+                                                                else: 
+                                                                        print(msgError) 
+                                                                        
+                                                                
+                                                        else : 
+                                                                print(msgError)
+                                                                
+                                                        
+                                                else:
+                                                        print(msgError)
+                                    
+                                    else:
+                                        print(msgError)  
+                             else : 
+                                   print(msgError)
+               
+                  else:
+                       print(msgError)
+            else:
+                print(msgError) 
+                                
+        else:
+                print(msgError)
+except:
+        print(msgError)
+```
