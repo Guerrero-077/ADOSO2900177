@@ -159,6 +159,7 @@ Fin
 ```
 
 # PYTHON 
+```
 print("Tres personas deciden invertir su dinero para fundar una empresa. Cada una de ellas invierte una cantidad distinta. Obtener el porcentaje que cada quien invierte con respecto a la cantidad total invertida.")
 
 p1 = float(input("Digite la cantidad que invirtio la primera persona "))
@@ -234,7 +235,7 @@ promMa = (Em*0.9)+(ope*0.1)
 
 print("El promedio de Matemáticas es: ", promMa)
 print
-
+```
 
 # CORRECCIÓN PYTHON 
 ```
