@@ -220,14 +220,14 @@ print("El promedio de Física es: ", promF)
 print("--------------------------------------------------------------------------------------------------------")
 Em= float(input("Digite la notade la Evaluación de Química "))
 print("--------------------------------------------------------------------------------------------------------")
-Tm1 =  float(input("Digite la notade la primera tarea de Química "))
+Tq1 =  float(input("Digite la notade la primera tarea de Química "))
 print("--------------------------------------------------------------------------------------------------------")
-Tm2 = float(input("Digite la notade la Segunda tarea de Química "))
+Tq2 = float(input("Digite la notade la Segunda tarea de Química "))
 print("--------------------------------------------------------------------------------------------------------")
-Tm3 = float(input("Digite la notade la Tercera tarea de Química "))
+Tq3 = float(input("Digite la notade la Tercera tarea de Química "))
 print("--------------------------------------------------------------------------------------------------------")
 
-ope = (Tm1+Tm2+Tm3)/3
+ope = (Tq1+Tq2+Tq3)/3
 promQ = (Em*0.85)+(ope*0.15)
 print("El promedio de Química es: ", promQ)
 
