@@ -151,6 +151,7 @@ except:
 # La calificación de Física se obtiene de la siguiente manera: Examen 80% Promedio de tareas 20% En esta materia se pidió un total de dos tareas.
 
 # La calificación de Química se obtiene de la siguiente manera: Examen 85% Promedio de tareas 15% En esta materia se pidió un promedio de tres tareas.
+
 try:
         msgError = "Error, dato no válida."
         msgOk = "dato correcto, ok."
@@ -158,52 +159,52 @@ try:
         msgInputT = "Favor, indique la nota de la Tarea "
         msgOutput = "El promedio de "
 
-        p1 = float(input(msgInput + "Matemáticas: "))
+        pm1 = float(input(msgInput + "Matemáticas: "))
 
         
-        if p1 > 0:
+        if pm1 > 1.0 and pm1 <=5.0:
             print(msgOk)
-            t1 = float(input(msgInputT + "1: "))
-            if t1 >0:
+            tm1 = float(input(msgInputT + "1: "))
+            if tm1 >= 1.0 and tm1<=5.0:
                   print(msgOk)
                   
-                  t2 = float(input(msgInputT + "2: "))
-                  if t2 > 0:
+                  tm2 = float(input(msgInputT + "2: "))
+                  if tm2 >= 1.0 and tm2 <=5.0:
                              print(msgOk)
-                             t3 = float(input(msgInputT + "3: "))
+                             tm3 = float(input(msgInputT + "3: "))
                             
-                             if t3 > 0:
+                             if tm3 >= 1.0 and tm3 <=5.0:
                                     print(msgOk) 
-                                    it = (t1+t2+t3)/3;
-                                    prom = (p1*0.9)+(it*0.1)
+                                    it = (tm1+tm2+tm3)/3;
+                                    prom = (pm1*0.9)+(it*0.1)
                                     print(msgOutput + "Matemáticas es: " + str(prom))
-                                    p2 = float(input(msgInput + "Física: "))
-                                    if p2 > 0:
+                                    pf2 = float(input(msgInput + "Física: "))
+                                    if pf2 >= 1.0 and pf2 <= 5.0:
                                                 print(msgOk)
-                                                t1 = float(input(msgInputT + "1: "))
-                                                if t1 > 0:
+                                                tf1 = float(input(msgInputT + "1: "))
+                                                if tf1 >= 1.0 and tf1 <= 5.0:
                                                         print(msgOk)
-                                                        t1 = float(input(msgInputT + "2: "))
-                                                        if t2 > 0:
+                                                        tf2 = float(input(msgInputT + "2: "))
+                                                        if tf2 >= 1.0 and tf2 <= 5.0:
                                                                 print(msgOk) 
-                                                                it = (t1+t2)/2;
-                                                                prom = (p2 * 0.8)+(it *0.2)
+                                                                it = (tf1+tf2)/2;
+                                                                prom = (pf2 * 0.8)+(it *0.2)
                                                                 print(msgOutput + "Física es: " + str(prom))
-                                                                p3 = float(input(msgInput + "Química: "))
-                                                                if p3 > 0:
+                                                                pq3 = float(input(msgInput + "Química: "))
+                                                                if pq3 >= 1.0 and pq3 <=5.0:
                                                                         print(msgOk)
-                                                                        t1 = float(input(msgInputT + "1: "))
-                                                                        if t1 > 0:
+                                                                        tq1 = float(input(msgInputT + "1: "))
+                                                                        if tq1 >= 1.0 and tq1 <= 5.0:
                                                                                 print(msgOk)
-                                                                                t2 = float(input(msgInputT + "2: "))
+                                                                                tq2 = float(input(msgInputT + "2: "))
                                     
-                                                                                if t2 > 0:
+                                                                                if tq2 >= 1.0 and tq2 <= 5.0:
                                                                                         print(msgOk)
-                                                                                        t3 = float(input(msgInputT + "3: "))
-                                                                                        if t3 > 0:
+                                                                                        tq3 = float(input(msgInputT + "3: "))
+                                                                                        if tq3 >= 1.0 and tq3 <= 5.0:
                                                                                                 print(msgOk)
-                                                                                                it = (t1+t2+t3)/3;
-                                                                                                prom = (p3*0.85)+(it*0.15)
+                                                                                                it = (tq1+tq2+tq3)/3;
+                                                                                                prom = (pq3*0.85)+(it*0.15)
                                                                                                 print(msgOutput + "Química es: " + str(prom))
                                                                                                 
                                                                                         else: 
@@ -236,27 +237,6 @@ try:
                                 
         else:
                 print(msgError)
-except:
-        print(msgError)
-
-
-## 3. Leer un real e imprimir si el número es positivo o negativo.
-try:
-        msgError = "Error, su número no es válido."
-        msgOk = "Su número fue registrada con éxito."
-        msgInput = "Digite un número "
-        msgOutput = "El número que usted registro es: "
-
-        num = float(input(msgInput))
-        if num > 0:
-                print(msgOk)
-                print(msgOutput + "Positivo")
-        else:
-            print(msgError)
-            print(msgOutput + "Negativo")
-
-
-        
 except:
         print(msgError)
         
