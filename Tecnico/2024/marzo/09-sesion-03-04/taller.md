@@ -126,6 +126,7 @@ Inicio
     Escribir num," Es positivo";
   Sino
     Escribir num, " Es negativo";
+  FinSi
 
 Fin 
 ```
@@ -141,6 +142,7 @@ Inicio
     Escribir num, " Es mayor que 200";
   Sino
     Escribir num, " Es menor que 200"
+  FinSi
 Fin
 ```
 5. Leer un real e imprimir si el número está en el rango de 50 y 100
@@ -156,6 +158,8 @@ Inicio
     Escribir num, " Su número se encuentra en el rango de 50 a 100";
   Sino
     Escribir num, " Su número no se encuentra en el rango de 50 a 100 ";
+  FinSi
+
 Fin
 ```
 
