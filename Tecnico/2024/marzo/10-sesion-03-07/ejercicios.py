@@ -4,7 +4,7 @@ while num == 0:
         try:
                 num = float(input("Digite un número "))
 
-                if num%2 == 0:
+                if num % 2 == 0:
                         print(num, "Es par")
                 else:
                         print(num, "Es impar")
