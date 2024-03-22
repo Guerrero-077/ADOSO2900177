@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div ></div>
+    <script>
+
+
+            let maximo = 150;
+            let minimo = -150;
+
+            rando = Math.floor(Math.random() * (maximo - minimo + 1) + minimo);
+            if(rando > 0){
+                console.log(rando, "Su número es Natural");
+            }else{
+                console.log(rando,"Su número es Entero");
+             }
+
+             
+            random = (Math.random() * (maximo - minimo) + minimo).toFixed(2);
+            if (random>0.0){
+                console.log(random, "Es decimas")
+            }else{
+                console.log(random, "Entero")
+            }
+
+                
+
+    </script>
+</body>
+</html>
