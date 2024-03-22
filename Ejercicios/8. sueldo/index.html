@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        let sueldo;
+        let salud;
+        let pension;
+        let arl;
+        let descuento;
+        let diaT;
+        let valorD;
+        let sueldoTo;
+
+        valorD = 43.333;
+        diaT = 10;
+        sueldo = diaT*valorD;
+        salud = sueldo*0.12;
+        pension = sueldo*0.16;
+        arl = sueldo*0.052;
+        descuento = salud+pension+arl;
+        sueldoTo=sueldo-descuento
+
+        console.log("Sueldo: ",sueldo)
+        console.log("Salud: ",salud)
+        console.log("Pensión: ",pension)
+        console.log("arl: ",arl)
+        console.log("Descuento: ",descuento)
+        console.log("Sueldo Total: ",sueldoTo)
+
+    </script>
+    
+</body>
+</html>
