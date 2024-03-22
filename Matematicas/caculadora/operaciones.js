@@ -1,13 +1,14 @@
 function capturarDato(value) {
-    document.getElementById('display').value += value;
+    document.getElementById('pantalla').value += value;
 }
 
 function limpiar() {
-    document.getElementById('display').value = '';
+    document.getElementById('pantalla').value = '';
 }
 
 function operaciones() {
-    var opererar = document.getElementById('display').value;
-    var result = eval(opererar);
-    document.getElementById('display').value = result;
+    var opererar = document.getElementById('pantalla').value;
+    var resultado = eval(opererar);
+    document.getElementById('pantalla').value = resultado;
+    return;
 }

@@ -9,7 +9,12 @@
 <body>
     <div class="container">
         <div class="general">
-            <input type="text" id="display" class="display" disabled>
+            <input type="text" id="pantalla" class="pantalla" disabled>
+
+            <div class="row">
+                <button class="btn" onclick="limpiar()">AC</button>
+
+            </div>
             <div class="row">
                 <button class="btn" onclick="capturarDato('7')">7</button>
                 <button class="btn" onclick="capturarDato('8')">8</button>
@@ -29,8 +34,9 @@
                 <button class="btn blue" onclick="capturarDato('*')">*</button>
             </div>
             <div class="row">
-                <button class="btn" onclick="limpiar()">C</button>
+                
                 <button class="btn" onclick="capturarDato('0')">0</button>
+                <button class="btn blue" onclick="capturarDato('.')">.</button>
                 <button class="btn blue" onclick="operaciones()">=</button>
                 <button class="btn blue" onclick="capturarDato('/')">/</button>
             </div>
