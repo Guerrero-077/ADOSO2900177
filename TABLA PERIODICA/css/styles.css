@@ -1,0 +1,1158 @@
+.fondo{
+    background-image: url(../imagen/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45rem;
+    position: relative;
+    border-radius: 2rem;
+}
+
+body h1{
+    text-align: center;
+    font-size: 3rem;
+    align-items: center;
+    margin: auto;
+}
+
+
+.estilo{
+    
+    width: 100px;
+    height: 100px;
+    border: solid 1px black ;
+    text-align: center;
+    
+    
+}
+.estilo:hover{
+    
+        transform: scale(1.5);
+        z-index: 1;
+    
+}
+.elementos {
+    width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+}
+.atomico{
+    font-size: 15px;
+    line-height: 0px;
+    
+}
+.simbolo{
+font-size: 25px;
+line-height: 0px;
+}
+.nombre{
+font-size: 13;
+line-height:0px;
+}
+.peso{
+    font-size: 17px;
+    line-height: 0px;
+}
+
+/*******************/
+
+.hidrogeno{
+background-color: greenyellow;
+}
+
+#q1{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.litio{
+    background-color: #0cc;
+}
+#q3{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+}
+
+.berilio{
+    background-color: #0cc;
+}
+#q4{
+    position: absolute;
+    top: 200px;
+    left: 200px; 
+}
+
+.sodio{
+    background-color: #0cc;
+}
+#q11{
+    position: absolute;
+    top: 300px;
+    left: 100px;   
+}
+
+.magnesio{
+    background-color: #0cc;
+}
+#q12{
+    position: absolute;
+    top: 300px;
+    left: 200px;    
+}
+
+.potasio{
+    background-color: #0cc;
+}
+#q19{
+    position: absolute;
+    top: 400px;
+    left: 100px;  
+}
+
+.calcio{
+    background-color: #0cc;
+}
+#q20{
+    position: absolute;
+    top: 400px;
+    left: 200px;    
+}
+
+.rubidio{
+    background-color: #0cc;
+}
+#q37{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+
+.estroncio{
+    background-color: #0cc;
+}
+#q38{
+    position: absolute;
+    top: 500px;
+    left: 200px
+}
+
+.cesio{
+    background-color: #0cc;
+}
+#q55{
+    position: absolute;
+    top: 600px;
+    left: 100px;
+}
+
+.bario{
+    background-color: #0cc;
+}
+#q56{
+    position: absolute;
+    top: 600px;
+    left: 200px
+}
+
+.francio{
+    background-color: #0cc;
+}
+#q87{
+    position: absolute;
+    top: 700px;
+    left: 100px;
+}
+
+.radio{
+    background-color: #0cc;
+}
+#q88{
+    position: absolute;
+    top: 700px;
+    left: 200px  
+}
+
+.escandio{
+    background-color: plum;
+}
+#q21{
+    position: absolute;
+    top: 400px;
+    left: 300px;    
+}
+
+.itrio{
+    background-color: plum;
+}
+#q39{
+    position: absolute;
+    top: 500px;
+    left: 300px;  
+}
+
+.lantano{
+    background-color: palevioletred;
+}
+#q57{
+    position: absolute;
+    top: 600px;
+    left: 300px;  
+}
+
+.actinio{
+    background-color: pink;
+}
+#q89{
+    position: absolute;
+    top: 700px;
+    left: 300px; 
+}
+
+.titanio{
+background-color: plum;
+}
+#q22{
+    position: absolute;
+    top: 400px;
+    left: 400px; 
+}
+
+.circonio{
+    background-color: plum;
+}
+#q40{
+    position: absolute;
+    top: 500px;
+    left: 400px;
+}
+
+.hafnio{
+    background-color: plum;
+}
+#q72{
+    position: absolute;
+    top: 600px;
+    left: 400px;
+}
+
+.rutherfordio{
+    background-color: plum;
+    font-size: 13px;
+}
+#q104{
+    position: absolute;
+    top: 700px;
+    left: 400px;
+}
+
+.vanadio{
+    background-color:plum
+
+}
+#q23{
+    position: absolute;
+    top: 400px;
+    left: 500px;
+
+}
+
+.cromo{
+    background-color: plum;
+}
+#q24{
+    position: absolute;
+    top: 400px;
+    left: 600px;
+}
+
+.manganeso{
+    background-color: plum;
+    font-size: 13px;
+}
+#q25{
+    position: absolute;
+    top: 400px;
+    left: 700px;
+}
+
+.hierro{
+    background-color:plum;
+}
+#q26{
+    position: absolute;
+    top: 400px;
+    left: 800px;
+}
+
+.cobalto{
+    background-color: plum;
+}
+#q27{
+    position: absolute;
+    top: 400px;
+    left: 900px;
+}
+
+.niquel{
+    background-color: plum;
+}
+#q28{
+    position: absolute;
+    top: 400px;
+    left: 1000px;
+}
+
+.cobre{
+    background-color:plum;
+}
+#q29{
+    position: absolute;
+    top: 400px;
+    left: 1100px;
+}
+
+.cinc{
+    background-color: plum;
+}
+#q30{
+    position: absolute;
+    top: 400px;
+    left: 1200px;
+}
+
+.galio{
+    background-color: #0cc;
+}
+#q31{
+    position: absolute;
+    top: 400px;
+    left: 1300px;
+}
+
+.germanio{
+    background-color: red;
+}
+#q32{
+    position: absolute;
+    top: 400px;
+    left: 1400px;
+}
+
+.arsenico{
+    background-color: red;
+}
+#q33{
+    position: absolute;
+    top: 400px;
+    left: 1500px;
+}
+
+.selenio{
+    background-color: rgb(173, 255, 47);
+}
+#q34{
+    position: absolute;
+    top: 400px;
+    left: 1600px;
+}
+
+.bromo{
+    background-color: rgb(173, 255, 47);
+}
+#q35{
+    position: absolute;
+    top: 400px;
+    left: 1700px;
+}
+
+.cripton{
+background-color: rgb(33, 145, 33);
+}
+#q36{
+    position: absolute;
+    top: 400px;
+    left: 1800px; 
+}
+
+.argon{
+    background-color: rgb(33, 145, 33);
+}
+#q18{
+    position: absolute;
+    top: 300px;
+    left: 1800px; 
+}
+
+.neon{
+    background-color: rgb(33, 145, 33);
+}
+#q10{
+    position: absolute;
+    top: 200px;
+    left: 1800px; 
+}
+
+.helio{
+    background-color:  rgb(33, 145, 33);
+}
+#q2{
+    position: absolute;
+    top: 100px;
+    left: 1800px; 
+}
+
+.boro{
+    background-color: red;
+}
+#q5{
+    position: absolute;
+    top: 200px;
+    left: 1300px;   
+}
+
+.carbono{
+    background-color: greenyellow;
+}
+#q6{
+    position: absolute;
+    top: 200px;
+    left: 1400px;   
+}
+
+.nitrogeno{
+    background-color: greenyellow;
+}
+#q7{
+    position: absolute;
+    top: 200px;
+    left: 1500px;  
+}
+
+.oxigeno{
+    background-color: greenyellow;
+}
+#q8{
+    position: absolute;
+    top: 200px;
+    left: 1600px;    
+}
+
+.fluor{
+    background-color: greenyellow;
+}
+#q9{
+    position: absolute;
+    top: 200px;
+    left: 1700px;     
+}
+
+.aluminio{
+    background-color: #0cc;
+}
+#q13{
+    position: absolute;
+    top: 300px;
+    left: 1300px;  
+}
+
+.silicio{
+    background-color: red;
+}
+#q14{
+    position: absolute;
+    top: 300px;
+    left: 1400px; 
+}
+
+.fosforo{
+    background-color: greenyellow;
+}
+#q15{
+    position: absolute;
+    top: 300px;
+    left: 1500px; 
+}
+
+.azufre{
+    background-color: greenyellow;
+}
+#q16{
+    position: absolute;
+    top: 300px;
+    left: 1600px; 
+}
+
+.cloro{
+    background-color: greenyellow;
+}
+#q17{
+    position: absolute;
+    top: 300px;
+    left: 1700px; 
+}
+
+.niobio{
+    background-color: plum;
+}
+#q41{
+    position: absolute;
+    top: 500px;
+    left:500px;  
+}
+
+.molibdemo{
+    background-color: plum;
+}
+#q42{
+    position: absolute;
+    top: 500px;
+    left:600px;  
+}
+
+
+.tecnecio{
+    background-color: plum;
+   
+}
+#q43{
+    position: absolute;
+    top: 500px;
+    left:700px;    
+}
+
+.rutenio{
+    background-color: plum;
+}
+#q44{
+    position: absolute;
+    top: 500px;
+    left:800px;     
+}
+#simbolo{
+    color: white;
+    font-size: 25px;
+    line-height: 0px;
+}
+
+.rodio{
+    background-color: plum;
+}
+#q45{
+    position: absolute;
+    top: 500px;
+    left:900px;   
+}
+
+.paladio{
+    background-color: plum;
+}
+#q46{
+    position: absolute;
+    top: 500px;
+    left:1000px; 
+}
+
+.plata{
+    background-color: plum;
+}
+#q47{
+    position: absolute;
+    top: 500px;
+    left:1100px; 
+}
+
+.cadmio{
+    background-color: plum;
+}
+#q48{
+    position: absolute;
+    top: 500px;
+    left:1200px;    
+}
+
+.tantalo{
+    background-color: plum;
+}
+#q73{
+    position: absolute;
+    top: 600px;
+    left:500px; 
+}
+
+.volframio{
+    background-color: plum;
+}
+#q74{
+    position: absolute;
+    top: 600px;
+    left:600px; 
+}
+
+.renio{
+    background-color: plum;
+}
+#q75{
+    position: absolute;
+    top: 600px;
+    left:700px; 
+}
+
+.osmio{
+    background-color: plum;
+   
+}
+#q76{
+    position: absolute;
+    top: 600px;
+    left:800px;   
+}
+
+.iridio{
+    background-color: plum;
+}
+#q77{
+    position: absolute;
+    top: 600px;
+    left:900px;  
+}
+
+.platino{
+    background-color: plum;
+}
+#q78{
+    position: absolute;
+    top: 600px;
+    left:1000px;    
+}
+
+.oro{
+    background-color: plum;
+}
+#q79{
+    position: absolute;
+    top: 600px;
+    left:1100px;    
+}
+
+.mercurio{
+    background-color: plum;
+}
+#q80{
+    position: absolute;
+    top: 600px;
+    left:1200px;    
+}
+#simbol{
+    color: red;
+    font-size: 25px;
+    line-height: 0px;
+}
+
+.dubnio{
+    background-color: plum;
+}
+#q105{
+    position: absolute;
+    top: 700px;
+    left:500px;
+}
+
+.seabopgio{
+    background-color: plum;
+}
+#q106{
+    position: absolute;
+    top: 700px;
+    left:600px;
+}
+
+.bohrio{
+    background-color: plum;
+}
+#q107{
+    position: absolute;
+    top: 700px;
+    left:700px; 
+}
+
+.hassio{
+    background-color: plum;
+}
+#q108{
+    position: absolute;
+    top: 700px;
+    left:800px; 
+}
+
+.meitnerio{
+    background-color: plum;
+}
+#q109{
+    position: absolute;
+    top: 700px;
+    left:900px; 
+}
+
+.darmstadtio{
+    background-color: plum;
+    font-size: 12px;
+}#q110{
+    position: absolute;
+    top: 700px;
+    left:1000px; 
+}
+
+.roentgenio{
+    background-color: plum;
+    font-size: 13px;
+}
+#q111{
+    position: absolute;
+    top: 700px;
+    left:1100px; 
+}
+
+.copernicium{
+    background-color: plum;
+    font-size: 13px;
+}
+#q112{
+    position: absolute;
+    top: 700px;
+    left:1200px;    
+} 
+
+.indio{
+    background-color: #0cc;
+}
+#q49{
+    position: absolute;
+    top: 500px;
+    left: 1300px;  
+}
+
+.estaño{
+    background-color: #0cc;
+}
+#q50{
+    position: absolute;
+    top: 500px;
+    left: 1400px;  
+}
+
+.antimonio{
+    background-color: red;
+}
+#q51{
+    position: absolute;
+    top: 500px;
+    left: 1500px; 
+}
+
+.telurio{
+    background-color: red;
+}
+#q52{
+    position: absolute;
+    top: 500px;
+    left: 1600px;
+}
+
+.yodo{
+    background-color: greenyellow;
+}
+#q53{
+    position: absolute;
+    top: 500px;
+    left: 1700px;
+}
+
+.xenon{
+    background-color:  rgb(33, 145, 33);
+}
+#q54{
+    position: absolute;
+    top: 500px;
+    left: 1800px; 
+}
+
+.talio{
+    background-color: #0cc;
+}
+#q81{
+    position: absolute;
+    top: 600px;
+    left: 1300px;  
+}
+
+.plomo{
+    background-color: #0cc;
+}
+#q82{
+    position: absolute;
+    top: 600px;
+    left: 1400px;
+}
+
+.bismuto{
+    background-color: #0cc;
+}
+#q83{
+    position: absolute;
+    top: 600px;
+    left: 1500px;
+}
+
+.polonio{
+    background-color: red;
+}
+#q84{
+    position: absolute;
+    top: 600px;
+    left: 1600px;  
+}
+
+.astato{
+    background-color: greenyellow;
+}
+#q85{
+    position: absolute;
+    top: 600px;
+    left: 1700px; 
+}
+
+.radon{
+    background-color: rgb(33, 145, 33);
+}
+#q86{
+    position: absolute;
+    top: 600px;
+    left: 1800px;   
+}
+
+.ununtrium{
+    background-color: #0cc;
+    font-size: 13px;
+}
+#q113{
+    position: absolute;
+    top: 700px;
+    left: 1300px;    
+}
+
+.flerovium{
+    background-color: #0cc;
+    font-size: 13px;
+    
+}
+#q114{
+    position: absolute;
+    top: 700px;
+    left: 1400px;
+}
+
+.ununpentium{
+    background-color: #0cc;
+    font-size: 12px;
+}
+#q115{
+    position: absolute;
+    top: 700px;
+    left: 1500px;
+}
+
+.livermorium{
+    background-color: #0cc;
+    font-size: 12px;
+}
+#q116{
+    position: absolute;
+    top: 700px;
+    left: 1600px;
+}
+
+.ununseptium{
+    background-color: whitesmoke;
+    font-size: 12px;
+    
+}
+#q117{
+    position: absolute;
+    top: 700px;
+    left: 1700px;   
+}
+
+.ununoctium{
+    background-color:  rgb(33, 145, 33);
+    font-size: 13px;
+}
+#q118{
+    position: absolute;
+    top: 700px;
+    left: 1800px; 
+}
+.simbolo1{
+    color: white;
+    font-size: 25px;
+    line-height: 0px;
+}
+
+.cerio{
+background-color: palevioletred;
+}
+#q58{
+    position: absolute;
+    top: 900px;
+    left: 500px; 
+}
+
+.praseodimio{
+    background-color: palevioletred;
+    font-size: 13px;
+}
+#q59{
+    position: absolute;
+    top: 900px;
+    left: 600px;   
+}
+
+.neodimio{
+    background-color: palevioletred;
+}
+#q60{
+    position: absolute;
+    top: 900px;
+    left: 700px;    
+}
+
+.prometio{
+    background-color: palevioletred;
+}
+#q61{
+    position: absolute;
+    top: 900px;
+    left: 800px; 
+}
+
+.samario{
+    background-color: palevioletred;
+}
+#q62{
+    position: absolute;
+    top: 900px;
+    left: 900px; 
+}
+
+.europio{
+    background-color: palevioletred;
+}
+#q63{
+    position: absolute;
+    top: 900px;
+    left: 1000px; 
+}
+
+.gadolinio{
+    background-color: palevioletred;
+}
+#q64{
+    position: absolute;
+    top: 900px;
+    left: 1100px;   
+}
+
+.terbio{
+    background-color: palevioletred;
+}
+#q65{
+    position: absolute;
+    top: 900px;
+    left: 1200px;  
+}
+
+.disprocio{
+    background-color: palevioletred;
+}
+#q66{
+    position: absolute;
+    top: 900px;
+    left: 1300px;   
+}
+
+.holmio{
+    background-color: palevioletred;
+}
+#q67{
+    position: absolute;
+    top: 900px;
+    left: 1400px;  
+}
+
+.erbio{
+    background-color: palevioletred;
+}
+#q68{
+    position: absolute;
+    top: 900px;
+    left: 1500px;    
+}
+
+.tulio{
+    background-color: palevioletred;
+}
+#q69{
+    position: absolute;
+    top: 900px;
+    left: 1600px;   
+}
+
+.iterbio{
+    background-color: palevioletred;
+}
+#q70{
+    position: absolute;
+    top: 900px;
+    left: 1700px;
+}   
+
+.lutecio{
+    background-color: palevioletred;
+}
+#q71{
+    position: absolute;
+    top: 900px;
+    left: 1800px;
+}
+
+.torio{
+    background-color: pink;
+}
+#q90{
+    position: absolute;
+    top: 1000px;
+    left: 500px; 
+}
+
+.protactinio{
+    background-color: pink;
+     font-size: 13px;
+}
+#q91{
+    position: absolute;
+    top: 1000px;
+    left: 600px;  
+}
+
+.uranio{
+    background-color: pink;
+}
+#q92{
+    position: absolute;
+    top: 1000px;
+    left: 700px;   
+}
+
+.neptunio{
+    background-color: pink;
+}
+#q93{
+    position: absolute;
+    top: 1000px;
+    left: 800px; 
+}
+
+.plutonio{
+    background-color: pink;
+}
+#q94{
+    position: absolute;
+    top: 1000px;
+    left: 900px; 
+}
+
+.americio{
+    background-color: pink;
+}
+#q95{
+    position: absolute;
+    top: 1000px;
+    left: 1000px; 
+}
+
+.curio{
+    background-color: pink;
+}
+#q96{
+    position: absolute;
+    top: 1000px;
+    left: 1100px;  
+}
+
+.berkelio{
+    background-color: pink;
+}
+#q97{
+    position: absolute;
+    top: 1000px;
+    left: 1200px; 
+}
+
+.californio{
+    background-color: pink;
+    font-size: 13px;
+}
+#q98{
+    position: absolute;
+    top: 1000px;
+    left: 1300px;  
+}
+
+.einstenio{
+    background-color: pink;
+}
+#q99{
+    position: absolute;
+    top: 1000px;
+    left: 1400px;     
+}
+
+.fermio{
+    background-color: pink;
+}
+#q100{
+    position: absolute;
+    top: 1000px;
+    left: 1500px;
+}
+
+.mendelevio{
+    background-color: pink;
+    font-size: 13px;
+}
+#q101{
+    position: absolute;
+    top: 1000px;
+    left: 1600px; 
+}
+
+.nobelio{
+background-color: pink;
+}
+#q102{
+    position: absolute;
+    top: 1000px;
+    left: 1700px;
+}
+
+.laurencio{
+background-color: pink;
+}
+#q103{
+    position: absolute;
+    top: 1000px;
+    left: 1800px;
+}
