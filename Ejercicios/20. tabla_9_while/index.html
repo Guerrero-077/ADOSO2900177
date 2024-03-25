@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Ingrese la tabla que desea</label>
+    <input type="text" id="tabla">
+    <button type="button" onclick="enviar()">Enviar</button>
+    <script>
+        function enviar(){
+            let tabla;
+            
+            tabla = document.getElementById("tabla").value
+            let contador;
+            let multiplicar;
+            let numero;
+            numero =5;
+
+            contador = 0;
+            multiplicar = 1;
+            while(contador < numero){
+                contador = contador+1;
+                multiplicar= tabla*contador;
+                if(multiplicar%2==0){
+                    document.write("El número es par ")
+                }else{
+                    document.write("El número es impar  ")
+                }
+                document.write(tabla,"x",contador,"=",multiplicar,"<br>")
+            }
+        }
+ 
+    </script>
+</body>
+</html>

@@ -6,18 +6,34 @@
     <title>Document</title>
 </head>
 <body>
+    <label for="">Ingrese su fecha de Nacimiento</label>
+    <input type="date" id="fechaNac">
+    <button type="button" onclick="enviar()">Enviar</button>
+    <div id="resultado"></div>
     <script>
         
-        let fechaAc = new Date();  //fecha Actual
-        let fechaNac = new Date("2006-08-07");
-        let diferencia
-        let edad;
-
-
-        diferencia = fechaAc-fechaNac 
-        edad = Math.floor(diferencia/(1000*60*60*24*365.25))
-        console.log(edad)
-         
+        function enviar(){
+            let fecha = document.getElementById("fechaNac").value;
+            let resultado;
+            resultado="";   //variable para colocar un mensaje
+            if(fecha != ""){ //validar que el  campo no esté vacío
+                
+                let fechaAc = new Date();  //fecha Actual
+                let fechaNac = new Date(fecha);
+                let diferencia
+                let edad;
+              
+        
+        
+                diferencia = fechaAc-fechaNac 
+                edad = Math.floor(diferencia/(1000*60*60*24*365.25))
+                resultado += "Tu edad es: "+edad+" años.";
+            }else{
+                document.getElementById("resultado").innerHTML="Todos los campos son obligatorios";
+                
+            }
+            document.getElementById("resultado").innerHTML=resultado;//le asigino al elemento un mensaje
+        }
     </script>
 </body>
 </html>

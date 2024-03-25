@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">Dias trabajados</label>
+    <input type="number" id="diaT">
+    <br>
+    
+    <label for="">Valor del Día</label>
+    <input type="number" id="valorD">
+    <br>
+    
+    <label for="">Salario minimo Actual</label>
+    <input type="number" id="salarioM">
+    <br>
+    <div id="resultado"></div>
+
+    <button type="button" onclick="enviar()">Eviar</button>
+
+    <script>
+
+        function enviar(){
+            let diaT;
+            let valorD;
+            let salarioM;
+            let salario;
+            let transporte;
+            let retencion;
+            let salud;
+            let pension;
+            let arl;
+            let totalS;
+            
+            diaT = parseInt(document.getElementById("diaT").value);
+            valorD = parseFloat(document.getElementById("valorD").value); 
+            salarioM = parseFloat(document.getElementById("salarioM").value);
+            
+            salario = diaT * valorD;
+            salud = salario*0.12;
+            pension= salario*0.16;
+            arl = salario*0.052;
+
+            if(salario<(2*salarioM)){
+                transporte = 114.000;
+                
+            }else{
+                transporte=0;
+            }
+
+            if(salario>(4*salarioM)){
+                retencion = 0.04;
+            }else{
+                retencion = 0;
+            }
+
+            totalS = (salario+transporte)-(salud+arl+pension)
+            document.getElementById("resultado").innerHTML ="Su salairio es de: "+ totalS;
+
+
+            
+        }
+    </script>
+</body>
+</html>

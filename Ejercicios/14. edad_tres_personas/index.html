@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <label for="">Ingrese su fecha de Nacimiento 1</label>
+        <input type="date" id="fechaNac">
+    
+        <br>
+        <label for="">Ingrese su fecha de Nacimiento 2</label>
+        <input type="date" id="fechaNac2">
+        <br>
+    
+        <label for="">Ingrese su fecha de Nacimiento 3</label>
+        <input type="date" id="fechaNac3">
+        <br>
+    
+    <button type="button" onclick="enviar()">Enviar</button>
+    <div id="resultado"></div>
+    <script>
+        
+        function enviar(){
+            let fecha = document.getElementById("fechaNac").value;
+            let fecha2 = document.getElementById("fechaNac2").value;
+            let fecha3 = document.getElementById("fechaNac3").value;
+            let resultado;
+            resultado = "";  
+
+            if(fecha != "" && fecha2 != "" && fecha3 != ""){
+                
+                let fechaAc = new Date();  //fecha Actual
+                let fechaNac = new Date(fecha);
+                let fechaNac2 = new Date(fecha2);
+                let fechaNac3 = new Date(fecha3);
+                let diferencia
+                let edad;
+      
+        
+                diferencia = fechaAc-fechaNac 
+                edad = Math.floor(diferencia/(1000*60*60*24*365.25))
+                console.log(edad)
+                if(edad >=18){
+                    resultado += "Tu edad es: "+edad+" años, Es mayor de edad <br>";
+                }else{
+                    resultado += "Tu edad es: "+edad+" años, Es menor de edad <br>";
+                }
+
+                        
+                diferencia2 = fechaAc-fechaNac2 
+                edad2 = Math.floor(diferencia2/(1000*60*60*24*365.25))
+                console.log(edad2)
+
+                if(edad2 >=18){
+                    resultado += "Tu edad es: "+edad2+" años, Es mayor de edad <br>";
+                }else{
+                    resultado += "Tu edad es: "+edad2+" años, Es menor de edad <br>";
+                }
+
+                diferencia3 = fechaAc-fechaNac3 
+                edad3 = Math.floor(diferencia3/(1000*60*60*24*365.25))
+                console.log(edad3)
+
+                if(edad3 >=18){
+                    resultado += "Tu edad es: "+edad3+" años, Es mayor de edad <br>";
+                }else{
+                    resultado += "Tu edad es: "+edad3+" años, Es menor de edad <br>";
+                }
+
+                document.getElementById("resultado").innerHTML=resultado;
+                                
+            }else{
+                document.getElementById("resultado").innerHTML="Todos los campos son obligatorios";
+                return;
+            }
+        }
+    </script>
+</body>
+</html>

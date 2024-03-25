@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+        <label for="">Ingrese el valor de número uno: </label>
+        <input type="number" name="elementos" id="elementos1">
+        <br/>
+        
+        <label for="">Ingrese el valor de número dos: </label>
+        <input type="number" name="elementos" id="elementos2">
+        <br/>
+    <button type="buttoon" onclick="datos()">Enviar</button>
+    <script>
+        
+        function datos(){
+            let numeroUno;
+            let numeroDos;
+    
+            
+            numeroUno = document.getElementById("elementos1").value;
+            numeroDos = document.getElementById("elementos2").value;
+
+                if(numeroUno !== "" && numeroDos !== "") {
+                    if(parseFloat(numeroUno)!= parseFloat(numeroDos)){
+                        if(parseFloat(numeroUno)>parseFloat(numeroDos)){
+                            console.log("Número uno",numeroUno,"es Mayor que número dos",numeroDos);
+
+                        }else{
+                            console.log("Número Dos es",numeroDos,"es Mayor que número uno",numeroUno);
+
+                            
+                        }
+                    }else{
+                        console.log("Los números son iguales");
+
+                    }
+                }else{
+                        console.log("Ingrese un número")
+                    }
+                
+            
+        }
+       
+    </script>
+</body>
+</html>

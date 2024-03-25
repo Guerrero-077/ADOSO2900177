@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla de 1 al 5 con for</title>
+</head>
+<body>
+    <script>
+        let tabla;
+        let contador;
+        let numero;
+        let resultado;
+        let par;
+        let impar;
+
+        numero = 5;
+        par = 0;
+        impar = 0;
+
+        for(tabla = 1; numero >= tabla; tabla++){
+            for(contador=1; numero>=contador; contador++){
+                resultado=tabla*contador;
+                document.write(tabla," x ",contador," = ",resultado)
+                
+                if(resultado%2==0){
+                    par=par+1;
+                    document.write(" Buzz <br>");
+                }else{
+                    impar=impar+1;
+                    document.write(" Bass <br>");
+                }
+            }
+            document.write("<br>");
+        }
+        document.write("Total de pares: ", par, "<br>")
+        document.write("Total de impares: ", impar)
+    </script>
+</body>
+</html>
