@@ -1,35 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabla del 9 con for</title>
 </head>
+
 <body>
-    <label for="">Ingerse la tabla que desea saber: </label>
-    <input id="tabla" type="number">
-    <button type="button" onclick="enviar()">Enviar</button>
+
     <script>
-        function enviar(){
-            let tabla;
-            let numero;
-            let contador;
-            let resultado;
-            tabla= document.getElementById("tabla").value;
-            numero = 5;
-            for(contador=1; numero >= contador; contador++){
-    
-                resultado = tabla * contador;
-                document.write(tabla," x ",contador," = ",resultado)
-                if(resultado%2==0){
-                    document.write(" El resultado es par <br>")
-                }else{
-                    document.write(" El resultado es impar <br>")
-                }
-    
+
+        let tabla;
+        let numero;
+        let contador;
+        let resultado;
+        tabla = 9;
+        numero = 5;
+        for (contador = 1; numero >= contador; contador++) {
+
+            resultado = tabla * contador;
+            
+            if (resultado % 2 == 0) {
+                console.log(resultado+" El resultado es par ")
+            } else {
+                console.log(resultado+" El resultado es impar")
             }
+
         }
+
 
     </script>
 </body>
+
 </html>

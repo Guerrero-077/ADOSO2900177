@@ -3,62 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>mayor de tres numeros</title>
 </head>
 <body>
-    <label for="numero1"  >Ingrese el valor para número Uno</label>
-    <input type="number" id="numero1">
-    <br/>
-    
-    <label for="numero2" >Ingrese el valor para número Dos</label>
-    <input type="number" id="numero2">
-    <br/>
-    
-    <label for="numero3" >Ingrese el valor para número Tres</label>
-    <input type="number" id="numero3">
-    <br/>
 
-    <button type="button" onclick="enviar()">Enviar</button>
-    <script>
+<script>
+  
+let numeroUno;
+let numeroDos;
+let numeroTres;
+numeroUno = 2;
+numeroDos = 3;
+numeroTres = 4;
+console.log(numeroUno)
+console.log(numeroDos)
+console.log(numeroTres)
 
-        function enviar(){
-            let  numeroUno;
-            let  numeroDos;
-            let  numeroTres;
+if (numeroUno !== "" && numeroDos !== "" && numeroTres !== "") {
 
-            numeroUno = document.getElementById("numero1").value;
-            numeroDos = document.getElementById("numero2").value;
-            numeroTres = document.getElementById("numero3").value;
+    if (parseFloat(numeroUno) !== parseFloat(numeroDos) ||
+        parseFloat(numeroUno) !== parseFloat(numeroTres) ||
+        parseFloat(numeroTres) !== parseFloat(numeroDos)) {
 
-            console.log(numeroUno)
-            console.log(numeroDos)
-            console.log(numeroTres)
-
-            if( numeroUno !== "" && numeroDos !=="" && numeroTres!==""){
-
-                if(parseFloat(numeroUno) !== parseFloat(numeroDos) ||
-                    parseFloat(numeroUno) !== parseFloat(numeroTres) || 
-                    parseFloat(numeroTres) !== parseFloat(numeroDos) ){
-
-                        if(parseFloat(numeroUno) > parseFloat(numeroDos) && parseFloat(numeroUno) > parseFloat(numeroTres) ){
-                            console.log("Número uno es mayor",numeroUno)
-                        }else{
-                            if(parseFloat(numeroDos) > parseFloat(numeroUno) && parseFloat(numeroDos) > parseFloat(numeroTres) ){
-                                console.log("Número dos es mayor",numeroDos)
-                            }else{
-                                console.log("Número tres es mayor",numeroTres)
-                            }
-                        }
-                        
-                    }else{
-                        
-                        console.log("Datos Iguales")
-                }
-            }else{
-                console.log("Ingrese un Número")
+        if (parseFloat(numeroUno) > parseFloat(numeroDos) && parseFloat(numeroUno) > parseFloat(numeroTres)) {
+            console.log("Número uno es mayor", numeroUno)
+        } else {
+            if (parseFloat(numeroDos) > parseFloat(numeroUno) && parseFloat(numeroDos) > parseFloat(numeroTres)) {
+                console.log("Número dos es mayor", numeroDos)
+            } else {
+                console.log("Número tres es mayor", numeroTres)
             }
-
         }
+    } else {
+
+        console.log("Datos Iguales")
+    }
+} else {
+    console.log("Ingrese un Número")
+}
     </script>
 </body>
 </html>

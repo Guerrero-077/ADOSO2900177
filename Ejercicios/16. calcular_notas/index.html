@@ -1,39 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
 
-    <label for="">Ingrese la nota 1</label>
-    <input type="number" id="nota1">
-    <br>
-    <label for="">Ingrese la nota 2</label>
-    <input type="number" id="nota2">
-    <br>
-    <label for="">Ingrese la nota 3</label>
-    <input type="number" id="nota3">
-    <br>
-    <button type="button" onclick="enviar()">Enviar</button>
-    <div id="resultado"></div>
-
     <script>
-        function enviar() {
             let nota1;
             let nota2;
             let nota3;
 
-            nota1 = document.getElementById("nota1").value;
-            nota2 = document.getElementById("nota2").value;
-            nota3 = document.getElementById("nota3").value;
-            let resultado = "";
+            nota1 = 4.5;
 
+            nota2 = 5.0;
+            
+            nota3 = 4.0;
             if (nota1 != "" && nota2 != "" && nota3 != "") {
-
                 let promedio1;
                 let promedio2;
                 let promedio3;
@@ -51,28 +35,22 @@
 
                 if (suma != "") {
                     if (suma > 4.5) {
-                        resultado += " La nota es SUPERIOR "+suma;
+                        console.log( " La nota es SUPERIOR "+suma);
                     } else {
                         if (suma <= 4.5 && suma > 3.5) {
-                            resultado += " La nota es BUENA "+suma;
+                            console.log( " La nota es BUENA "+suma);
                         } else {
                             if (suma >= 3 && suma <= 3.5) {
-                                resultadO += "La nota es MEDIA "+suma;
+                                console.log( "La nota es MEDIA "+suma);
                             } else {
-                                resultado += "La nota es MALA "+suma;
+                                rconsole.log("La nota es MALA "+suma);
                             }
                         }
                     }
-                    document.getElementById("resultado").innerText =  resultado;
                 }
             } else {
-                document.getElementById("resultado").innerText = "Todos los campos son obligatorios";
+                console.log("Todos los campos son obligatorios");
             }
-
-
-        }
-
     </script>
 </body>
-
 </html>

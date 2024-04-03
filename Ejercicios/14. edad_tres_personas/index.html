@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Edad de tres personas</title>
 </head>
 <body>
     
@@ -22,7 +22,6 @@
     <button type="button" onclick="enviar()">Enviar</button>
     <div id="resultado"></div>
     <script>
-        
         function enviar(){
             let fecha = document.getElementById("fechaNac").value;
             let fecha2 = document.getElementById("fechaNac2").value;
@@ -31,15 +30,13 @@
             resultado = "";  
 
             if(fecha != "" && fecha2 != "" && fecha3 != ""){
-                
                 let fechaAc = new Date();  //fecha Actual
                 let fechaNac = new Date(fecha);
                 let fechaNac2 = new Date(fecha2);
                 let fechaNac3 = new Date(fecha3);
                 let diferencia
                 let edad;
-      
-        
+    
                 diferencia = fechaAc-fechaNac 
                 edad = Math.floor(diferencia/(1000*60*60*24*365.25))
                 console.log(edad)
@@ -48,12 +45,10 @@
                 }else{
                     resultado += "Tu edad es: "+edad+" años, Es menor de edad <br>";
                 }
-
-                        
+ 
                 diferencia2 = fechaAc-fechaNac2 
                 edad2 = Math.floor(diferencia2/(1000*60*60*24*365.25))
                 console.log(edad2)
-
                 if(edad2 >=18){
                     resultado += "Tu edad es: "+edad2+" años, Es mayor de edad <br>";
                 }else{
@@ -74,7 +69,7 @@
                                 
             }else{
                 document.getElementById("resultado").innerHTML="Todos los campos son obligatorios";
-                return;
+                
             }
         }
     </script>

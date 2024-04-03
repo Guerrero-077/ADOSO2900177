@@ -1,61 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>area de tres cuadrados</title>
 </head>
+
 <body>
+
+<script>
+    let cuadradoUno;
+    let cuadradoDos;
+    let cuadradoTres;
+    let area1;
+    let area2;
+    let area3;
+
+    cuadradoUno = 2;
+    cuadradoDos = 3;
+    cuadradoTres = 4;
     
-    <label for="">Ingrese la medida del lado de su primer cuadrado: </label>
-    <input type="text" placeholder="lado del cuadrado" id="lado1">
-    <br/>
-    <label for="">Ingrese las medida del lado de su segundo cuadrado: </label>
-    <input type="text" placeholder="lado del cuadrado" id="lado2">
-    <br/>
-    <label for="">Ingrese la medida del lado de su tercer cuadrado: </label>
-    <input type="text" placeholder="lado del cuadrado" id="lado3">
-    <br/>
-    <div id="msg"></div>
-    <button type="button" onclick="enviar()">Enviar</button>
+    area1 = cuadradoUno * cuadradoUno;
+    area2 = cuadradoDos * cuadradoDos;
+    area3 = cuadradoTres * cuadradoTres;
 
-    <script>
-        function enviar() {
+    if (cuadradoUno !== "" && cuadradoDos !== "" && cuadradoTres !== "") {
+        if (area1 == area2 && area1 == area3 && area2 == area3) {
+            console.log("Las areas son iguales");
+        } else {
+            if (area1 > area2 && area1 > area2) {
+                console.log("Area 1", area1);
+            } else {
+                if (area2 > area3 && area2 > area1) {
 
-            
-            let cuadradoUno;
-            let cuadradoDos;
-            let cuadradoTres;
-            let area1;
-            let area2;
-            let area3;
-    
-            cuadradoUno = document.getElementById("lado1").value;
-            cuadradoDos = document.getElementById("lado2").value;
-            cuadradoTres = document.getElementById("lado3").value;
+                    console.log("Area 2", area2);
+                } else {
 
-            if(cuadradoUno !=="" && cuadradoDos !=="" && cuadradoTres !==""){
-
-
-                area1 =parseFloat(cuadradoUno)* parseFloat(cuadradoUno);
-                area2 =parseFloat(cuadradoDos)* parseFloat(cuadradoDos);
-                area3 =parseFloat(cuadradoTres)* parseFloat(cuadradoTres);
-                
-                console.log(area1);
-                console.log(area2);
-                console.log(area3);
-                return;
-
-            }else{
-                console.log("Ingrese un Número")
-                document.getElementById("msg").innerHTML="Ingrese un Número";
+                    console.log("Area 3", area3);
+                }
             }
-            
-
-
-
         }
+    } else {
+        console.log("Ingrese un Número")
+    }
 
-    </script>
+</script>
 </body>
+
 </html>

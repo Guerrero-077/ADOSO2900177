@@ -3,67 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>salario</title>
 </head>
 <body>
-    
-    <label for="">Dias trabajados</label>
-    <input type="number" id="diaT">
-    <br>
-    
-    <label for="">Valor del Día</label>
-    <input type="number" id="valorD">
-    <br>
-    
-    <label for="">Salario minimo Actual</label>
-    <input type="number" id="salarioM">
-    <br>
-    <div id="resultado"></div>
 
-    <button type="button" onclick="enviar()">Eviar</button>
+<script>
+        let diaT;
+        let valorD;
 
-    <script>
+        let salarioM;
+        let salario;
 
-        function enviar(){
-            let diaT;
-            let valorD;
-            let salarioM;
-            let salario;
-            let transporte;
-            let retencion;
-            let salud;
-            let pension;
-            let arl;
-            let totalS;
+        let transporte;
+        let retencion;
+
+        let salud;
+        let pension;
+        let arl;
+        
+        let totalS;
+        
+        diaT = 20;
+        valorD = 43333;
+        salarioM = 1300000;
+        
+        salario = diaT * valorD;
+        salud = salario*0.12;
+        pension= salario*0.16;
+        arl = salario*0.052;
+
+        if(salario<2*salarioM){
+            transporte = 114000;
             
-            diaT = parseInt(document.getElementById("diaT").value);
-            valorD = parseFloat(document.getElementById("valorD").value); 
-            salarioM = parseFloat(document.getElementById("salarioM").value);
-            
-            salario = diaT * valorD;
-            salud = salario*0.12;
-            pension= salario*0.16;
-            arl = salario*0.052;
-
-            if(salario<(2*salarioM)){
-                transporte = 114.000;
-                
-            }else{
-                transporte=0;
-            }
-
-            if(salario>(4*salarioM)){
-                retencion = 0.04;
-            }else{
-                retencion = 0;
-            }
-
-            totalS = (salario+transporte)-(salud+arl+pension)
-            document.getElementById("resultado").innerHTML ="Su salairio es de: "+ totalS;
-
-
-            
+        }else{
+            transporte=0;
         }
-    </script>
+
+        if(salario > 4*salarioM){
+            retencion = 0.04;
+        }else{
+            retencion = 0;
+        }
+        totalS = (salario+transporte)-(salud+arl+pension)
+        console.log("El sueldo inicial de la persona es de: "+ salario);
+        console.log("Su subsidio es de: "+ transporte);
+        console.log("Su salud es de: "+ salud);
+        console.log("Su pension es de: "+ pension);
+        console.log("Su Ael es de: "+ arl);
+        console.log("Su Retencion es de: "+ retencion);
+        console.log("Su salairio final es de: "+ totalS);
+
+    
+</script>
 </body>
 </html>

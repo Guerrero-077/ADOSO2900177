@@ -3,17 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabla con while </title>
 </head>
 <body>
-    <label for="">Ingrese la tabla que desea</label>
-    <input type="text" id="tabla">
-    <button type="button" onclick="enviar()">Enviar</button>
+
     <script>
-        function enviar(){
+        
             let tabla;
             
-            tabla = document.getElementById("tabla").value
+            tabla = 5;
             let contador;
             let multiplicar;
             let numero;
@@ -24,9 +22,9 @@
             while(contador < numero){
                 contador = contador+1;
                 multiplicar= tabla*contador;
-                document.write(tabla,"x",contador,"=",multiplicar,"<br>")
+                console.log(tabla+" x "+contador+" = "+multiplicar)
             }
-        }
+        
  
     </script>
 </body>

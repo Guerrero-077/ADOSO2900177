@@ -3,25 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tabla del 5 con for </title>
 </head>
 <body>
-    <label for="">Ingrese la tabla que desea saber: </label>
-    <input type="number" id="tabla">
-    <button type="button" onclick="enviar()">Enviar</button>
+
     <script>
-        function enviar(){
+       
             let numero;
             let tabla;
             let contador;
             let resultado;
-            tabla=document.getElementById("tabla").value;
+            tabla = 5;
             numero=5;
             for(contador=1; numero >= contador; contador ++ ){
                 resultado = tabla * contador;
-                document.write(tabla,"x",contador,"=",resultado,"<br>");
+                console.log(tabla+" x "+contador+" = " + resultado);
             }
-        }
+        
     </script>
 </body>
 </html>
