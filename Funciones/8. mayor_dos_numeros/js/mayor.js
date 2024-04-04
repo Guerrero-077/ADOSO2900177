@@ -7,7 +7,7 @@
 let numUno;
 let numDos;
 
-
+//como paramétro
 function mayor(pnumUno, pnumDos){
     numUno = pnumUno;
     numDos = pnumDos;
@@ -19,4 +19,16 @@ function mayor(pnumUno, pnumDos){
     }
   
 }
-    
+
+//como Expresión
+const mayorExp= function (pnumUno, pnumDos){
+  numUno = pnumUno;
+  numDos = pnumDos;
+
+  if(numUno> numDos){
+    return "El numero uno es mayor "+numUno
+  }else{
+      return "El numero dos es mayor " + numDos
+  }
+
+}

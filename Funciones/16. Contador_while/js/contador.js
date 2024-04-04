@@ -6,7 +6,24 @@
 
 let numero;
 
+//Como Paramétros
+
 function contar(pnumero) {
+    numero = pnumero;
+    let contador = 0;
+    let resultado = "";
+
+    while (contador < numero) {
+        contador = contador + 1;
+        resultado +=  contador + "\n"; 
+    }
+
+    return resultado; 
+}
+
+//Como Expresión
+
+const contarExp = function (pnumero) {
     numero = pnumero;
     let contador = 0;
     let resultado = "";

@@ -4,7 +4,16 @@
  * 02/04/2024
 */
 
-const porcentaje = function(pnumero){
+//Como paramétro
+
+function porcentaje(pnumero){
+    let numero = pnumero;
+    let resultado; 
+    resultado = numero/ 100;
+    return resultado;
+}
+//Como Exprfesión
+const porcentajeExp = function(pnumero){
     let numero = pnumero;
     let resultado; 
     resultado = numero/ 100;
