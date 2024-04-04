@@ -5,9 +5,7 @@
 */
 let diaT;
 let valorD;
-
 //Como paramétro
-
 function  calcularSueldo(pdiasT, pvalorD){
     diaT = pdiasT;
     valorD = pvalorD;
@@ -51,8 +49,8 @@ function  calcularSueldo(pdiasT, pvalorD){
            "El porcentaje de retencion es de "+retencion+ "%. \n"+
            "Entonces, el Sueldo Total a Pagar es de: "+ totalS
 }
-//Como Expresión 
 
+//Como Expresión 
 const calcularSueldoExp = function  (pdiasT, pvalorD){
     diaT = pdiasT;
     valorD = pvalorD;

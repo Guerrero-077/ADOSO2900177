@@ -4,6 +4,8 @@
  * Fecha 03/04/2034
  */
 
+
+//como paamétro
 function edades(pfechaNacUno,pfechaNacDos,pfechaNacTres){
 
     let fechaNacUno = new Date(pfechaNacUno);
@@ -47,6 +49,7 @@ function edades(pfechaNacUno,pfechaNacDos,pfechaNacTres){
 
 }
 
+//como Expresión
 const edadesExp = function(pfechaNacUno,pfechaNacDos,pfechaNacTres){
 
     let fechaNacUno = new Date(pfechaNacUno);

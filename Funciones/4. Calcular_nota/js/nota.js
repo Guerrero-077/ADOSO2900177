@@ -4,11 +4,11 @@
  * 02/04/2024
 */
 
+//con parametros 
 let numUno;
 let numDos;
 let numTres; 
 
-//con parametros 
 function calcularNota(pnumUno,pnumDos,pnumTres){
 
     numUno = pnumUno;

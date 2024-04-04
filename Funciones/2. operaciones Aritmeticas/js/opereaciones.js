@@ -4,11 +4,9 @@
  * 01/04/2024
 */
 
+// con parametros 
 let numUno;
 let numDos;
-
-
-// con parametros 
 
  function suma(pnumUno,pnumDos){
 

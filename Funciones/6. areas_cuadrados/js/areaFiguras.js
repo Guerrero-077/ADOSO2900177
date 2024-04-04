@@ -4,6 +4,8 @@
  * 02/04/2024
 */
 
+//como parametro
+
 let lado;
 
 let baseRe;      //basa rectangulo
@@ -35,7 +37,7 @@ function areas(plado,pbaseRe,palturaRe,pbaseTri,palturaTri){
 
 
 
-
+//Como expresion
 
 const areasExp = function (plado,pbaseRe,palturaRe,pbaseTri,palturaTri){
 

@@ -4,13 +4,13 @@
  * 01/04/2024
  */
 
-function saludo(psaludo){
+function saludo(psaludo){//Como parametro
     let saludar = psaludo;
     return saludar;
     
 }
 
-const saludoExp = function saludo(psaludo){
+const saludoExp = function(psaludo){//como expresión
     let saludar = psaludo;
     return saludar;
     

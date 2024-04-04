@@ -44,6 +44,7 @@ let notaTres;
             `La nota tres es ${notaTres}, que equivale al ${promedioTres}% del examen.`+'\n'+msg;
 
 }
+
 //Como Expresión
 const notasExp =  function (pnotaUno,pnotaDos,pnotaTres){
     

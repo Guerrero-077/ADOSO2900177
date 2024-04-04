@@ -1,3 +1,8 @@
+/**
+ * Tabla del 9 que me idique que dato es par e impar
+ * Autor: Santiago GM
+ * 03/04/2024
+ */
 
 let tabla;
 
