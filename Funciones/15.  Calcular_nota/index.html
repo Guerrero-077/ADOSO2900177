@@ -1,19 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="js/calcular.js"></script>
 </head>
+
 <body>
     <script>
+
+        
         notaUno = 4.5;
         notaDos = 5.0;
         notaTres = 4.0;
+        
+        let promedioUno = notas(notaUno, 0.2);
+        let promedioDos = notas(notaDos,0.35);
+        let promedioTres = notas(notaTres, 0.45);
+        let suma;
 
-        console.log("Como paramétro: \n"+notas(notaUno,notaDos,notaTres))
-        console.log("Como Expresión: \n"+notasExp(notaUno,notaDos,notaTres))
+        suma = promedioUno + promedioDos + promedioTres;
+
+        let mostrar = console.log(
+        `La nota uno es ${notaUno}, que equivale al ${promedioUno}% del examen.\n`+
+        `La nota dos es ${notaDos}, que equivale al ${promedioDos}% del examen.\n`+
+        `La nota tres es ${notaTres}, que equivale al ${promedioTres}% del examen.`+'\n'
+        )
+        
+        console.log(validar (suma));
     </script>
 </body>
+
 </html>

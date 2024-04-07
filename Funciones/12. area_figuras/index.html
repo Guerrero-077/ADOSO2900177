@@ -1,19 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="js/areas.js"></script>
 </head>
+
 <body>
     <script>
-        ladoUno =  5;
-        ladoDos = 10;
-        ladoTres = 6;
+        let ladoUno = 5;
+        let ladoDos = 10;
+        let ladoTres = 6;
 
-        console.log("Como paramétro: \n"+areas(ladoUno,ladoDos,ladoTres))
-        console.log("Como Expresión: \n"+areasExp(ladoUno,ladoDos,ladoTres))
+        areaUno = areas(ladoUno);
+        areaDos = areas(ladoDos);
+        areaTres = areas(ladoTres);
+
+        console.log("El área del primer cuadrado es: " + areaUno);
+        console.log("El área del segundo cuadrado es: " + areaDos);
+        console.log("El área del tercer cuadrado es: " + areaTres);
+
+        console.log(validar(areaUno, areaDos, areaTres));
     </script>
 </body>
+
 </html>

@@ -8,8 +8,14 @@
 </head>
 <body>
     <script>
-        console.log("Como paramétros: \n"+edades("07/08/2006")); //  17 años
-        console.log("Como Expresión: \n"+edadesExp("07/08/2006")); //  17 años
+
+        fechaAc = new Date();
+        fechaNac = new Date("07/08/2006");
+        fechaNac2 = new Date("07/08/2000");
+        
+        console.log("Como paramétros: \n"+edades(fechaAc,fechaNac)); //  17 años
+        console.log("Como paramétros: \n"+edadesExp(fechaAc,fechaNac2)); //  17 años
+      
     </script>
 </body>
 </html>

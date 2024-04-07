@@ -16,7 +16,6 @@ function  calcularSueldo(pdiasT, pvalorD){
     let arl;
     let transporte;
     let retencion;
-
     let salarioM = 1300000;
     let totalS;
 

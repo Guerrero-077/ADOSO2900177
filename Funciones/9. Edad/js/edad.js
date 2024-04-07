@@ -4,33 +4,32 @@
  * 03/04/2024
  */
 //Como paramétro
- function edades(pedad){
 
-     let diferencia;
-     let edad;
-     edad = pedad;
-     let fechaAc = new Date();
-     let fechaNac =  new Date(edad);
-     
+let fechaAc;
+let fechaNac;
+function edades(pfechaAc, pfechaNac) {
 
+   fechaAc = pfechaAc;
+   fechaNac = pfechaNac;
 
-    diferencia = fechaAc-fechaNac 
-    edad = Math.floor(diferencia/(1000*60*60*24*365.25))
-    return "Tu edad es: "+ edad +" años."
- }
- //Como Expresión
+  let diferencia;
+  let edad;
 
- const edadesExp =  function (pedad){
-
-    let diferencia;
-    let edad;
-    edad = pedad;
-    let fechaAc = new Date();
-    let fechaNac =  new Date(edad);
-    
-
-
-   diferencia = fechaAc-fechaNac 
-   edad = Math.floor(diferencia/(1000*60*60*24*365.25))
-   return "Tu edad es: "+ edad +" años."
+  diferencia = fechaAc - fechaNac;
+  edad = Math.floor(diferencia / (1000 * 60 * 60 * 24 * 365.25));
+  return "Tu edad es: " + edad + " años.";
 }
+
+//Como Expresión
+
+const edadesExp = function (pfechaAc, pfechaNac) {
+   fechaAc = pfechaAc;
+   fechaNac = pfechaNac;
+
+  let diferencia;
+  let edad;
+
+  diferencia = fechaAc - fechaNac;
+  edad = Math.floor(diferencia / (1000 * 60 * 60 * 24 * 365.25));
+  return "Tu edad es: " + edad + " años.";
+};

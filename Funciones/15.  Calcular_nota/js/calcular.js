@@ -4,81 +4,46 @@
  * Fecha: 03/04/2024
  */
 
-let notaUno;
-let notaDos;
-let notaTres;
+let nota;
+let porcentaje;
+let operacion;
 //Como paramétro
- function notas(pnotaUno,pnotaDos,pnotaTres){
-    
-    notaUno = pnotaUno;
-    notaDos = pnotaDos;
-    notaTres = pnotaTres;
-
-    let promedioUno;
-    let promedioDos;
-    let promedioTres;
-    let suma;
-    let msg ="";
-
-    promedioUno = (notaUno * 20)/100
-    
-    promedioDos = (notaDos*35)/100
-   
-    promedioTres = (notaTres*45)/100
-
-    suma = promedioUno + promedioDos + promedioTres;
-
-    if(suma > 4.5){
-        msg = "La calificación es Superior "+suma;
-    }else if(suma <= 4.5 && suma > 3.5){
-        msg = "La calificaciom es Buena "+suma;
-    }else if(suma >= 3 && suma <= 3.5){
-        msg =  "La calificacion es Media "+suma;
-    }else {
-        msg =  "la calificacion es Mala"+suma;
-    }
-    
-
-    return `La nota uno es ${notaUno}, que equivale al ${promedioUno}% del examen.\n`+
-            `La nota dos es ${notaDos}, que equivale al ${promedioDos}% del examen.\n`+
-            `La nota tres es ${notaTres}, que equivale al ${promedioTres}% del examen.`+'\n'+msg;
-
+function notas(pnota, pporcentaje) {
+  nota = pnota;
+  porcentaje = pporcentaje;
+  operacion = nota * porcentaje;
+  return operacion;
 }
 
+function validar(suma) {
+  if (suma > 4.5) {
+    return "La calificación es Superior " + suma;
+  } else if (suma <= 4.5 && suma > 3.5) {
+    return "La calificaciom es Buena " + suma;
+  } else if (suma >= 3 && suma <= 3.5) {
+    return "La calificacion es Media " + suma;
+  } else {
+    return "la calificacion es Mala" + suma;
+  }
+}
+
+
 //Como Expresión
-const notasExp =  function (pnotaUno,pnotaDos,pnotaTres){
-    
-    notaUno = pnotaUno;
-    notaDos = pnotaDos;
-    notaTres = pnotaTres;
+const notasExp = function(pnota, pporcentaje) {
+  nota = pnota;
+  porcentaje = pporcentaje;
+  operacion = nota * porcentaje;
+  return operacion;
+}
 
-    let promedioUno;
-    let promedioDos;
-    let promedioTres;
-    let suma;
-    let msg ="";
-
-    promedioUno = (notaUno * 20)/100
-    
-    promedioDos = (notaDos*35)/100
-   
-    promedioTres = (notaTres*45)/100
-
-    suma = promedioUno + promedioDos + promedioTres;
-
-    if(suma > 4.5){
-        msg = "La calificación es Superior "+suma;
-    }else if(suma <= 4.5 && suma > 3.5){
-        msg = "La calificaciom es Buena "+suma;
-    }else if(suma >= 3 && suma <= 3.5){
-        msg =  "La calificacion es Media "+suma;
-    }else {
-        msg =  "la calificacion es Mala"+suma;
-    }
-    
-
-    return `La nota uno es ${notaUno}, que equivale al ${promedioUno}% del examen.\n`+
-            `La nota dos es ${notaDos}, que equivale al ${promedioDos}% del examen.\n`+
-            `La nota tres es ${notaTres}, que equivale al ${promedioTres}% del examen.`+'\n'+msg;
-
- }
+const validarExp = function(suma) {
+  if (suma > 4.5) {
+    return "La calificación es Superior " + suma;
+  } else if (suma <= 4.5 && suma > 3.5) {
+    return "La calificaciom es Buena " + suma;
+  } else if (suma >= 3 && suma <= 3.5) {
+    return "La calificacion es Media " + suma;
+  } else {
+    return "la calificacion es Mala" + suma;
+  }
+}

@@ -5,50 +5,29 @@
 */
 
 //con parametros 
-let numUno;
-let numDos;
-let numTres; 
+let nota;
+let porcentaje;
 
-function calcularNota(pnumUno,pnumDos,pnumTres){
+function calcularNota(pnota,pporcentaje){
 
-    numUno = pnumUno;
-    numDos = pnumDos;
-    numTres = pnumTres;
+    nota = pnota;
+    porcentaje = pporcentaje;
 
-    let nota1;
-    let nota2;
-    let nota3;
+    let resultado;
+    resultado = nota * porcentaje;
 
-    nota1 =  (numUno*30)/100;
-    nota2 =  (numDos*30)/100;
-    nota3 =  (numTres*40)/100;
-
-    return  "El promedio de la primera nota es: "+nota1+".\n" +
-            "El promedio de la segunda nota es: "+nota2+".\n"+
-            "El promedio de la tercera nota es: "+nota3+".\n"
-
+    return `El porcentaje de ${nota} es: ${resultado}`;
     
 }
 
-//Con Expresión
+const calcularNotaExp = function(pnota,pporcentaje){
 
-const calcularNotaExp = function (pnumUno,pnumDos,pnumTres){
+    nota = pnota;
+    porcentaje = pporcentaje;
 
-    numUno = pnumUno;
-    numDos = pnumDos;
-    numTres = pnumTres;
+    let resultado;
+    resultado = nota * porcentaje;
 
-    let nota1;
-    let nota2;
-    let nota3;
-
-    nota1 =  (numUno*30)/100;
-    nota2 =  (numDos*30)/100;
-    nota3 =  (numTres*40)/100;
-
-    return  "El promedio con Expresión de la primera nota es: "+nota1+".\n" +
-            "El promedio con Expresión de la segunda nota es: "+nota2+".\n"+
-            "El promedio con Expresión de la tercera nota es: "+nota3+".\n"
-
+    return `El porcentaje de ${nota} es: ${resultado}`;
     
 }

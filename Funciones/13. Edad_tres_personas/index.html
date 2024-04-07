@@ -8,14 +8,22 @@
 </head>
 <body>
     <script>
-        fechaNacUno = "07/08/2006"
-        fechaNacDos = "06/07/2005"
-        fechaNacTres = "05/06/2004"
+        fechaAc = new Date();
+        fechaNac1 = new Date("07/08/2006");
+        fechaNac2 = new Date("07/08/2000");
+        fechaNac3 = new Date("07/08/2000");
+        
+        
+        edadUno = edades(fechaAc,fechaNac1);
+        edadDos = edades(fechaAc,fechaNac2);
+        edadTres = edades(fechaAc,fechaNac2);
 
-        console.log(edades(fechaNacUno, fechaNacDos, fechaNacTres));
-        console.log(edadesExp(fechaNacUno, fechaNacDos, fechaNacTres));
+        console.log("La edad de la primera persona es: " + edadUno);
+        console.log("La edad de la segunda persona es: " + edadDos);
+        console.log("La edad de la tercera persona es: " + edadTres);
 
-
+        console.log(validar(edadUno, edadDos, edadTres));
+    </script>
     </script>
 </body>
 </html>
