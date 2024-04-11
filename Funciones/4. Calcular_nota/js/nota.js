@@ -20,6 +20,8 @@ function calcularNota(pnota,pporcentaje){
     
 }
 
+//Como Expresión
+
 const calcularNotaExp = function(pnota,pporcentaje){
 
     nota = pnota;

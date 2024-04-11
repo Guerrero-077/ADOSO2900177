@@ -7,6 +7,7 @@
 let nota;
 let porcentaje;
 let operacion;
+let suma;
 //Como paramétro
 function notas(pnota, pporcentaje) {
   nota = pnota;
@@ -15,7 +16,8 @@ function notas(pnota, pporcentaje) {
   return operacion;
 }
 
-function validar(suma) {
+function validar(psuma) {
+  suma = psuma
   if (suma > 4.5) {
     return "La calificación es Superior " + suma;
   } else if (suma <= 4.5 && suma > 3.5) {
@@ -36,7 +38,8 @@ const notasExp = function(pnota, pporcentaje) {
   return operacion;
 }
 
-const validarExp = function(suma) {
+const validarExp = function(psuma) {
+  suma = psuma
   if (suma > 4.5) {
     return "La calificación es Superior " + suma;
   } else if (suma <= 4.5 && suma > 3.5) {

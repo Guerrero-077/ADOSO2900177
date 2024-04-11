@@ -1,38 +1,41 @@
 /**
- * Mayor igual de dos números 
+ * Mayor igual de dos números
  * Autor: Santiago GM
  * 03/04/2024
  */
 
-let numUnos;
+let numUno;
 let numDos;
+let num;
 //Como paramétro
 
-function mayorIgual(pnumUno,pnumDos){
+function mayorIgual(pnum) {
+  num = pnum;
+  return num;
+}
+function validar(pnumUno, pnumDos) {
+  numUno = pnumUno;
+  numDos = pnumDos;
 
-    numUnos = pnumUno;
-    numDos = pnumDos;
-
-    if(numUnos == numDos){
-        return "Los número son iguales";
-    }else if(numUnos > numDos){
-        return `El número uno es mayor que el dos. El uno es ${numUnos} y el dos es ${numDos}`;
-    }else{
-        return `El número dos es mayor que el uno. El uno es ${numDos} y el dos es ${numDos}`
-    }
+  if (numUno == numDos) {
+    return "Los número son iguales";
+  } else if (numUno > numDos) {
+    return `El número uno es mayor que el dos. El uno es ${numUno} y el dos es ${numDos}`;
+  } else {
+    return `El número dos es mayor que el uno. El uno es ${numDos} y el dos es ${numUno}`;
+  }
 }
 //Como Expresión
-const mayorIgualExp= function (pnumUno,pnumDos){
-
-    numUnos = pnumUno;
-    numDos = pnumDos;
-
-    if(numUnos == numDos){
-        return "Los número son iguales";
-    }else if(numUnos > numDos){
-        return `El número uno es mayor que el dos. El uno es ${numUnos} y el dos es ${numDos}`;
-    }else{
-        return `El número dos es mayor que el uno. El uno es ${numDos} y el dos es ${numDos}`
-    }
+const mayorIgualExp = function (pnum) {
+  num = pnum;
+  return num;
 }
-    
+const validarExp = function (pnumUno, pnumDos) {
+  if (numUno == numDos) {
+    return "Los número son iguales";
+  } else if (numUno > numDos) {
+    return `El número uno es mayor que el dos. El uno es ${numUno} y el dos es ${numDos}`;
+  } else {
+    return `El número dos es mayor que el uno. El uno es ${numDos} y el dos es ${numUno}`;
+  }
+}

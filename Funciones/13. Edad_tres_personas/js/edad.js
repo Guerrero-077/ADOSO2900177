@@ -55,7 +55,7 @@ function validar(pedadUno,pedadDos,pedadTres){
 
 }
 
-
+//Comom Expresión
 const edadesExp = function(pfechaAc, pfechaNac) {
 
    fechaAc = pfechaAc;

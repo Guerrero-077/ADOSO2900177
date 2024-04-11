@@ -5,15 +5,16 @@
  */
 
 let tablas;
+let limite;
 
 //Como Parametro
 
-function tabla(ptablas){
+function tabla(ptablas,plimite){
 
     tablas = ptablas;
+    limite = plimite;
 
     let contador = 0;
-    let limite = 5;
     let resultado;
     let msg = "";
 
@@ -29,12 +30,12 @@ function tabla(ptablas){
 }
 //Como Expresión
 
-const tablaExp = function (ptablas){
+const tablaExp = function (ptablas,plimite){
 
     tablas = ptablas;
+    limite  = plimite
 
     let contador = 0;
-    let limite = 5;
     let resultado;
     let msg = "";
 

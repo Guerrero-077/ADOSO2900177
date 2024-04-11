@@ -8,12 +8,14 @@
 </head>
 <body>
     <script>
-        numUno = 13;
-        numDos = 23;
-        numTres = 33;
+        let validacion;
 
-        console.log("Como paramétros: \n"+mayorIgual(numUno,numDos,numTres))
-        console.log("Como Expresión: \n"+mayorIgualExp(numUno,numDos,numTres))
+        numUno = mayorIgual(2);
+        numDos = mayorIgual(5);
+        numTres = mayorIgual(6);
+
+        validacion = validar(numUno,numDos,numTres)
+        console.log(validacion)
     </script>
 </body>
 </html>

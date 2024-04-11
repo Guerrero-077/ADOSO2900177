@@ -7,7 +7,6 @@
 //como parametro
 
 let lado;
-
 let baseRe;      //basa rectangulo
 let alturaRe;    //altura rectangulo
 let baseTri;     //base Triangulo 
@@ -16,18 +15,15 @@ let alturaTri;    //altura Triangulo
 function areasCuadrado(plado){
 
     let areaCu;       //area Cuadrado
-    
     lado = plado;
 
     areaCu = lado*lado
     return "El area del cuadrado es: "+areaCu+".\n"
     
-    
 }
 function areaRectandulo(pbaseRe,palturaRe){
     
     let areaRe;      //area Rectangulo
-
     baseRe = pbaseRe;
     alturaRe = palturaRe;
 
@@ -37,7 +33,6 @@ function areaRectandulo(pbaseRe,palturaRe){
 
 function areaTriangulo(pbaseTri,palturaTri){
     let areaTri;     //area Triangulo
-
     baseTri = pbaseTri;
     alturaTri = palturaTri;
     areaTri = (baseTri * alturaTri)/2
@@ -51,9 +46,7 @@ function areaTriangulo(pbaseTri,palturaTri){
 const areasCuadradoExp = function(plado){
 
     let areaCu;       //area Cuadrado
-    
     lado = plado;
-
     areaCu = lado*lado
     return "El area del cuadrado es: "+areaCu+".\n"
     
@@ -62,7 +55,6 @@ const areasCuadradoExp = function(plado){
 const areaRectanduloExp = function(pbaseRe,palturaRe){
     
     let areaRe;      //area Rectangulo
-
     baseRe = pbaseRe;
     alturaRe = palturaRe;
 

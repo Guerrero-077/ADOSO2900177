@@ -1,17 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="js/salario.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        valorD = 43333;
-        diasT = 20;
-        console.log("Como paramétro \n"+calcularSueldo(valorD,diasT));
-        console.log("Como Expresión \n"+calcularSueldoExp(valorD,diasT));
+      diasT = 10;
+      valorD = 600000;
+      pSalud = 0.12;
+      pPesion = 0.16;
+      pArl = 0.052;
+      salarioM = 1300000;
+      trasnporteP = 114000;
+      retencionP = 0.04;
+
+      let pago = sueldo(diasT, valorD);
+      console.log("pago "+pago);
+
+      let salud1 = salud(pago, pSalud);
+      console.log("salud "+salud1);
+
+      let pension1 = pension(pago, pPesion);
+      console.log("pensión "+pension1);
+
+      let arl1 = arl(pago, pArl);
+      console.log("arl "+arl1);
+
+      let validacion1 = validacion(pago, salarioM, trasnporteP, retencionP);
+      console.log("retencion "+validacion1.retencionP);
+      console.log("trasporte "+validacion1.trasnporteP);
+
+      let descuento =  (salud1 + pension1 + arl1 + validacion1.retencionP);
+      console.log("descuento "+descuento);
+
+      let pagoT = (pago + validacion1.trasnporteP) - descuento;
+      console.log("total "+pagoT);
+
     </script>
-</body>
+  </body>
 </html>

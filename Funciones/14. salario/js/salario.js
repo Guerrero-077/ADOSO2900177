@@ -3,93 +3,129 @@
  *Autor: Santiago GM
  *Fecha: 03/04/2024 
 */
-let diaT;
-let valorD;
+
 //Como paramétro
-function  calcularSueldo(pdiasT, pvalorD){
-    diaT = pdiasT;
+
+let diasT;  //Dias Trabajados
+let valorD; //Valor por día
+let operaciones; 
+let salario;
+let pSalud; //Porcentaje de salud 
+let pPension;   //Porcetaje de pension
+let pArl;   //Porcentaje de ARL
+let salarioM; //Salario Minimo
+let trasnporteP;
+let retencionP;
+
+function sueldo(pdiasT,pvalorD){
+    
+    diasT = pdiasT;
     valorD = pvalorD;
+    salario = diasT * valorD;
+    return salario;
 
-    let salario;
-    let salud;
-    let pension;
-    let arl;
-    let transporte;
-    let retencion;
-    let salarioM = 1300000;
-    let totalS;
+}
+function salud(psalario,ppSalud){
+    salario = psalario;
+    pSalud = ppSalud;
 
-    salario = diaT * valorD;
+    operaciones = salario * pSalud;
+    return operaciones;
+}
+function pension(psalario,ppPension){
+    salario = psalario;
+    pPension = ppPension;
 
-    salud = salario * 0.12;
-    pension = salario * 0.16;
-    arl = salario * 0.052;
-    
-    
-    if(salario<2*salarioM){
-        transporte = 114000;
-        
+    operaciones = salario * ppPension;
+    return operaciones;
+}
+function arl(psalario,ppArl){
+    salario = psalario;
+    pArl = ppArl;
+
+    operaciones = salario * ppArl;
+    return operaciones;
+
+}
+
+function validacion(psalario,psalarioM,ptrasnporte,pretencion){
+    salario = psalario;
+    salarioM = psalarioM;
+    trasnporteP = ptrasnporte;
+    retencionP = pretencion;
+    if(salario <= salarioM * 2){
+        trasnporteP = ptrasnporte;
     }else{
-        transporte=0;
+        trasnporteP = 0
     }
-    
-    if(salario > 4*salarioM){
-        retencion = 0.04;
+
+    if(salario > salarioM * 4){
+
+        retencionP = salario * pretencion;
     }else{
-        retencion = 0;
+        retencionP = 0;
     }
-    totalS = (salario+transporte)-(salud+arl+pension)
+
+    return  {
+        trasnporteP,
+        retencionP
+    };
     
-    return "El pago inicial de la persona es de: " + salario+".\n"+
-           "El porcentaje para la salud es del "+salud+"%.\n"+
-           "El porcentaje para  la pensión es del "+pension+"%. \n"+
-           "El porcentaje para ARL es del "+arl+"%.\n"+
-           "El subsidio de trasnporte es de: "+transporte+".\n"+
-           "El porcentaje de retencion es de "+retencion+ "%. \n"+
-           "Entonces, el Sueldo Total a Pagar es de: "+ totalS
 }
 
 //Como Expresión 
-const calcularSueldoExp = function  (pdiasT, pvalorD){
-    diaT = pdiasT;
+const sueldoExp = function(pdiasT,pvalorD){
+    
+    diasT = pdiasT;
     valorD = pvalorD;
+    salario = diasT * valorD;
+    return salario;
 
-    let salario;
-    let salud;
-    let pension;
-    let arl;
-    let transporte;
-    let retencion;
+}
+const saludExp = function(psalario,ppSalud){
+    salario = psalario;
+    pSalud = ppSalud;
 
-    let salarioM = 1300000;
-    let totalS;
+    operaciones = salario * pSalud;
+    return operaciones;
+}
+const pensionExp = function(psalario,ppPension){
+    salario = psalario;
+    pPension = ppPension;
 
-    salario = diaT * valorD;
+    operaciones = salario * ppPension;
+    return operaciones;
+}
+const arlExp = function(psalario,ppArl){
+    salario = psalario;
+    pArl = ppArl;
 
-    salud = salario * 0.12;
-    pension = salario * 0.16;
-    arl = salario * 0.052;
-    
-    
-    if(salario<2*salarioM){
-        transporte = 114000;
-        
+    operaciones = salario * ppArl;
+    return operaciones;
+
+}
+
+const validacionExp = function(psalario,psalarioM,ptrasnporte,pretencion){
+    salario = psalario;
+    salarioM = psalarioM;
+    trasnporteP = ptrasnporte;
+    retencionP = pretencion;
+    if(salario <= salarioM * 2){
+        trasnporteP = ptrasnporte;
     }else{
-        transporte=0;
+        trasnporteP = 0
     }
-    
-    if(salario > 4*salarioM){
-        retencion = 0.04;
+
+    if(salario > salarioM * 4){
+
+        retencionP = salario * pretencion;
     }else{
-        retencion = 0;
+        retencionP = 0;
     }
-    totalS = (salario+transporte)-(salud+arl+pension)
+
+    return  {
+        trasnporteP,
+        retencionP
+    };
     
-    return "El pago inicial de la persona es de: " + salario+".\n"+
-           "El porcentaje para la salud es del "+salud+"%.\n"+
-           "El porcentaje para  la pensión es del "+pension+"%. \n"+
-           "El porcentaje para ARL es del "+arl+"%.\n"+
-           "El subsidio de trasnporte es de: "+transporte+".\n"+
-           "El porcentaje de retencion es de "+retencion+ "%. \n"+
-           "Entonces, el Sueldo Total a Pagar es de: "+ totalS
 }

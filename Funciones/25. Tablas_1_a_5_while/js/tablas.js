@@ -8,6 +8,8 @@ let limite;
 // Como paramétros
 
 function tablas(plimite){
+
+    limite = plimite;
     let tabla;
     let contador;
     let par;
@@ -38,7 +40,6 @@ function tablas(plimite){
             }
         }
         msg += "\n"
-        
     }
     return msg+"total de pares: "+par+"\n"+
                 "total de impares "+impar;
@@ -47,6 +48,7 @@ function tablas(plimite){
 //Como Exresión
 
 const tablasExp = function (plimite){
+    limite = plimite;
     let tabla;
     let contador;
     let par;

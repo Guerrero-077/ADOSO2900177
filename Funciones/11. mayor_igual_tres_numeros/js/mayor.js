@@ -4,16 +4,25 @@
  * Fecha: 03/04/2024
  */
 
+let num;
 let numUno;
 let numDos;
 let numTres;
 
 //Como paramétro
 
-function mayorIgual(pnumUno,pnumDos,pnumTres){
+function mayorIgual(pnum){
+    num = pnum;
+    return num;
+
+}
+
+function validar(pnumUno,pnumDos,pnumTres){
+
     numUno = pnumUno;
     numDos = pnumDos;
     numTres = pnumTres;
+
     if(numUno == numDos && numUno == numTres &&  numDos == numTres) {
         return "Los tres numeros son iguales";
     }else if (numUno > numDos && numUno > numTres) {
@@ -22,16 +31,22 @@ function mayorIgual(pnumUno,pnumDos,pnumTres){
         return `El número dos es mayor que número uno y que número tres: El número uno es ${numUno}, El número dos es ${numDos}, El número tres es ${numTres}`;
     }else{
 
-        return `El número tres es mayor que número uno y que número tres: El número uno es ${numUno}, El número dos es ${numDos}, El número tres es ${numTres}`;
+        return `El número tres es mayor que número uno y que número dos: El número uno es ${numUno}, El número dos es ${numDos}, El número tres es ${numTres}`;
     }
 }
 
 //Como Expresión
 
-const mayorIgualExp = function (pnumUno,pnumDos,pnumTres){
+const mayorIgualExp = function (pnum){
+    num = pnum;
+    return num;
+}
+const validarExp =   function(pnumUno,pnumDos,pnumTres){
     numUno = pnumUno;
     numDos = pnumDos;
     numTres = pnumTres;
+
+
     if(numUno == numDos && numUno == numTres &&  numDos == numTres) {
         return "Los tres numeros son iguales";
     }else if (numUno > numDos && numUno > numTres) {

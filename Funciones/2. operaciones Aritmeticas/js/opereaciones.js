@@ -130,8 +130,6 @@ const divisionExp = function(pnumUno,pnumDos){
 }
 
 
-
-
 const operacionesExp = function(poerador,pnumUno,pnumDos){
 
     let operador = poerador;

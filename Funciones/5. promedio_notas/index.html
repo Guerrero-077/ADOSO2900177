@@ -8,8 +8,19 @@
 </head>
 <body>
     <script>
-        console.log("El promedio Como parametro de sun notas es de: \n"+promedios(2,4,6))
-        console.log("El promedio Como Expresión de sun notas es de: \n"+promediosExp(2,4,6))
+        let notaUno;
+        let notaDos;
+        let notaTres;
+        let promedio;
+
+        notaUno = promedios(2.0);
+        notaDos = promedios(4.0);
+        notaTres = promedios(5.0);
+
+        promedio =  (notaUno + notaDos +notaTres)/3;
+        console.log("El promedio de las tres notas es de: \n"+promedio);
+
+        
     </script>
 </body>
 </html>

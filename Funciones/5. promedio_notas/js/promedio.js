@@ -3,29 +3,17 @@
  * Autor: Santiago GM
  * 02/04/2024
 */
-let numUno;
-let numDos;
-let numTres;
+let nota;
 
 //como paramétro
-function promedios(pnumUno,pnumDos,pnumTres){
-
-    numUno = pnumUno;
-    numDos = pnumDos;
-    numTres = pnumTres;
-
-    let promedio;
-    promedio = (numUno + numDos + numTres)/3;
-    return  promedio; 
+function promedios(pnota){
+    nota = pnota;
+    return  nota; 
 }
+
 //Como Expresión
-const promediosExp= function (pnumUno,pnumDos,pnumTres){
+const promediosExp= function (pnota){
 
-    numUno = pnumUno;
-    numDos = pnumDos;
-    numTres = pnumTres;
-
-    let promedio;
-    promedio = (numUno + numDos + numTres)/3;
-    return  promedio; 
+    nota = pnota;
+    return  nota; 
 }

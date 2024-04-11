@@ -37,7 +37,8 @@ function validar(pareaUno, pareaDos, pareaTres) {
   }
 }
 
-const areas = function(plado) {
+//Como Expresiónb
+const areasExp = function(plado) {
   lado = plado;
 
   let area;
