@@ -48,6 +48,7 @@ function tablas(plimite){
 //Como Exresión
 
 const tablasExp = function (plimite){
+    
     limite = plimite;
     let tabla;
     let contador;
