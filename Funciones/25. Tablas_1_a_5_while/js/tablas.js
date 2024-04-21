@@ -3,85 +3,86 @@
  * Autor: Santiago GM
  * 03/04/2024
  */
-let limite; 
 
+let par = 0;
+let impar = 0;
 // Como paramétros
 
-function tablas(plimite){
+function tablas(ptabla, plimite, plimiteT) {
+  let tabla;
+  let limite;
+  let limiteT;
 
-    limite = plimite;
-    let tabla;
-    let contador;
-    let par;
-    let impar;
-    let resultado;
-    let msg = "";
+  let contador;
+  let resultado;
+  let msg = "";
+  tabla = ptabla;
+  limite = plimite;
+  limiteT = plimiteT;
 
-    tabla = 0;
-    par = 0;
-    impar = 0;
-    
-    while (tabla < limite) {
+  while (tabla < limite) {
+    contador = 0;
+    tabla = tabla + 1;
 
-        contador = 0;
-        tabla = tabla + 1;
-
-        while (contador < limite) {
-            contador = contador + 1;    
-            resultado = tabla * contador;
-            msg += `\n ${tabla} x ${contador} = ${resultado}`;
-
-            if (resultado % 2 == 0) {
-                par = par + 1;
-                msg += " Buzz\n";
-            } else {
-                impar = impar + 1
-                msg +=" Bass \n";
-            }
-        }
-        msg += "\n"
+    while (contador < limiteT) {
+      contador = contador + 1;
+      resultado = tabla * contador;
+      msg += `\n ${tabla} x ${contador} = ${resultado}`;
+      msg += validar(resultado);
     }
-    return msg+"total de pares: "+par+"\n"+
-                "total de impares "+impar;
+    msg += "\n";
+  }
+  return (
+    msg + "\n" + "total de pares: " + par + "\n" + "total de impares " + impar
+  );
 }
 
-//Como Exresión
+function validar(resultado) {
+  if (resultado % 2 == 0) {
+    par = par + 1;
+    return " Buzz";
+  } else {
+    impar = impar + 1;
+    return " Bass";
+  }
+}
 
-const tablasExp = function (plimite){
-    
-    limite = plimite;
+//Como Expresión
+const tablasExp = function(ptabla, plimite, plimiteT) {
     let tabla;
+    let limite;
+    let limiteT;
+  
     let contador;
-    let par;
-    let impar;
     let resultado;
     let msg = "";
-
-    tabla = 0;
-    par = 0;
-    impar = 0;
-    
+    tabla = ptabla;
+    limite = plimite;
+    limiteT = plimiteT;
+  
     while (tabla < limite) {
-
-        contador = 0;
-        tabla = tabla + 1;
-
-        while (contador < limite) {
-            contador = contador + 1;    
-            resultado = tabla * contador;
-            msg += `\n ${tabla} x ${contador} = ${resultado}`;
-
-            if (resultado % 2 == 0) {
-                par = par + 1;
-                msg += " Buzz\n";
-            } else {
-                impar = impar + 1
-                msg +=" Bass \n";
-            }
-        }
-        msg += "\n"
-        
+      contador = 0;
+      tabla = tabla + 1;
+  
+      while (contador < limiteT) {
+        contador = contador + 1;
+        resultado = tabla * contador;
+        msg += `\n ${tabla} x ${contador} = ${resultado}`;
+        msg += validarExp(resultado);
+      }
+      msg += "\n";
     }
-    return msg+"total de pares: "+par+"\n"+
-                "total de impares "+impar;
-}
+    return (
+      msg + "\n" + "total de pares: " + par + "\n" + "total de impares " + impar
+    );
+  }
+  
+const validarExp = function(resultado) {
+    if (resultado % 2 == 0) {
+      par = par + 1;
+      return " Buzz";
+    } else {
+      impar = impar + 1;
+      return " Bass";
+    }
+  }

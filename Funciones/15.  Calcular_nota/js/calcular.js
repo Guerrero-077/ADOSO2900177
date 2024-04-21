@@ -4,12 +4,11 @@
  * Fecha: 03/04/2024
  */
 
-let nota;
-let porcentaje;
-let operacion;
-let suma;
 //Como paramétro
 function notas(pnota, pporcentaje) {
+  let nota;
+  let porcentaje;
+  let operacion;
   nota = pnota;
   porcentaje = pporcentaje;
   operacion = nota * porcentaje;
@@ -17,7 +16,8 @@ function notas(pnota, pporcentaje) {
 }
 
 function validar(psuma) {
-  suma = psuma
+  let suma;
+  suma = psuma;
   if (suma > 4.5) {
     return "La calificación es Superior " + suma;
   } else if (suma <= 4.5 && suma > 3.5) {
@@ -29,17 +29,20 @@ function validar(psuma) {
   }
 }
 
-
 //Como Expresión
-const notasExp = function(pnota, pporcentaje) {
+const notasExp = function (pnota, pporcentaje) {
+  let nota;
+  let porcentaje;
+  let operacion;
   nota = pnota;
   porcentaje = pporcentaje;
   operacion = nota * porcentaje;
   return operacion;
 }
 
-const validarExp = function(psuma) {
-  suma = psuma
+const validarExp = function (psuma) {
+  let suma;
+  suma = psuma;
   if (suma > 4.5) {
     return "La calificación es Superior " + suma;
   } else if (suma <= 4.5 && suma > 3.5) {
@@ -49,4 +52,4 @@ const validarExp = function(psuma) {
   } else {
     return "la calificacion es Mala" + suma;
   }
-}
+};

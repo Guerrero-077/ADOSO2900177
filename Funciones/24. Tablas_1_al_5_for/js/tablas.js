@@ -4,66 +4,82 @@
  * 03/04/2024
  */
 
-let limite;
-let tabla;
-
 // Con paramétros
+let par = 0;
+let impar = 0;
+let resultado;
 
-function tablas(ptabla, plimite) {
+function tablas(ptabla, plimite,plimiteT) {
+  
+  let limite;
+  let limiteT;
+  let tabla;
+  let contador;
+  let msg = "";
+  
   tabla = ptabla;
   limite = plimite;
-
-  let contador;
-  let par = 0;
-  let impar = 0;
-  let resultado;
-  let msg = "";
-
+  limiteT = plimiteT
+  
   for (tabla = 1; limite >= tabla; tabla++) {
-    for (contador = 1; limite >= contador; contador++) {
+    for (contador = 1; limiteT >= contador; contador++) {
       resultado = tabla * contador;
 
       msg += `\n ${tabla} x ${contador} = ${resultado}`;
 
-      if (resultado % 2 == 0) {
-        par = par + 1;
-        msg += " Buzz\n";
-      } else {
-        impar = impar + 1;
-        msg += " Bass\n";
-      }
+      msg += validar(resultado);
+
     }
     msg += "\n";
   }
   return msg + "total de pares: " + par + "\n" + "total de impares " + impar;
 }
 
+function validar(resultado){
+  
+  if (resultado % 2 == 0){
+    par ++
+    return " Buzz";
+  }else{
+    impar++
+    return " Bass";
+  }
+}
+
 //Como Expresión
-
-const tablasExp = function (ptabla,plimite) {
-  limite = plimite;
-  tabla = ptabla
+const tablasExp = function(ptabla, plimite,plimiteT) {
+  
+  let limite;
+  let limiteT;
+  let tabla;
   let contador;
-  let par = 0;
-  let impar = 0;
-  let resultado;
   let msg = "";
-
+  
+  tabla = ptabla;
+  limite = plimite;
+  limiteT = plimiteT
+  
   for (tabla = 1; limite >= tabla; tabla++) {
-    for (contador = 1; limite >= contador; contador++) {
+    for (contador = 1; limiteT >= contador; contador++) {
       resultado = tabla * contador;
 
       msg += `\n ${tabla} x ${contador} = ${resultado}`;
 
-      if (resultado % 2 == 0) {
-        par = par + 1;
-        msg += " Buzz\n";
-      } else {
-        impar = impar + 1;
-        msg += " Bass\n";
-      }
+      msg += validarExp(resultado);
+
     }
     msg += "\n";
   }
   return msg + "total de pares: " + par + "\n" + "total de impares " + impar;
-};
+}
+
+const validarExp = function(resultado){
+  
+  if (resultado % 2 == 0){
+    par ++
+    return " Buzz";
+  }else{
+    impar++
+    return " Bass";
+  }
+}

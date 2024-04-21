@@ -4,69 +4,78 @@
  * 02/04/2024
 */
 
-//como parametro
-
-let lado;
-let baseRe;      //basa rectangulo
-let alturaRe;    //altura rectangulo
-let baseTri;     //base Triangulo 
-let alturaTri;    //altura Triangulo 
+//como parámetro
 
 function areasCuadrado(plado){
-
+    
+    let lado;
     let areaCu;       //area Cuadrado
-    lado = plado;
-
-    areaCu = lado*lado
-    return "El area del cuadrado es: "+areaCu+".\n"
+    
+    lado = plado;   
+    
+    areaCu = lado*lado;
+    return areaCu;
     
 }
-function areaRectandulo(pbaseRe,palturaRe){
+function areaRectangulo(pbaseRe,palturaRe){
     
+    let baseRe;      //basa rectangulo
+    let alturaRe;    //altura rectangulo
     let areaRe;      //area Rectangulo
     baseRe = pbaseRe;
     alturaRe = palturaRe;
-
+    
     areaRe = baseRe * alturaRe;
-    return "EL area del rectangulo es: "+areaRe+".\n"
+    return areaRe;
 }
 
 function areaTriangulo(pbaseTri,palturaTri){
+    
+    let baseTri;     //base Triangulo 
+    let alturaTri;    //altura Triangulo 
     let areaTri;     //area Triangulo
     baseTri = pbaseTri;
     alturaTri = palturaTri;
     areaTri = (baseTri * alturaTri)/2
-    return "El area del triangulo es: "+areaTri;
+    return areaTri;
 }
 
 
 
-//Como expresion
+//Como ExpresiÓn
 
 const areasCuadradoExp = function(plado){
 
+        
+    let lado;
     let areaCu;       //area Cuadrado
     lado = plado;
     areaCu = lado*lado
-    return "El area del cuadrado es: "+areaCu+".\n"
+    return areaCu;
     
     
 }
-const areaRectanduloExp = function(pbaseRe,palturaRe){
+const areaRectanguloExp = function(pbaseRe,palturaRe){
     
+    let baseRe;      //basa rectangulo
+    let alturaRe;    //altura rectangulo
     let areaRe;      //area Rectangulo
     baseRe = pbaseRe;
     alturaRe = palturaRe;
 
     areaRe = baseRe * alturaRe;
-    return "EL area del rectangulo es: "+areaRe+".\n"
+    return areaRe;
 }
 
 const areaTrianguloExp = function(pbaseTri,palturaTri){
+
+        
+    let baseTri;     //base Triangulo 
+    let alturaTri;    //altura Triangulo 
     let areaTri;     //area Triangulo
 
     baseTri = pbaseTri;
     alturaTri = palturaTri;
-    areaTri = (baseTri * alturaTri)/2
-    return "El area del triangulo es: "+areaTri;
+    areaTri = (baseTri * alturaTri)/2;
+    return areaTri;
 }

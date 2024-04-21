@@ -20,13 +20,21 @@ function tablas(ptablas,plimite){
 
         resultado = tabla * contador;
 
-        msg += `${tabla} x ${contador} = ${resultado}`;
-        if(resultado%2==0){
-            msg+= " Este es un par\n";
-        }else{
-            msg+=" Este es impar\n"
-        }
+        msg += `${tabla} x ${contador} = ${resultado} `;
+        msg+= validar(resultado);
 
+    }
+    return msg;
+}
+
+function validar(valida){
+    let msg = "";
+
+    if(valida%2==0){
+        msg+= "El resultado es  par\n";
+        
+    }else{
+        msg+="El resultado es impar\n"
     }
     return msg;
 }

@@ -11,7 +11,6 @@ let numero;
 function contar(pnumero){
     numero = pnumero;
     let contador;
-    let limite = 5;
     let resultado = "";
 
     for(contador = 1; numero >= contador; contador ++){
@@ -26,7 +25,6 @@ function contar(pnumero){
 const contarExp = function (pnumero){
     numero = pnumero;
     let contador;
-    let limite = 5;
     let resultado = "";
 
     for(contador = 1; numero >= contador; contador ++){

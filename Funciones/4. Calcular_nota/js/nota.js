@@ -5,31 +5,25 @@
 */
 
 //con parametros 
-let nota;
-let porcentaje;
+function calcularNota(pnotaUno,pnotaDos,pnotaTres){
+    let notaUno = pnotaUno;
+    let notaDos = pnotaDos;
+    let notaTres = pnotaTres;
+    let promedio; 
+    promedio = (notaUno + notaDos + notaTres) / 3;
 
-function calcularNota(pnota,pporcentaje){
+    return promedio;
 
-    nota = pnota;
-    porcentaje = pporcentaje;
-
-    let resultado;
-    resultado = nota * porcentaje;
-
-    return `El porcentaje de ${nota} es: ${resultado}`;
-    
 }
 
 //Como Expresión
+const calcularNotaExp = function(pnotaUno,pnotaDos,pnotaTres){
 
-const calcularNotaExp = function(pnota,pporcentaje){
-
-    nota = pnota;
-    porcentaje = pporcentaje;
-
-    let resultado;
-    resultado = nota * porcentaje;
-
-    return `El porcentaje de ${nota} es: ${resultado}`;
+    let notaUno = pnotaUno;
+    let notaDos = pnotaDos;
+    let notaTres = pnotaTres;
+    let promedio; 
+    promedio = (notaUno + notaDos + notaTres) / 3;
+    return promedio;
     
 }

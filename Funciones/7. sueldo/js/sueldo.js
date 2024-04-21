@@ -4,79 +4,73 @@
  * 02/04/2024
  */
 
-let diaT;
-let valorD;
-let porcentaje;
-let operacion;
-let pago;
-//Como paramétro
-function suledo(pdiaT, pvalorD) {
+//Como parámetro
+function sueldo(pdiaT, pvalorD) {
+  let diaT;
+  let valorD;
+  let pago;
+
   diaT = pdiaT;
   valorD = pvalorD;
   pago = diaT * valorD;
   return pago;
 }
 
-function saludp(ppsalud) {
-  porcentaje = ppsalud;
-  operacion = pago * porcentaje;
-  return operacion;
-}
-function pensionp(ppesion) {
-  porcentaje = ppesion;
-  operacion = pago * ppesion;
-  return operacion;
-}
-function arlp(pparl) {
-  porcentaje = pparl;
-  operacion = pago * porcentaje;
-  return operacion;
+function salud(pago) {
+  let saludP = pago * 0.12;
+  return saludP;
 }
 
-function descuentos(psalud, ppesnsion, parl) {
-  let pensionD;
-  let arlD;
-  let saludD;
-  saludD = psalud;
-  pensionD = ppesnsion;
-  arlD = parl;
-
-  operacion = saludD + pensionD + arlD;
-  return operacion;
+function pension(pago) {
+  let pensionP = pago * 0.16;
+  return pensionP;
 }
 
-//Como Expresión
-const suledoExp = function(pdiaT, pvalorD) {
+function arl(pago) {
+  let arlP = pago * 0.052;
+  return arlP;
+}
+function pagoTotal(pago) {
+
+  let saludP = salud(pago);
+  let pensionP = pension(pago);
+  let arlP = arl(pago);
+  let total = pago - (saludP + pensionP + arlP);
+  return total;
+}
+
+//como Expresión
+
+const sueldoExp =  function(pdiaT, pvalorD) {
+  let diaT;
+  let valorD;
+  let pago;
+
   diaT = pdiaT;
   valorD = pvalorD;
   pago = diaT * valorD;
   return pago;
 }
 
-const saludpExp = function(ppsalud) {
-  porcentaje = ppsalud;
-  operacion = pago * porcentaje;
-  return operacion;
-}
-const pensionpExp = function(ppesion) {
-  porcentaje = ppesion;
-  operacion = pago * ppesion;
-  return operacion;
-}
-function arlp(pparl) {
-  porcentaje = pparl;
-  operacion = pago * porcentaje;
-  return operacion;
+const saludExp = function(pago) {
+  let salud = pago * 0.12;
+  return salud;
 }
 
-const descuentosExp = function(psalud, ppesnsion, parl) {
-  let pensionD;
-  let arlD;
-  let saludD;
-  saludD = psalud;
-  pensionD = ppesnsion;
-  arlD = parl;
-
-  operacion = saludD + pensionD + arlD;
-  return operacion;
+const pensionExp =  function(pago) {
+  let pension = pago * 0.16;
+  return pension;
 }
+
+const arlExp =  function(pago) {
+  let arl = pago * 0.052;
+  return arl;
+}
+const pagoTotalExp =  function(pago) {
+  let saludE = salud(pago);
+  let pensionE = pension(pago);
+  let arlE = arl(pago);
+  let total = pago - (saludE + pensionE + arlE);
+  return total;
+}
+

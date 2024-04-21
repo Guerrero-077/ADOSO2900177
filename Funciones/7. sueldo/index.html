@@ -1,36 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="js/sueldo.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="js/sueldo.js"></script>
 </head>
+
 <body>
-    <script>
-        valorD = 43333;
-        diaT = 10;
+  <script>
 
-        let sueldo = suledo(valorD,diaT);
-        let salud =saludp(0.12);
-        let pension = pensionp(0.16);
-        let arl = arlp(0.052);
-        let descuento = descuentos(salud,pension,arl);
+    valorD = 43333;
+    diaT = 10;
 
-        let sueldoTo;
-        sueldoTo = sueldo - descuento
+    let sueldoE = sueldo(diaT, valorD);
+    let saludE = salud(sueldoE);
+    let pensionE = pension(sueldoE);
+    let arlE = arl(sueldoE);
+    let pagoTo = pagoTotal(sueldoE)
+
+    console.log("Su salario Bruto es de: $" + sueldoE + "." + "\n");
+
+    console.log("Los deducibles son: " + "\n" + "salud: " + saludE + "%");
+
+    console.log("pensión:" + pensionE + "% \n");
+
+    console.log("arl: " + arlE + "%");
+
+    console.log("El pago total será de: $" + pagoTo);
 
 
-        let mostrar ;
-
-        mostrar = console.log( 
-
-        "Su pago es de: " + pago+".\n"+
-        "El porcentaje para la salud es del "+salud+"%.\n"+
-        "El porcentaje para  la pensión es del "+pension+"%. \n"+
-        "Y el porcentaje para ARL es del "+arl+"%.\n"+
-        "Por lo tanto, el monto a pagar en concepto de descuentos será de: "+ descuento + ".\n" +
-        "Entonces, el Sueldo Total a Pagar es de: "+sueldoTo)
-    </script>
+  </script>
 </body>
+
 </html>

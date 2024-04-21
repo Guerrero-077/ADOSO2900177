@@ -8,28 +8,29 @@
 let fechaAc;
 let fechaNac;
 function edades(pfechaAc, pfechaNac) {
-
-   fechaAc = pfechaAc;
-   fechaNac = pfechaNac;
+  fechaAc = pfechaAc;
+  fechaNac = pfechaNac;
 
   let diferencia;
   let edad;
 
   diferencia = fechaAc - fechaNac;
   edad = Math.floor(diferencia / (1000 * 60 * 60 * 24 * 365.25));
-  return "Tu edad es: " + edad + " años.";
+  return edad;
 }
 
 //Como Expresión
 
 const edadesExp = function (pfechaAc, pfechaNac) {
-   fechaAc = pfechaAc;
-   fechaNac = pfechaNac;
+  let fechaAc;
+  let fechaNac;
+  fechaAc = pfechaAc;
+  fechaNac = pfechaNac;
 
   let diferencia;
   let edad;
 
   diferencia = fechaAc - fechaNac;
   edad = Math.floor(diferencia / (1000 * 60 * 60 * 24 * 365.25));
-  return "Tu edad es: " + edad + " años.";
-};
+  return edad;
+}

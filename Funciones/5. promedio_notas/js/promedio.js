@@ -3,17 +3,20 @@
  * Autor: Santiago GM
  * 02/04/2024
 */
-let nota;
+
 
 //como paramétro
-function promedios(pnota){
-    nota = pnota;
-    return  nota; 
+function calcularProm(pnota,pporcentaje){
+    let nota  = pnota;
+    let porcentaje = pporcentaje;
+    let resultado = nota * porcentaje;
+    return resultado;
 }
 
 //Como Expresión
-const promediosExp= function (pnota){
-
-    nota = pnota;
-    return  nota; 
+const calcularPromExp = function(pnota,pporcentaje){
+    let nota  = pnota;
+    let porcentaje = pporcentaje;
+    let resultado = nota * porcentaje;
+    return resultado;
 }

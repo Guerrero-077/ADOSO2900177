@@ -4,15 +4,13 @@
  * Fecha 03/04/2034
  */
 
+//como parámetro
 
-//como paamétro
-
-let fechaAc;
-let fechaNac;
 function edades(pfechaAc, pfechaNac) {
-
-   fechaAc = pfechaAc;
-   fechaNac = pfechaNac;
+  let fechaAc;
+  let fechaNac;
+  fechaAc = pfechaAc;
+  fechaNac = pfechaNac;
 
   let diferencia;
   let edad;
@@ -22,79 +20,78 @@ function edades(pfechaAc, pfechaNac) {
   return edad;
 }
 
-let edadUno;
-let edadDos;
-let edadTres;
-let resultado = "";
+function validar(pedadP) {
+  let edadP;
+  edadP = pedadP;
 
-function validar(pedadUno,pedadDos,pedadTres){
+  if (edadP >= 18) {
+    return "Mayor de edad";
+  } else {
+    return "Menor de edad";
+  }
+}
 
-    edadUno = pedadUno;
-    edadDos = pedadDos;
-    edadTres = pedadTres
+function promedio(psuma, pnumEdad) {
+  let suma;
+  let numEdad;
+  let promedio;
 
-    if(edadUno >=18){
-        resultado += "La edad es: "+edadUno+" años, Es mayor de edad.\n";
-    }else{
-        resultado += "La edad es: "+edadUno+" años, Es menor de edad.\n";
-    }
+  suma = psuma;
+  numEdad = pnumEdad;
 
-    if(edadDos >=18){
-        resultado += "La edad es: "+edadDos+" años, Es mayor de edad.\n";
-    }else{
-        resultado += "La edad es: "+edadDos+" años, Es menor de edad.\n";
-    }
+  promedio = suma / pnumEdad;
 
-    if(edadTres >=18){
-        resultado += "La edad es: "+edadTres+" años, Es mayor de edad.\n";
-    }else{
-        resultado += "La edad es: "+edadTres+" años, Es menor de edad. ";
-    }
-
-    return resultado;
-
+  if (promedio >= 18) {
+    return "El promedio de edad se encuentra detro de la mayoria de edad " + promedio;
+  } else {
+    return "El promedio de edad no se encuentra dentro de la mayoria de edad " + promedio;
+  }
 }
 
 //Comom Expresión
-const edadesExp = function(pfechaAc, pfechaNac) {
-
-   fechaAc = pfechaAc;
-   fechaNac = pfechaNac;
-
+const edadesExp = function (pfechaAc, pfechaNac) {
+  let fechaAc;
+  let fechaNac;
   let diferencia;
   let edad;
+
+  fechaAc = pfechaAc;
+  fechaNac = pfechaNac;
 
   diferencia = fechaAc - fechaNac;
   edad = Math.floor(diferencia / (1000 * 60 * 60 * 24 * 365.25));
   return edad;
 }
 
+const validarExp = function (pedadP) {
+  let edadP;
+  edadP = pedadP;
 
+  if (edadP >= 18) {
+    return "Mayor de edad";
+  } else {
+    return "Menor de edad";
+  }
+}
 
-const validarExp = function(pedadUno,pedadDos,pedadTres){
+const promedioExp = function (psuma, pnumEdad) {
+  let suma;
+  let numEdad;
+  let promedio;
 
-    edadUno = pedadUno;
-    edadDos = pedadDos;
-    edadTres = pedadTres
+  suma = psuma;
+  numEdad = pnumEdad;
 
-    if(edadUno >=18){
-        resultado += "La edad es: "+edadUno+" años, Es mayor de edad.\n";
-    }else{
-        resultado += "La edad es: "+edadUno+" años, Es menor de edad.\n";
-    }
+  promedio = suma / pnumEdad;
 
-    if(edadDos >=18){
-        resultado += "La edad es: "+edadDos+" años, Es mayor de edad.\n";
-    }else{
-        resultado += "La edad es: "+edadDos+" años, Es menor de edad.\n";
-    }
-
-    if(edadTres >=18){
-        resultado += "La edad es: "+edadTres+" años, Es mayor de edad.\n";
-    }else{
-        resultado += "La edad es: "+edadTres+" años, Es menor de edad. ";
-    }
-
-    return resultado;
-
+  if (promedio >= 18) {
+    return (
+      "El promedio de edad se encuentra detro de la mayoria de edad " + promedio
+    );
+  } else {
+    return (
+      "El promedio de edad no se encuentra dentro de la mayoria de edad " +
+      promedio
+    );
+  }
 }

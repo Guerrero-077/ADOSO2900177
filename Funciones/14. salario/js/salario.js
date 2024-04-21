@@ -1,131 +1,126 @@
 /**
  * Calcular el sueldo de una persona
  *Autor: Santiago GM
- *Fecha: 03/04/2024 
-*/
+ *Fecha: 03/04/2024
+ */
 
 //Como paramétro
 
-let diasT;  //Dias Trabajados
-let valorD; //Valor por día
-let operaciones; 
-let salario;
-let pSalud; //Porcentaje de salud 
-let pPension;   //Porcetaje de pension
-let pArl;   //Porcentaje de ARL
-let salarioM; //Salario Minimo
-let trasnporteP;
-let retencionP;
+function sueldo(pdiaT, pvalorD) {
+  let diaT; //Dias Trabajados
+  let valorD; //Valor por día
+  let pago;
 
-function sueldo(pdiasT,pvalorD){
-    
-    diasT = pdiasT;
+  diaT = pdiaT;
+  valorD = pvalorD;
+  pago = diaT * valorD;
+  return pago;
+}
+function salud(pago) {
+  let saludP = pago * 0.12;
+  return saludP;
+}
+
+function pension(pago) {
+  let pensionP = pago * 0.16;
+  return pensionP;
+}
+
+function arl(pago) {
+  let arlP = pago * 0.052;
+  return arlP;
+}
+function subTras(pago) {
+  let salarioM = 1300000;
+  let trans;
+  if (pago <= salarioM * 2) {
+    trans = 114000;
+  } else {
+    trans = 0;
+  }
+  return trans;
+}
+function reten(pago) {
+  let salarioM = 1300000;
+  let retencion;
+  if (pago > salarioM * 4) {
+    retencion = pago * 0.04;
+  } else {
+    retencion = 0;
+  }
+  return retencion;
+}
+function pagoT(pago) {
+  let salario = pago;
+  let saludE = salud(pago);
+  let pensionE = pension(pago);
+  let arlE = arl(pago);
+
+  let retencion = reten(pago);
+  let subTrasporte = subTras(pago);
+  let descuento = saludE + pensionE + arlE;
+
+  let totalSalario = salario + subTrasporte - (retencion + descuento);
+
+  return totalSalario;
+}
+
+//Como Expresión
+const sueldoExp = function(pdiaT, pvalorD) {
+    let diaT; //Dias Trabajados
+    let valorD; //Valor por día
+    let pago;
+  
+    diaT = pdiaT;
     valorD = pvalorD;
-    salario = diasT * valorD;
-    return salario;
-
-}
-function salud(psalario,ppSalud){
-    salario = psalario;
-    pSalud = ppSalud;
-
-    operaciones = salario * pSalud;
-    return operaciones;
-}
-function pension(psalario,ppPension){
-    salario = psalario;
-    pPension = ppPension;
-
-    operaciones = salario * ppPension;
-    return operaciones;
-}
-function arl(psalario,ppArl){
-    salario = psalario;
-    pArl = ppArl;
-
-    operaciones = salario * ppArl;
-    return operaciones;
-
-}
-
-function validacion(psalario,psalarioM,ptrasnporte,pretencion){
-    salario = psalario;
-    salarioM = psalarioM;
-    trasnporteP = ptrasnporte;
-    retencionP = pretencion;
-    if(salario <= salarioM * 2){
-        trasnporteP = ptrasnporte;
-    }else{
-        trasnporteP = 0
+    pago = diaT * valorD;
+    return pago;
+  }
+const saludExp =  function(pago) {
+    let saludP = pago * 0.12;
+    return saludP;
+  }
+  
+const pensionExp = function(pago) {
+    let pensionP = pago * 0.16;
+    return pensionP;
+  }
+  
+ const arlExp = function(pago) {
+    let arlP = pago * 0.052;
+    return arlP;
+  }
+  const subTrasExp = function(pago) {
+    let salarioM = 1300000;
+    let trans;
+    if (pago <= salarioM * 2) {
+      trans = 114000;
+    } else {
+      trans = 0;
     }
-
-    if(salario > salarioM * 4){
-
-        retencionP = salario * pretencion;
-    }else{
-        retencionP = 0;
+    return trans;
+  }
+  const retenExp = function(pago) {
+    let salarioM = 1300000;
+    let retencion;
+    if (pago > salarioM * 4) {
+      retencion = pago * 0.04;
+    } else {
+      retencion = 0;
     }
-
-    return  {
-        trasnporteP,
-        retencionP
-    };
-    
-}
-
-//Como Expresión 
-const sueldoExp = function(pdiasT,pvalorD){
-    
-    diasT = pdiasT;
-    valorD = pvalorD;
-    salario = diasT * valorD;
-    return salario;
-
-}
-const saludExp = function(psalario,ppSalud){
-    salario = psalario;
-    pSalud = ppSalud;
-
-    operaciones = salario * pSalud;
-    return operaciones;
-}
-const pensionExp = function(psalario,ppPension){
-    salario = psalario;
-    pPension = ppPension;
-
-    operaciones = salario * ppPension;
-    return operaciones;
-}
-const arlExp = function(psalario,ppArl){
-    salario = psalario;
-    pArl = ppArl;
-
-    operaciones = salario * ppArl;
-    return operaciones;
-
-}
-
-const validacionExp = function(psalario,psalarioM,ptrasnporte,pretencion){
-    salario = psalario;
-    salarioM = psalarioM;
-    trasnporteP = ptrasnporte;
-    retencionP = pretencion;
-    if(salario <= salarioM * 2){
-        trasnporteP = ptrasnporte;
-    }else{
-        trasnporteP = 0
-    }
-
-    if(salario > salarioM * 4){
-
-        retencionP = salario * pretencion;
-    }else{
-        retencionP = 0;
-    }
-
-    return  {
-        trasnporteP,
-        retencionP
-    };
-    
-}
+    return retencion;
+  }
+  const pagoTExp = function(pago) {
+    let salario = pago;
+    let saludE = salud(pago);
+    let pensionE = pension(pago);
+    let arlE = arl(pago);
+  
+    let retencion = reten(pago);
+    let subTrasporte = subTras(pago);
+    let descuento = saludE + pensionE + arlE;
+  
+    let totalSalario = salario + subTrasporte - (retencion + descuento);
+  
+    return totalSalario;
+  }

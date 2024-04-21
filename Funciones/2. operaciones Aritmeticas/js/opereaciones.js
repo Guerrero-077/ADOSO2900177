@@ -5,11 +5,11 @@
 */
 
 // con parametros 
-let numUno;
-let numDos;
 
- function suma(pnumUno,pnumDos){
+function suma(pnumUno,pnumDos){
 
+    let numUno;
+    let numDos;
     let sumar;
     numUno = pnumUno;
     numDos =pnumDos
@@ -20,7 +20,8 @@ let numDos;
 }
 
 function resta(pnumUno,pnumDos){
-
+    let numUno;
+    let numDos;
     let restar;
     numUno = pnumUno;
     numDos =pnumDos
@@ -31,7 +32,8 @@ function resta(pnumUno,pnumDos){
 }
 
 function multiplicacion(pnumUno,pnumDos){
-
+    let numUno;
+    let numDos;
     let multiplicar;
     numUno = pnumUno;
     numDos =pnumDos
@@ -42,7 +44,8 @@ function multiplicacion(pnumUno,pnumDos){
 }
 
 function division(pnumUno,pnumDos){
-
+    let numUno;
+    let numDos;
     let dividir;
     numUno = pnumUno;
     numDos =pnumDos
@@ -53,25 +56,27 @@ function division(pnumUno,pnumDos){
 }
 
 function operaciones(poerador,pnumUno,pnumDos){
-
+    let numUno;
+    let numDos;
     let operador = poerador;
     numUno = pnumUno;
     numDos = pnumDos;
 
-    if(operador == suma ){
+
+    if(operador == "suma" ){
 
         return suma(numUno,numDos);
 
-    }else if(operador == resta ){
+    }else if(operador == "resta" ){
 
         return resta(numUno,numDos);
         
-    }else if(operador == multiplicacion ){
+    }else if(operador == "multiplicacion" ){
 
         return multiplicacion(numUno,numDos);
     
         
-    }else if(operador == division){
+    }else if(operador == "division"){
 
         return division(numUno,numDos);
         
@@ -86,7 +91,8 @@ function operaciones(poerador,pnumUno,pnumDos){
 //Expresion 
 
 const sumaExp = function(pnumUno,pnumDos){
-
+    let numUno;
+    let numDos;
     let sumar;
     numUno = pnumUno;
     numDos =pnumDos
@@ -98,6 +104,8 @@ const sumaExp = function(pnumUno,pnumDos){
 
 const restaExp = function(pnumUno,pnumDos){
 
+    let numUno;
+    let numDos;
     let restar;
     numUno = pnumUno;
     numDos =pnumDos
@@ -108,7 +116,8 @@ const restaExp = function(pnumUno,pnumDos){
 }
 
 const multiplicacionExp = function(pnumUno,pnumDos){
-
+    let numUno;
+    let numDos;
     let multiplicar;
     numUno = pnumUno;
     numDos =pnumDos
@@ -119,7 +128,8 @@ const multiplicacionExp = function(pnumUno,pnumDos){
 }
 
 const divisionExp = function(pnumUno,pnumDos){
-
+    let numUno;
+    let numDos;
     let dividir;
     numUno = pnumUno;
     numDos =pnumDos
@@ -131,27 +141,28 @@ const divisionExp = function(pnumUno,pnumDos){
 
 
 const operacionesExp = function(poerador,pnumUno,pnumDos){
-
+    let numUno;
+    let numDos;
     let operador = poerador;
     numUno = pnumUno;
     numDos = pnumDos;
 
-    if(operador == sumaExp){
+    if(operador == "sumaExp"){
 
         
         return sumaExp(numUno,numDos);
         
-    }else if(operador == restaExp){
+    }else if(operador == "restaExp"){
 
         
         return restaExp(numUno,numDos);
         
-    }else if( operador == multiplicacionExp ){
+    }else if( operador == "multiplicacionExp" ){
 
         
         return multiplicacionExp(numUno,numDos);
         
-    }else if(operador == divisionExp){
+    }else if(operador == "divisionExp"){
 
         
         return divisionExp(numUno,numDos);

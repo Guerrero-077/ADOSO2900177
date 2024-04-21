@@ -8,19 +8,17 @@
 </head>
 <body>
     <script>
-        let notaUno;
-        let notaDos;
-        let notaTres;
-        let promedio;
+        let nota1 = calcularPromExp(5.0,0.3);
+        let nota2 = calcularPromExp(3.0,0.3);
+        let nota3 = calcularPromExp(4.0,0.4);
+        let suma;
 
-        notaUno = promedios(2.0);
-        notaDos = promedios(4.0);
-        notaTres = promedios(5.0);
-
-        promedio =  (notaUno + notaDos +notaTres)/3;
-        console.log("El promedio de las tres notas es de: \n"+promedio);
-
+        console.log("El porcentaje de la nota 1 como Expresión es: " + nota1 + "%");
+        console.log("El porcentaje de la nota 2 como Expresión es: " + nota2 + "%");
+        console.log("El porcentaje de la nota 3 como Expresión es: " + nota3 + "%");
         
+        suma = (nota1 + nota2 + nota3);
+        console.log("La suma del porcentaje de sus notas es de: "+suma + "%");
     </script>
 </body>
 </html>

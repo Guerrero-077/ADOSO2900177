@@ -5,28 +5,22 @@
 */
 
 //Como paramétro
-
-
-function porcentajes(pnumero,pporcentaje){
-
-    let operacion;
+function porcentajes(pnumero){
+    let numero;
+    let porcentaje;
     numero = pnumero;
-    porcentaje = pporcentaje;
-    operacion = numero / porcentaje;
-    return operacion;
 
+    porcentaje = numero / 100;
+    return porcentaje;
 }
 
 //Como Expresión
-let numero;
-let porcentaje;
-
-function porcentajes(pnumero,pporcentaje){
-
-    let operacion;
+function porcentajesExp(pnumero){
+    let numero;
+    let porcentaje;
     numero = pnumero;
-    porcentaje = pporcentaje;
-    operacion = numero / porcentaje;
-    return operacion;
+
+    porcentaje = numero / 100;
+    return porcentaje;
 
 }
