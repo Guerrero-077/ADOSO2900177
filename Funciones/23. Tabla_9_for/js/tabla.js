@@ -27,16 +27,16 @@ function tablas(ptablas,plimite){
     return msg;
 }
 
-function validar(valida){
-    let msg = "";
+function validar(resultado){
 
-    if(valida%2==0){
-        msg+= "El resultado es  par\n";
+
+    if(resultado%2==0){
+     return "El resultado es  par\n";
         
     }else{
-        msg+="El resultado es impar\n"
+     return"El resultado es impar\n";
     }
-    return msg;
+   
 }
 
 //Como Expresión
@@ -53,12 +53,20 @@ const tablasExp = function (ptablas,plimite){
         resultado = tabla * contador;
 
         msg += `${tabla} x ${contador} = ${resultado}`;
-        if(resultado%2==0){
-            msg+= " Este es un par\n";
-        }else{
-            msg+=" Este es impar\n"
-        }
+
+        msg += validarExp(resultado);
 
     }
     return msg;
+}
+
+const validarExp = function(resultado){
+
+
+    if(resultado%2==0){
+     return " El resultado es  par\n";
+        
+    }else{
+     return " El resultado es impar\n";
+    }
 }

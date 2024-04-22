@@ -4,16 +4,16 @@
  * 03/04/2024
  */
 
-let tablas;
-let limite
+let resultado;
 //Como paramétro
 
 function tabla(ptablas,plimite){
+    let tablas;
+    let limite
     tablas = ptablas;
     limite = plimite
     let contador;
     let msg="";
-    let resultado;
     contador = 0;
     msg = "";
 
@@ -21,21 +21,28 @@ function tabla(ptablas,plimite){
         contador = contador +1
         resultado = tablas * contador;
 
-        msg += `${tablas} x ${contador} = ${resultado} `
-        if(resultado %2==0){
+        msg += `${tablas} x ${contador} = ${resultado} `;
+        msg += validar(resultado)
 
-            msg += "par\n";
-        }else{
-            msg += "impar\n"
-        }
     }
 
     return msg;
 }
 
+function validar(resultado){
+        if(resultado %2==0){
+
+           return "par\n";
+        }else{
+           return "impar\n"
+        }
+}
+
 //Como Expresión
 
 const tablaExp = function (ptablas,plimite){
+    let tablas;
+    let limite
     tablas = ptablas;
     limite = plimite
     let contador;
@@ -49,13 +56,19 @@ const tablaExp = function (ptablas,plimite){
         resultado = tablas * contador;
 
         msg += `${tablas} x ${contador} = ${resultado} `
-        if(resultado %2==0){
 
-            msg += "par\n";
-        }else{
-            msg += "impar\n"
-        }
+        msg += validarExp(resultado);
     }
 
     return msg;
+}
+
+
+function validarExp(resultado){
+        if(resultado %2==0){
+
+           return "par\n";
+        }else{
+           return "impar\n"
+        }
 }
