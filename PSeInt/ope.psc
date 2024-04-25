@@ -17,21 +17,21 @@ Algoritmo ope
 				Escribir '___________________________________________'
 				Escribir '1. Consultar el sueldo'
 				Escribir '___________________________________________'
-				Escribir '2. retirar sueldo'
+				Escribir '2. Retirar sueldo'
 				Escribir '___________________________________________'
-				Escribir '3. Ingresar sueldo'
+				Escribir '3. Rngresar sueldo'
 				Escribir '___________________________________________'
-				Escribir '4.salir'
+				Escribir '4.Salir'
 				Escribir '___________________________________________'
 				Leer opciones
 				Según opciones Hacer
 					1:
 						Escribir '___________________________________________'
-						Escribir 'su sueldo es: $', sueldo
+						Escribir 'Su sueldo es: $', sueldo
 						Escribir '___________________________________________'
 					2:
 						Repetir
-							Escribir 'digite la cantidad que desea retirar: '
+							Escribir 'Digite la cantidad que desea retirar: '
 							Leer retiro
 							Si retiro<=sueldo Y retiro>0 Entonces
 								sueldo <- sueldo-retiro
@@ -62,7 +62,7 @@ Algoritmo ope
 							Leer opcionR
 						Hasta Que opcionR=='n'
 					4:
-						Escribir 'hasta luego'
+						Escribir 'Hasta luego'
 					De Otro Modo:
 						Escribir 'Opcion no valida'
 				FinSegún

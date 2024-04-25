@@ -26,7 +26,7 @@ Algoritmo Palabrerio
 	Repetir
 		Escribir 'Ingrese su respuesta: '
 		Leer prueba
-		Si prueba==palabras[i2,1] Entonces
+		Si prueba==palabras[1,1] Entonces
 			Escribir 'correcto'
 			intentos <- 2
 		SiNo

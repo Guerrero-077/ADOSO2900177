@@ -62,7 +62,7 @@ Algoritmo conversor
 					Escribir 'Convertir de Decigramo a gramo'
 					Escribir 'Ingrese el valor de Decigramo que deseas convertir: '
 					Leer dg
-					Si dag<=0 Entonces
+					Si dg<=0 Entonces
 						Escribir 'El valor debe ser mayor de 0'
 					SiNo
 						conversion <- dg*0.1

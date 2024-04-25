@@ -25,8 +25,8 @@ Algoritmo sin_titulo
 			Escribir '1....'
 			Esperar 1 Segundos
 			Escribir ppt[index]
-			Escribir 'desea jugar ? ingrese (si) para jugar o (no) para salir' // escoje el dato del vector segun el valor aleatori de index
-			Leer op
+			Escribir 'desea jugar ? ingrese (si) para jugar o (no) para salir'
+			Leer op // escoje el dato del vector segun el valor aleatori de index
 		Hasta Que op='no'
 	FinMientras
 	Escribir 'nos vemos'
