@@ -14,11 +14,12 @@ frutas = ["Manzana", " Pera", " Uva", " Mora"];
 
 console.log("Todos los datos del arrglo de números: " + numeros);
 console.log("Todos los datos del arrglo de frutas: " + frutas);
-console.log("---------------------------------------------------------")
+console.log("------------------------------------------------");
+
 console.log("El primer dato del arreglo de números: " + numeros[0]);
 console.log("El primer dato del arreglo de frutas: " + frutas[0]);
+console.log("------------------------------------------------");
 
-console.log("---------------------------------------------------------");
 
 let longitudN;
 let longitudF;
@@ -29,7 +30,8 @@ longitudF = frutas.length;
 for(contador = 0; contador < longitudN; contador++ ){
     console.log('La posicion: '+ contador + ' ' + numeros[contador]); 
 }
-console.log("---------------------------------------------------------");
+console.log("------------------------------------------------");
+
 
 let matriz;
 
@@ -43,7 +45,8 @@ console.log(matriz);
 
 let longitudM;
 longitudM = matriz.length;
-console.log("---------------------------------------------------------");
+console.log("------------------------------------------------");
+
 
 
 
@@ -52,4 +55,26 @@ for(contador = 0; contador < longitudM; contador++){
         console.log(matriz[contador][contar]);
     }
 }
+console.log("------------------------------------------------");
 
+let arreglos = [];
+let numerosDatos;
+let mostrar = "";
+
+arreglos = [2,4,6,8,10]
+
+numerosDatos  = arreglos.length
+console.log("Mostrar los valores iniciales del arreglo: " + numerosDatos);
+
+arreglos.push(12)
+arreglos.push(14)
+arreglos.push(16)
+
+numerosDatos  = arreglos.length
+console.log("Mostrar los valores finales del arreglos: " + numerosDatos);
+
+for (i = 0; i < numerosDatos; i++) {
+     mostrar += "Los arreglos: "+arreglos[i]+"\n";
+    
+}
+alert(mostrar)
