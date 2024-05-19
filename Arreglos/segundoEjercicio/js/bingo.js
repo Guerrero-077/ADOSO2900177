@@ -93,19 +93,12 @@ for (iteracion1 = 0; iteracion1 < 3; iteracion1++) {
     x4.push(bingo[2 + iteracion1][4 - iteracion1]);
 }
 
-x2.sort(function (a, b) {
-    return a - b;
-});
 
-// x2.sort((a,b) => a - b);
+x2.sort((a,b) => a - b);
+x3.sort((a,b) => a - b);
+x4.sort((a,b) => a - b);
 
-x3.sort(function (a, b) {
-    return a - b;
-});
 
-x4.sort(function (a, b) {
-    return a - b;
-});
 
 console.log('xMedia '+mostrar(x2));
 
