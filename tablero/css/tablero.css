@@ -1,0 +1,35 @@
+#principal{
+    display: block;
+    float: left;
+    width: 590px;
+    border: 1px solid red;    
+    margin-top: 50px;
+    padding: 10px 0 0 20px;
+}
+.row{
+    /* float: left; */
+    display: flexbox;
+    flex-wrap: nowrap;
+    height: 200px;
+    margin-bottom: 5px;
+}
+.celda{
+    border: 1px solid blue;
+}
+
+.espacio-deiz{
+    margin: 0 4px 0 4px;
+}
+
+.espacio-iz{
+    margin-left: 6px;
+}
+.letra-blanca{
+    color: aquamarine;
+}
+.fondo-azul-oscuro{
+    background-color: darkslateblue;
+}
+.derecha{
+    float: right;
+}

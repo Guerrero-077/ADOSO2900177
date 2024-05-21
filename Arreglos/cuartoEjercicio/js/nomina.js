@@ -137,7 +137,7 @@ function subT(pago) {
 
 //Abono
 function bono(pago, estrato) {
-  if ((pago < salarioM && estrato == 1) || estrato == 2) {
+  if (pago < salarioM && estrato == 1 || pago < salarioM && estrato == 2){
     abono = 100000;
   } else {
     abono = 0;
@@ -166,7 +166,7 @@ function arlNomina(pago) {
 
 function retencionNomina(pago, estrato) {
   
-  if (pago > 8 * salarioM && nomina[iteracion].estrato == 6 ) {
+  if (pago > 8 * salarioM && estrato == 6 ) {
     retencion = 0.05;
   } else if (pago > salarioM * 6) {
     retencion = 0.04;
@@ -191,6 +191,7 @@ for (iteracion = 0; iteracion < nomina.length; iteracion++) {
   retencionNomina(pago, nomina[iteracion].estrato);
 
   reten  = pago * retencion
+
   salario = ( pago + subTransporte + abono) -  (salud + pension + arl + reten)
   pagoNomina.push({
     tipoDocumento: nomina[iteracion].tipoDocumento,
@@ -205,6 +206,7 @@ for (iteracion = 0; iteracion < nomina.length; iteracion++) {
     subTransporte: subTransporte,
     abono: abono,
     retencion: retencion,
+    CantidadRetenida: reten,
     salud: salud,
     pension: pension,
     arl: arl,
