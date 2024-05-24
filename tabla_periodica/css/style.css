@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box;
+}
+#bajar{
+    margin-top: 50px;
+}
+.celda{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.celda div.col-2{
+    padding: 0;
+    margin: 0;
+    height: 80px;
+}
+.elemento{
+    /* width: 65px; */
+    margin: 2px;    
+    /* height: 75px; */
+    border: 1px solid #000;
+    overflow: hidden;
+    border-radius: 5px;
+
+}
+span{
+    font-size: 11px;
+    text-align: center;
+    display: inline;
+}
+h6{
+    font-size: 23px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}

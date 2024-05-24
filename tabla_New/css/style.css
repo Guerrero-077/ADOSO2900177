@@ -4,15 +4,7 @@
     box-sizing: border-box;
     
 }
-body{
-    min-height: 100vh;
-    width: 100vw;
-    background-image: url(../imagen/fondo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    
-}
+
 .texto{
     text-align: center;
 }
@@ -30,7 +22,7 @@ body{
 .columna {
     margin-top: 5rem;
     display: flex;
-    margin-left: 20rem;
+    margin-left: 18rem;
     
 }
 
@@ -45,7 +37,7 @@ body{
 }
 .elementos {
     border: solid 1px black ;
-    width: 80px;
+    width: 70px;
     height: auto;
     transition: transform 0.3s ease;
 }
