@@ -1,0 +1,1705 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+
+    <link rel="stylesheet" href="css/tablero.css" />
+  </head>
+  <body>
+
+      <div class="container bajar mt-5">
+        <div class="tex-center">TABLA DE LAS PROPIEDADES PERIÓDICAS DE LOS ELEMENTOS</div>
+        <div class="principal">
+
+            <div class="categorias">
+
+              <div class="tipos metal"></div>
+              <p class="info">Metal</p>
+
+              <div class="tipos  semiMental"></div>
+              <p class="info">Semimetal</p>
+
+              <div class="tipos noMetal"></div>
+              <p class="info">No Metal</p>
+
+              <div class="tipos metalesRepresentativos"></div>
+              <p class="info">Metales Representativos</p>
+
+              <div class="tipos noMetales"></div>
+              <p class="info">No metales</p>
+
+              <div class="tipos metal"></div>
+              <p class="info">Metales de transicion</p>
+
+              <div class="tipos metalesRepresentativos"></div>
+              <p class="info">Gases Nobles</p>
+
+              <div class="tipos lantanidos"></div>
+              <p class="info">Lantánidos</p>
+
+              <div class="tipos actinidos"></div>
+              <p class="info">Actínidos</p>
+            </div>
+          <div class="grupoUno">IA</div>
+
+          <!-- primer periodo -->
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>1</p></div>
+                        <div class="masaAtomica text-end"><p>1,0079</p></div>
+                        <div class="ionizacion">
+                          <p>79  <br />0,082 1313</p>
+                        </div>
+                        <div class="electronegatividad text-end">
+                          <p>-1,1 <br />2,20</p>
+                        </div>
+                        <div class="simbolo text-center"><p>H</p></div>
+                        <div class="nombre text-center"><p>Hidrógeno</p></div>
+                      </div>
+                    </div>
+    
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">IIA</div>
+                    </div>
+                    <div class="col-8 d-flex"></div>
+                  </div>
+                </div>
+    
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-12 d-flex"></div></div>
+                </div>
+    
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">IIIA</div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">IVA</div>
+                    </div>
+                    <div class="col-2 text-center p-0 m-0">
+                      <div class="grupo">VA</div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">VIA</div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">VIIA</div>
+                    </div>
+    
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetal">
+                        <div class="numeroAtomico"><p>2</p></div>
+                        <div class="masaAtomica text-end"><p>4,0</p></div>
+                        <div class="ionizacion"><p>0,18 2372</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>0 <br />4,1</p>
+                        </div>
+                        <div class="simbolo text-center"><p>He</p></div>
+                        <div class="nombre text-center"><p>Helio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- segundo periodo -->
+    
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>3</p></div>
+                        <div class="masaAtomica text-end"><p>6,941</p></div>
+                        <div class="ionizacion"><p>152 0,53 520</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>1 <br />0,98</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Li</p></div>
+                        <div class="nombre text-center"><p>Litio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>4</p></div>
+                        <div class="masaAtomica text-end"><p>9,0122</p></div>
+                        <div class="ionizacion"><p>112 1,85 899</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2 <br />1,57</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Be</p></div>
+                        <div class="nombre text-center"><p>Berilio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-4 d-flex p-0 m-0"></div>
+                    <div class="col-4 d-flex p-0 m-0">
+                      <div class="elemento noMetales elemetPru">
+                        <div class="numeroAtomico"><p>1</p></div>
+                        <div class="masaAtomica text-end"><p>1,0079</p></div>
+                        <div class="ionizacion">
+                          <p>79 <br />0,082 1313</p>
+                        </div>
+                        <div class="electronegatividad text-end">
+                          <p>-1,1 <br />2,20</p>
+                        </div>
+                        <div class="simbolo text-center"><p>H</p></div>
+                        <div class="nombre text-center"><p>Hidrógeno</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-12 d-flex"></div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento semimetal">
+                        <div class="numeroAtomico"><p>5</p></div>
+                        <div class="masaAtomica text-end"><p>10,81</p></div>
+                        <div class="ionizacion">
+                          <p>98 <br />2,34 801</p>
+                        </div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />2,04</p>
+                        </div>
+                        <div class="simbolo text-center"><p>B</p></div>
+                        <div class="nombre text-center"><p>Boro</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>6</p></div>
+                        <div class="masaAtomica text-end"><p>12,0</p></div>
+                        <div class="ionizacion">
+                          <p>91 <br />2,23 801</p>
+                        </div>
+                        <div class="electronegatividad text-end">
+                          <p>±4,2 <br />2,55</p>
+                        </div>
+                        <div class="simbolo text-center"><p>C</p></div>
+                        <div class="nombre text-center"><p>Carbono</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>7</p></div>
+                        <div class="masaAtomica text-end"><p>14,0</p></div>
+                        <div class="ionizacion">
+                          <p>92 <br />1,25 1402</p>
+                        </div>
+                        <div class="electronegatividad text-end">
+                          <p>1,2,±3,4,5 3,9</p>
+                        </div>
+                        <div class="simbolo text-center"><p>N</p></div>
+                        <div class="nombre text-center"><p>Nitrógeno</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>8</p></div>
+                        <div class="masaAtomica text-end"><p>16,0</p></div>
+                        <div class="ionizacion"><p>74 1,31 1314</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±2 <br />3,44</p>
+                        </div>
+                        <div class="simbolo text-center"><p>O</p></div>
+                        <div class="nombre text-center"><p>Oxígeno</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>9</p></div>
+                        <div class="masaAtomica text-end"><p>19,0</p></div>
+                        <div class="ionizacion"><p>64 1,696 1681</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>-1 <br />3,98</p>
+                        </div>
+                        <div class="simbolo text-center"><p>F</p></div>
+                        <div class="nombre text-center"><p>Flúor</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetal">
+                        <div class="numeroAtomico"><p>10</p></div>
+                        <div class="masaAtomica text-end"><p>20,18</p></div>
+                        <div class="ionizacion"><p>70 0,82 2081</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>0 <br />4,7</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ne</p></div>
+                        <div class="nombre text-center"><p>Neón</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- tercer periodo -->
+    
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>11</p></div>
+                        <div class="masaAtomica text-end"><p>22,990</p></div>
+                        <div class="ionizacion"><p>186 0,96 496</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>1 <br />0,93</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Na</p></div>
+                        <div class="nombre text-center"><p>Sodio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>12</p></div>
+                        <div class="masaAtomica text-end"><p>24,30</p></div>
+                        <div class="ionizacion"><p>160 1,74 738</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2 <br />1,31</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Mg</p></div>
+                        <div class="nombre text-center"><p>Magnesio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">III B</div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">IV B</div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">V B</div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">VI B</div>
+                    </div>
+                  </div>
+                </div>
+    
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">VII B</div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0"></div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">VIII B</div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0"></div>
+    
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="grupo">I B</div>
+                    </div>
+                    <div class="col-2 d-flex justify-content-end">
+                      <div class="grupo">II B</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>13</p></div>
+                        <div class="masaAtomica text-end"><p>27,0</p></div>
+                        <div class="ionizacion"><p>143 2,7 578</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,61</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Al</p></div>
+                        <div class="nombre text-center"><p>Aluminiio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento semimetal">
+                        <div class="numeroAtomico"><p>14</p></div>
+                        <div class="masaAtomica text-end"><p>28,09</p></div>
+                        <div class="ionizacion"><p>132 2,33 787</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±4 <br />1,90</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Si</p></div>
+                        <div class="nombre text-center"><p>Silicio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>15</p></div>
+                        <div class="masaAtomica text-end"><p>31,0</p></div>
+                        <div class="ionizacion"><p>128 1,82 1012</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±3,5 <br />2,19</p>
+                        </div>
+                        <div class="simbolo text-center"><p>P</p></div>
+                        <div class="nombre text-center"><p>Fósforo</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>16</p></div>
+                        <div class="masaAtomica text-end"><p>32,07</p></div>
+                        <div class="ionizacion"><p>127 2,07 1000</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±2,4,6 2,58</p>
+                        </div>
+                        <div class="simbolo text-center"><p>S</p></div>
+                        <div class="nombre text-center"><p>Azufre</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>17</p></div>
+                        <div class="masaAtomica text-end"><p>35,45</p></div>
+                        <div class="ionizacion"><p>99 3,2 1251</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±1,3,5,7 3,16</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Cl</p></div>
+                        <div class="nombre text-center"><p>Cloro</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetal">
+                        <div class="numeroAtomico"><p>18</p></div>
+                        <div class="masaAtomica text-end"><p>40,0</p></div>
+                        <div class="ionizacion"><p>95 1,78 1521</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>0 <br />3,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ar</p></div>
+                        <div class="nombre text-center"><p>Argón</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- cuarto periodo -->
+    
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>19</p></div>
+                        <div class="masaAtomica text-end"><p>39,098</p></div>
+                        <div class="ionizacion"><p>227 0,86 419</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>1 <br />0,82</p>
+                        </div>
+                        <div class="simbolo text-center"><p>K</p></div>
+                        <div class="nombre text-center"><p>Potasio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico">20</div>
+                        <div class="masaAtomica text-end">40,08</div>
+                        <div class="ionizacion">202</div>
+                        <div class="electronegatividad text-end">2 <br />1,0</div>
+                        <div class="simbolo text-center">Ca</div>
+                        <div class="nombre text-center">Calcio</div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>21</p></div>
+                        <div class="masaAtomica text-end"><p>45,0</p></div>
+                        <div class="ionizacion"><p>161 2,99 633</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,54</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Sc</p></div>
+                        <div class="nombre text-center"><p>Escandio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>22</p></div>
+                        <div class="masaAtomica text-end"><p>47,867</p></div>
+                        <div class="ionizacion"><p>145 4,54 659</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>4,3,2 <br />1,54</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ti</p></div>
+                        <div class="nombre text-center"><p>Titanio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>23</p></div>
+                        <div class="masaAtomica text-end"><p>50,94</p></div>
+                        <div class="ionizacion"><p>131 6,11 651</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>5,4,3,2 1,63</p>
+                        </div>
+                        <div class="simbolo text-center"><p>V</p></div>
+                        <div class="nombre text-center"><p>Vanadio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>24</p></div>
+                        <div class="masaAtomica text-end"><p>52,0</p></div>
+                        <div class="ionizacion"><p>125 7,18 653</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>6,3,2 <br />1,66</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Cr</p></div>
+                        <div class="nombre text-center"><p>Cromo</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>25</p></div>
+                        <div class="masaAtomica text-end"><p>54,94</p></div>
+                        <div class="ionizacion"><p>137 7,43 717</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>7,6,4,3,2 1,55</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Mn</p></div>
+                        <div class="nombre text-center"><p>Manganeso</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>26</p></div>
+                        <div class="masaAtomica text-end"><p>55,84</p></div>
+                        <div class="ionizacion"><p>124 7,87 763</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,2 <br />1,83</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Fe</p></div>
+                        <div class="nombre text-center"><p>Hierro</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>27</p></div>
+                        <div class="masaAtomica text-end"><p>58,93</p></div>
+                        <div class="ionizacion"><p>125 8,86 760</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,2 <br />1,83</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Co</p></div>
+                        <div class="nombre text-center"><p>Cobalto</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>28</p></div>
+                        <div class="masaAtomica text-end"><p>58,69</p></div>
+                        <div class="ionizacion"><p>125 8,91 737</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,1 <br />1,91</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ni</p></div>
+                        <div class="nombre text-center"><p>Níquel</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>29</p></div>
+                        <div class="masaAtomica text-end"><p>63,559</p></div>
+                        <div class="ionizacion"><p>128 8,96 746</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,1 <br />1,90</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Cu</p></div>
+                        <div class="nombre text-center"><p>Cobre</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>30</p></div>
+                        <div class="masaAtomica text-end"><p>65,39</p></div>
+                        <div class="ionizacion"><p>133 7,13 906</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2 <br />1,65</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Zn</p></div>
+                        <div class="nombre text-center"><p>Cinc</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>31</p></div>
+                        <div class="masaAtomica text-end"><p>69,72</p></div>
+                        <div class="ionizacion"><p>141 5,91 579</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,3 <br />1,81</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ga</p></div>
+                        <div class="nombre text-center"><p>Galio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento semimetal">
+                        <div class="numeroAtomico"><p>32</p></div>
+                        <div class="masaAtomica text-end"><p>72,64</p></div>
+                        <div class="ionizacion"><p>137 5,32 762</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±4,2 <br />2,01</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ge</p></div>
+                        <div class="nombre text-center"><p>Germanio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento semimetal">
+                        <div class="numeroAtomico"><p>33</p></div>
+                        <div class="masaAtomica text-end"><p>74,92</p></div>
+                        <div class="ionizacion"><p>139 5,75 947</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±3,5 <br />2,18</p>
+                        </div>
+                        <div class="simbolo text-center"><p>As</p></div>
+                        <div class="nombre text-center"><p>Arsénico</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>34</p></div>
+                        <div class="masaAtomica text-end"><p>78,96</p></div>
+                        <div class="ionizacion"><p>140 4,39 941</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±2,4,6 2 2,55</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Se</p></div>
+                        <div class="nombre text-center"><p>Selenio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>35</p></div>
+                        <div class="masaAtomica text-end"><p>79,90</p></div>
+                        <div class="ionizacion"><p>114 3,12 114</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±1,3,5,7 2,96</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Br</p></div>
+                        <div class="nombre text-center"><p>Bromo</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetal">
+                        <div class="numeroAtomico"><p>36</p></div>
+                        <div class="masaAtomica text-end"><p>83,80</p></div>
+                        <div class="ionizacion"><p>112 3,42 1351</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>0 <br />3,0</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Kr</p></div>
+                        <div class="nombre text-center"><p>Kriptón</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- quinto periodo -->
+    
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>37</p></div>
+                        <div class="masaAtomica text-end"><p>85,468</p></div>
+                        <div class="ionizacion"><p>248 1,53 403</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>1 <br />0,82</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Rb</p></div>
+                        <div class="nombre text-center"><p>Rubidio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>38</p></div>
+                        <div class="masaAtomica text-end"><p>87,62</p></div>
+                        <div class="ionizacion"><p>215 2,54 550</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2 <br />0,95</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Sr</p></div>
+                        <div class="nombre text-center"><p>Estroncio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>39</p></div>
+                        <div class="masaAtomica text-end"><p>88,9</p></div>
+                        <div class="ionizacion"><p>178 4,47 600</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,22</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Y</p></div>
+                        <div class="nombre text-center"><p>Itrio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>40</p></div>
+                        <div class="masaAtomica text-end"><p>91,22</p></div>
+                        <div class="ionizacion"><p>159 6,45 640</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>4 <br />1,33</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Zr</p></div>
+                        <div class="nombre text-center"><p>Circonio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>41</p></div>
+                        <div class="masaAtomica text-end"><p>92,91</p></div>
+                        <div class="ionizacion"><p>143 8,57 652</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>5,3 <br />1,6</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Nb</p></div>
+                        <div class="nombre text-center"><p>Niobio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>42</p></div>
+                        <div class="masaAtomica text-end"><p>95,94</p></div>
+                        <div class="ionizacion"><p>136 10,2 684</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>6,5,4,3,2 12,16</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Mo</p></div>
+                        <div class="nombre text-center"><p>Molibdno</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>43</p></div>
+                        <div class="masaAtomica text-end"><p>98</p></div>
+                        <div class="ionizacion"><p>135 11,5 705</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>7 <br />2,16</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Tc</p></div>
+                        <div class="nombre text-center"><p>Tecnecio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>44</p></div>
+                        <div class="masaAtomica text-end"><p>101,07</p></div>
+                        <div class="ionizacion"><p>133 12,4 710</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>8,6,4,3,2 2,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ru</p></div>
+                        <div class="nombre text-center"><p>Rutenio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>45</p></div>
+                        <div class="masaAtomica text-end"><p>102,9</p></div>
+                        <div class="ionizacion"><p>134 12,4 720</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>4,3,2 <br />2,28</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Rh</p></div>
+                        <div class="nombre text-center"><p>Rodio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>46</p></div>
+                        <div class="masaAtomica text-end"><p>106,42</p></div>
+                        <div class="ionizacion"><p>138 12,0 805</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,4 <br />2,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Pd</p></div>
+                        <div class="nombre text-center"><p>Paladio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>47</p></div>
+                        <div class="masaAtomica text-end"><p>107,87</p></div>
+                        <div class="ionizacion"><p>145 10,5 731</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,1 <br />1,93</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ag</p></div>
+                        <div class="nombre text-center"><p>Plata</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>48</p></div>
+                        <div class="masaAtomica text-end"><p>112,41</p></div>
+                        <div class="ionizacion"><p>149 8,69 868</p></div>
+                        <div class="electronegatividad text-end"><p>1,7</p></div>
+                        <div class="simbolo text-center"><p>Cd</p></div>
+                        <div class="nombre text-center"><p>Cadmio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>49</p></div>
+                        <div class="masaAtomica text-end"><p>114,82</p></div>
+                        <div class="ionizacion"><p>163 7,31 558</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,78</p>
+                        </div>
+                        <div class="simbolo text-center"><p>In</p></div>
+                        <div class="nombre text-center"><p>Indio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>50</p></div>
+                        <div class="masaAtomica text-end"><p>118,71</p></div>
+                        <div class="ionizacion"><p>162 7,28 709</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>4,2 <br />1,96</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Sn</p></div>
+                        <div class="nombre text-center"><p>Estaño</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento semimetal">
+                        <div class="numeroAtomico"><p>51</p></div>
+                        <div class="masaAtomica text-end"><p>121,76</p></div>
+                        <div class="ionizacion"><p>159 6,7 834</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±3,5 <br />2,05</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Sb</p></div>
+                        <div class="nombre text-center"><p>Antimonio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento semimetal">
+                        <div class="numeroAtomico"><p>52</p></div>
+                        <div class="masaAtomica text-end"><p>127,60</p></div>
+                        <div class="ionizacion"><p>160 6,2 869</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±2,4,6 2,1</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Te</p></div>
+                        <div class="nombre text-center"><p>Telurio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>53</p></div>
+                        <div class="masaAtomica text-end"><p>126,90</p></div>
+                        <div class="ionizacion"><p>215 4,93 1009</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±1,3,5,7 2,66</p>
+                        </div>
+                        <div class="simbolo text-center"><p>I</p></div>
+                        <div class="nombre text-center"><p>Yodo</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetal">
+                        <div class="numeroAtomico"><p>54</p></div>
+                        <div class="masaAtomica text-end"><p>131,29</p></div>
+                        <div class="ionizacion"><p>129 5,88 117</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>0 <br />2,6</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Xe</p></div>
+                        <div class="nombre text-center"><p>Xenón</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- sexto periodo -->
+    
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>55</p></div>
+                        <div class="masaAtomica text-end"><p>85,91</p></div>
+                        <div class="ionizacion"><p>265 1,98 376</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>1 <br />0,79</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Cs</p></div>
+                        <div class="nombre text-center"><p>Cesio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>56</p></div>
+                        <div class="masaAtomica text-end"><p>137,33</p></div>
+                        <div class="ionizacion"><p>217 3,62 503</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2 <br />0,9</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ba</p></div>
+                        <div class="nombre text-center"><p>Bario</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>57</p></div>
+                        <div class="masaAtomica text-end"><p>138,9</p></div>
+                        <div class="ionizacion"><p>187 6,15 538</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,1</p>
+                        </div>
+                        <div class="simbolo text-center"><p>La</p></div>
+                        <div class="nombre text-center"><p>Lantano</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>72</p></div>
+                        <div class="masaAtomica text-end"><p>178,5</p></div>
+                        <div class="ionizacion"><p>156 13,31 658</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>4 <br />1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Hf</p></div>
+                        <div class="nombre text-center"><p>Hefnio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>73</p></div>
+                        <div class="masaAtomica text-end"><p>180,95</p></div>
+                        <div class="ionizacion"><p>143 16,65 761</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>5 <br />1,5</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ta</p></div>
+                        <div class="nombre text-center"><p>Tantalo</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>74</p></div>
+                        <div class="masaAtomica text-end"><p>183,84</p></div>
+                        <div class="ionizacion"><p>137 19,35 770</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>6,5,4,3,2 1,7</p>
+                        </div>
+                        <div class="simbolo text-center"><p>W</p></div>
+                        <div class="nombre text-center"><p>Volframio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>75</p></div>
+                        <div class="masaAtomica text-end"><p>186,21</p></div>
+                        <div class="ionizacion"><p>137 21,02 760</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>17,6,5,4,3 1,9</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Re</p></div>
+                        <div class="nombre text-center"><p>Renio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>76</p></div>
+                        <div class="masaAtomica text-end"><p>190,23</p></div>
+                        <div class="ionizacion"><p>134 22,61 840</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>8,6,4,3,2 2,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Os</p></div>
+                        <div class="nombre text-center"><p>Osmio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>77</p></div>
+                        <div class="masaAtomica text-end"><p>192,21</p></div>
+                        <div class="ionizacion"><p>136 22,5 878</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>4,3,2,1 2,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ir</p></div>
+                        <div class="nombre text-center"><p>Irdio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>78</p></div>
+                        <div class="masaAtomica text-end"><p>195,08</p></div>
+                        <div class="ionizacion"><p>138 21,46 869</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>22,4 <br />,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Pt</p></div>
+                        <div class="nombre text-center"><p>Platino</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>79</p></div>
+                        <div class="masaAtomica text-end"><p>196,97</p></div>
+                        <div class="ionizacion"><p>144 19,28 890</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,1 <br />2,4</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Au</p></div>
+                        <div class="nombre text-center"><p>Oro</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>80</p></div>
+                        <div class="masaAtomica text-end"><p>200,59</p></div>
+                        <div class="ionizacion"><p>150 13,54 1007</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,1 <br />1,9</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Hg</p></div>
+                        <div class="nombre text-center"><p>Mercurio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>81</p></div>
+                        <div class="masaAtomica text-end"><p>204,38</p></div>
+                        <div class="ionizacion"><p>171 11,85 589</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>1,3 <br />1,8</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ti</p></div>
+                        <div class="nombre text-center"><p>Talio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>82</p></div>
+                        <div class="masaAtomica text-end"><p>207,2</p></div>
+                        <div class="ionizacion"><p>175 11,3 716</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>4,2 <br />1,8</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Pb</p></div>
+                        <div class="nombre text-center"><p>Plomo</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>83</p></div>
+                        <div class="masaAtomica text-end"><p>209,0</p></div>
+                        <div class="ionizacion"><p>170 9,78 703</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,5 <br />2,0</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Bi</p></div>
+                        <div class="nombre text-center"><p>Bismuto</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento semimetal">
+                        <div class="numeroAtomico"><p>84</p></div>
+                        <div class="masaAtomica text-end"><p>209</p></div>
+                        <div class="ionizacion"><p>164 9,20 812</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>±2,4,6 <br />2,0</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Po</p></div>
+                        <div class="nombre text-center"><p>Polonio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetales">
+                        <div class="numeroAtomico"><p>85</p></div>
+                        <div class="masaAtomica text-end"><p>210</p></div>
+                        <div class="ionizacion">
+                          <p>142 <br />--- <br />931</p>
+                        </div>
+                        <div class="electronegatividad text-end">
+                          <p>±1,3,5,7 2,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>At</p></div>
+                        <div class="nombre text-center"><p>Astato</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetal">
+                        <div class="numeroAtomico"><p>86</p></div>
+                        <div class="masaAtomica text-end"><p>222</p></div>
+                        <div class="ionizacion"><p>167 9,73 1037</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>0 <br />2,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Rn</p></div>
+                        <div class="nombre text-center"><p>Radón</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- septimo periodo -->
+    
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>87</p></div>
+                        <div class="masaAtomica text-end"><p>223</p></div>
+                        <div class="ionizacion">
+                          <p>270 <br />--- 398</p>
+                        </div>
+                        <div class="electronegatividad text-end">
+                          <p>1 <br />0,7</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Fr</p></div>
+                        <div class="nombre text-center"><p>Francio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metalesRepresentativos">
+                        <div class="numeroAtomico"><p>88</p></div>
+                        <div class="masaAtomica text-end"><p>226</p></div>
+                        <div class="ionizacion"><p>220 5,5 509</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2 <br />0,9</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ra</p></div>
+                        <div class="nombre text-center"><p>Radio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>89</p></div>
+                        <div class="masaAtomica text-end"><p>227,02</p></div>
+                        <div class="ionizacion"><p>188 10,07 4999</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,1</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ac</p></div>
+                        <div class="nombre text-center"><p>Actinio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>104</p></div>
+                        <div class="masaAtomica text-end"><p>267</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>4 <br />---</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Rf</p></div>
+                        <div class="nombre text-center"><p>Rutherfordio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>105</p></div>
+                        <div class="masaAtomica text-end"><p>262</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Db</p></div>
+                        <div class="nombre text-center"><p>Dubnio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>106</p></div>
+                        <div class="masaAtomica text-end"><p>269</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Sg</p></div>
+                        <div class="nombre text-center"><p>Seaborgio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>107</p></div>
+                        <div class="masaAtomica text-end"><p>264</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Bh</p></div>
+                        <div class="nombre text-center"><p>Bohiro</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>108</p></div>
+                        <div class="masaAtomica text-end"><p>269</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Hs</p></div>
+                        <div class="nombre text-center"><p>Hassio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>109</p></div>
+                        <div class="masaAtomica text-end"><p>278</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Mt</p></div>
+                        <div class="nombre text-center"><p>Meitnerio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>110</p></div>
+                        <div class="masaAtomica text-end"><p>281</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Ds</p></div>
+                        <div class="nombre text-center"><p>Darmstadtio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>111</p></div>
+                        <div class="masaAtomica text-end"><p>282</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Rg</p></div>
+                        <div class="nombre text-center"><p>Roentgenio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento metal">
+                        <div class="numeroAtomico"><p>112</p></div>
+                        <div class="masaAtomica text-end"><p>285</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Cn</p></div>
+                        <div class="nombre text-center"><p>Copernicio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento">
+                        <div class="numeroAtomico"><p>113</p></div>
+                        <div class="masaAtomica text-end"><p>286</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Nh</p></div>
+                        <div class="nombre text-center"><p>Nihonio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento">
+                        <div class="numeroAtomico"><p>114</p></div>
+                        <div class="masaAtomica text-end"><p>289</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Fl</p></div>
+                        <div class="nombre text-center"><p>Flerovio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento">
+                        <div class="numeroAtomico"><p>115</p></div>
+                        <div class="masaAtomica text-end"><p>289</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Mc</p></div>
+                        <div class="nombre text-center"><p>Moscovio</p></div>
+                      </div>
+                    </div>
+    
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento">
+                        <div class="numeroAtomico"><p>116</p></div>
+                        <div class="masaAtomica text-end"><p>293</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Lv</p></div>
+                        <div class="nombre text-center"><p>Livermorio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento">
+                        <div class="numeroAtomico"><p>117</p></div>
+                        <div class="masaAtomica text-end"><p>294</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Ts</p></div>
+                        <div class="nombre text-center"><p>Teneso</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento noMetal">
+                        <div class="numeroAtomico"><p>118</p></div>
+                        <div class="masaAtomica text-end"><p>294</p></div>
+                        <div class="ionizacion"><p>---</p></div>
+                        <div class="electronegatividad text-end"><p>---</p></div>
+                        <div class="simbolo text-center"><p>Or</p></div>
+                        <div class="nombre text-center"><p>Organesón</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <br />
+    
+          <!-- lantanidos -->
+    
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-8 d-flex p-0 m-0"></div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>58</p></div>
+                        <div class="masaAtomica text-end"><p>140,12</p></div>
+                        <div class="ionizacion"><p>183 6,78 535</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,4 <br />1,1</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ce</p></div>
+                        <div class="nombre text-center"><p>Organesón</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>59</p></div>
+                        <div class="masaAtomica text-end"><p>140,9</p></div>
+                        <div class="ionizacion"><p>182 6,77 527</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,4 <br />1,1</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Pr</p></div>
+                        <div class="nombre text-center"><p>Praseodimio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>60</p></div>
+                        <div class="masaAtomica text-end"><p>144,24</p></div>
+                        <div class="ionizacion"><p>182 7,01 533</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,1</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Nd</p></div>
+                        <div class="nombre text-center"><p>Neodimio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>61</p></div>
+                        <div class="masaAtomica text-end"><p>145</p></div>
+                        <div class="ionizacion"><p>181 7,26 536</p></div>
+                        <div class="electronegatividad text-end"><p>1,2</p></div>
+                        <div class="simbolo text-center"><p>Pm</p></div>
+                        <div class="nombre text-center"><p>Prometio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>62</p></div>
+                        <div class="masaAtomica text-end"><p>145</p></div>
+                        <div class="ionizacion"><p>150 7,52 545</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,3 <br />1,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Sm</p></div>
+                        <div class="nombre text-center"><p>Samario</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>63</p></div>
+                        <div class="masaAtomica text-end"><p>151,97</p></div>
+                        <div class="ionizacion"><p>199 5,24 547</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,3 <br />1,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Eu</p></div>
+                        <div class="nombre text-center"><p>Europio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>64</p></div>
+                        <div class="masaAtomica text-end"><p>157,25</p></div>
+                        <div class="ionizacion"><p>173 7,90 593</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Gd</p></div>
+                        <div class="nombre text-center"><p>Gadolinio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>65</p></div>
+                        <div class="masaAtomica text-end"><p>158,93</p></div>
+                        <div class="ionizacion"><p>176 8,25 566</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,4 <br />1,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Tb</p></div>
+                        <div class="nombre text-center"><p>Terbio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>66</p></div>
+                        <div class="masaAtomica text-end"><p>162,50</p></div>
+                        <div class="ionizacion"><p>175 8,55 573</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Dy</p></div>
+                        <div class="nombre text-center"><p>Disprosio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>67</p></div>
+                        <div class="masaAtomica text-end"><p>164,93</p></div>
+                        <div class="ionizacion"><p>174 8,80 581</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Ho</p></div>
+                        <div class="nombre text-center"><p>Holmio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>68</p></div>
+                        <div class="masaAtomica text-end"><p>167,26</p></div>
+                        <div class="ionizacion"><p>173 9,07 589</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Er</p></div>
+                        <div class="nombre text-center"><p>Erbio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>69</p></div>
+                        <div class="masaAtomica text-end"><p>168,93</p></div>
+                        <div class="ionizacion"><p>175 9,32 597</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,3 <br />1,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Tm</p></div>
+                        <div class="nombre text-center"><p>Tulio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>70</p></div>
+                        <div class="masaAtomica text-end"><p>173,04</p></div>
+                        <div class="ionizacion"><p>194 6,90 604</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,3 <br />1,2</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Yb</p></div>
+                        <div class="nombre text-center"><p>Iterbio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento lantanidos">
+                        <div class="numeroAtomico"><p>71</p></div>
+                        <div class="masaAtomica text-end"><p>172,97</p></div>
+                        <div class="ionizacion"><p>172 9,84 524</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,0</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Lu</p></div>
+                        <div class="nombre text-center"><p>Lutecio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- actinidos -->
+    
+          <div class="row">
+            <div class="col-12">
+              <div class="row">
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-8 d-flex p-0 m-0"></div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>90</p></div>
+                        <div class="masaAtomica text-end"><p>232,04</p></div>
+                        <div class="ionizacion"><p>18 11,72 588</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>4 <br />1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Th</p></div>
+                        <div class="nombre text-center"><p>Torio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>91</p></div>
+                        <div class="masaAtomica text-end"><p>231</p></div>
+                        <div class="ionizacion"><p>161 15,37 563</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>4,54 <br />1,5</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Pa</p></div>
+                        <div class="nombre text-center"><p>Protactinio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>92</p></div>
+                        <div class="masaAtomica text-end"><p>248,03</p></div>
+                        <div class="ionizacion"><p>153 18,95 598</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,4,5,6 1,7</p>
+                        </div>
+                        <div class="simbolo text-center"><p>U</p></div>
+                        <div class="nombre text-center"><p>Uranio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>93</p></div>
+                        <div class="masaAtomica text-end"><p>237</p></div>
+                        <div class="ionizacion"><p>131 20,25 605</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,4,5,6 v</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Np</p></div>
+                        <div class="nombre text-center"><p>Neptunio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>94</p></div>
+                        <div class="masaAtomica text-end"><p>140,12</p></div>
+                        <div class="ionizacion"><p>151 19,84 585</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,4,5,6 1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Pu</p></div>
+                        <div class="nombre text-center"><p>Plutonio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>95</p></div>
+                        <div class="masaAtomica text-end"><p>243</p></div>
+                        <div class="ionizacion"><p>173 13,67 578</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,4,5,6 1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Am</p></div>
+                        <div class="nombre text-center"><p>Americio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>96</p></div>
+                        <div class="masaAtomica text-end"><p>247</p></div>
+                        <div class="ionizacion"><p>--- 13,5 581</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,4 <br />1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Cm</p></div>
+                        <div class="nombre text-center"><p>Curio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>97</p></div>
+                        <div class="masaAtomica text-end"><p>247</p></div>
+                        <div class="ionizacion"><p>--- 14,8 601</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,4 <br />1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Bk</p></div>
+                        <div class="nombre text-center"><p>Berkelio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <div class="row">
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>98</p></div>
+                        <div class="masaAtomica text-end"><p>251</p></div>
+                        <div class="ionizacion"><p>--- 15,1 608</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3,4 <br />1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Cf</p></div>
+                        <div class="nombre text-center"><p>Californio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>99</p></div>
+                        <div class="masaAtomica text-end"><p>252</p></div>
+                        <div class="ionizacion"><p>--- --- 642</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Es</p></div>
+                        <div class="nombre text-center"><p>Einstenio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>100</p></div>
+                        <div class="masaAtomica text-end"><p>257</p></div>
+                        <div class="ionizacion"><p>--- --- 627</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Fm</p></div>
+                        <div class="nombre text-center"><p>Fermio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>101</p></div>
+                        <div class="masaAtomica text-end"><p>258</p></div>
+                        <div class="ionizacion"><p>--- --- 635</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>3 <br />1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>Md</p></div>
+                        <div class="nombre text-center"><p>Mendelevio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>102</p></div>
+                        <div class="masaAtomica text-end"><p>259</p></div>
+                        <div class="ionizacion"><p>--- --- 642</p></div>
+                        <div class="electronegatividad text-end">
+                          <p>2,3 <br />1,3</p>
+                        </div>
+                        <div class="simbolo text-center"><p>No</p></div>
+                        <div class="nombre text-center"><p>Nobelio</p></div>
+                      </div>
+                    </div>
+                    <div class="col-2 d-flex p-0 m-0">
+                      <div class="elemento actinidos">
+                        <div class="numeroAtomico"><p>103</p></div>
+                        <div class="masaAtomica text-end"><p>262</p></div>
+                        <div class="ionizacion"><p>1627 --- 473</p></div>
+                        <div class="electronegatividad text-end"><p>3</p></div>
+                        <div class="simbolo text-center"><p>Lr</p></div>
+                        <div class="nombre text-center"><p>Laurencio</p></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+    </div>
+  </body>
+</html>

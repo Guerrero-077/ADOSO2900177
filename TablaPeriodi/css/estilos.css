@@ -1,0 +1,97 @@
+
+.arriba{
+    /* float: center; */
+    width: 1100px; 
+    margin-top: 60px;
+}
+/* 
+.periodo{
+    float: center;
+    width: 1400px;
+    height: 80px;
+} */
+.elemento{
+    width: 75px;
+    height: 75px;
+
+    display: block;
+    margin: 1px;
+    border: 1px solid #000;
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 20px 33px 23px;
+
+    overflow: hidden;
+}
+.vacio{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+
+}
+.nombre{
+    grid-column: 1/4;
+    font-size: 12px;
+    text-align: center;
+}
+.numeroAtomico{
+    font-size: 13px;
+}
+.masaAtomica{
+    font-size: 11px;
+    text-align: end;
+}
+.simbolo{
+    grid-column: 1/3;
+    font-size: 28px;
+    text-align: center;
+
+    
+}
+.celda:hover{
+    transform: scale(1.5);
+    z-index: 1;
+}   
+
+
+.s{
+    color: rgb(30, 10, 209);
+}
+.m{
+    color: rgb(221, 11, 11);
+}
+.elemen{
+    margin-right: 10px;
+}
+html {height: 180%;}body {background-image: linear-gradient(to bottom right, #aeccea, #5fa0cf, #e0cece, rgb(167, 25, 112));}
+
+.noMetales{
+    background-color:#15bc15 ;
+    
+}
+.metales{
+    background-color:#0099FF ;
+}
+.noMetal{
+    background-color:#009900  ;
+}
+.semiMental{
+    background-color:#CC0033;
+}
+.metal{
+    background-color:#CC66FF ;
+}
+.lantanidos{
+    background-color:#FF99FF ;
+}
+.actinidos{
+    background-color:#FFCCFF;
+}
+.grupo{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 55px;
+}

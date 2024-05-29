@@ -1,0 +1,90 @@
+
+.arriba{
+    float: center;
+    width: 1200px; 
+    margin-top: 60px;
+}
+
+.periodo{
+    float: center;
+    width: 1400px;
+    height: 80px;
+}
+.elemento{
+    float: center;
+    display: flex;
+    flex-wrap: wrap;
+    border: 2px solid rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+.vacio{
+    float: left;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50px;
+
+}
+.nombre{
+    margin: 9px 15px 0px 0px;
+    font-size: 12px;
+    width: inherit;
+    /*word-break:break-all;*/
+    justify-content: center;
+    margin-left : -10px;
+}
+.simbolo{
+    margin: 13px 10px 1px 10px;
+    font-size: 25px;
+    overflow: hidden; 
+    
+}
+.celda:hover{
+    transform: scale(1.5);
+    z-index: 1;
+}   
+span{
+    font-size: 10.7px;
+    text-align: center;
+    display: inline;
+    margin-right: 4px;
+}
+
+.s{
+    color: rgb(30, 10, 209);
+}
+.m{
+    color: rgb(221, 11, 11);
+}
+.elemen{
+    margin-right: 10px;
+}
+html {height: 180%;}body {background-image: linear-gradient(to bottom right, #aeccea, #5fa0cf, #e0cece, rgb(167, 25, 112));}
+
+.noMetales{
+    background-color:#15bc15 ;
+    
+}
+.metales{
+    background-color:#0099FF ;
+}
+.noMetal{
+    background-color:#009900  ;
+}
+.semiMental{
+    background-color:#CC0033;
+}
+.metal{
+    background-color:#CC66FF ;
+}
+.lantanidos{
+    background-color:#FF99FF ;
+}
+.actinidos{
+    background-color:#FFCCFF;
+}
+.grupo{
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 55px;
+}
