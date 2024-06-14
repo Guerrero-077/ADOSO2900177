@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+
+</head>
+<body>
+    <h1>Arrastra donde corresponda</h1>
+
+       <div class="container text-center justify-content-center">
+        <div class="dato" draggable="true" ondragstart="drag(event)" id="uno">1</div>
+        <div class="dato" draggable="true" ondragstart="drag(event)" id="dos">2</div>
+        <div class="dato" draggable="true" ondragstart="drag(event)" id="tres">3</div>
+
+        
+        
+    </div>
+
+
+    <div class="container mt-5 text-center">
+        <div class="figuras" id="0" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="removeImage(event, this)"></div>
+        <div class="figuras" id="1" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="removeImage(event, this)"></div>
+        <div class="figuras" id="2" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="removeImage(event, this)"></div>
+    </div>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
