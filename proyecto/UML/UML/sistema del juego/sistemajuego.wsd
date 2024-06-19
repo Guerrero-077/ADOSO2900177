@@ -1,0 +1,92 @@
+@startuml JuegoCompleto
+
+' Actores
+participant Jugador
+participant Sistema
+participant BaseDatos
+participant ServidorCorreo
+participant Emparejador
+participant RankingGlobal
+participant SalaEspera
+participant SalaPrivada
+participant Mecanica
+participant Recompensas
+participant Temporada
+participant SistemaRangos
+
+' Registro y Autenticación
+Jugador -> Sistema: Registro / Iniciar Sesión
+activate Sistema
+Sistema -> BaseDatos: Verificar credenciales / Almacenar usuario
+activate BaseDatos
+BaseDatos --> Sistema: Resultado de verificación / Almacenamiento
+deactivate BaseDatos
+
+Sistema -> BaseDatos: Verificar dirección de correo
+BaseDatos --> Sistema: Dirección de correo electrónico
+deactivate BaseDatos
+
+Sistema -> Sistema: Generar código de verificación
+Sistema -> ServidorCorreo: Enviar correo de verificación
+deactivate Sistema
+activate ServidorCorreo
+ServidorCorreo --> Jugador: Correo con código de verificación
+deactivate ServidorCorreo
+Jugador -> Sistema: Ingresar código de verificación
+activate Sistema
+Sistema --> Jugador: Confirmación de verificación
+deactivate Sistema
+
+' Juego en Línea
+Jugador -> Sistema: Iniciar Juego / Unirse a Partida
+activate Sistema
+Sistema -> SalaEspera: Unirse a Sala de Espera
+activate SalaEspera
+SalaEspera --> Sistema: Jugadores en espera / Unión confirmada
+deactivate SalaEspera
+
+Sistema -> Emparejador: Solicitar emparejamiento
+activate Emparejador
+Emparejador --> Sistema: Jugadores emparejados
+deactivate Emparejador
+
+Sistema -> SalaEspera / SalaPrivada: Notificar emparejamiento / Comenzar partida
+deactivate SalaEspera
+deactivate SalaPrivada
+
+Sistema -> Mecanica: Iniciar partida / Procesar juego
+activate Mecanica
+Mecanica -> Mecanica: Ejecutar mecánica del juego
+Mecanica --> Sistema: Resultados del juego
+deactivate Mecanica
+
+Sistema -> Sistema: Actualizar puntuación / Rangos / Temporada
+Sistema -> RankingGlobal: Actualizar puntuación global
+activate RankingGlobal
+RankingGlobal --> Sistema: Confirmación de actualización
+deactivate RankingGlobal
+
+Sistema -> Temporada: Actualizar puntuación de temporada
+activate Temporada
+Temporada --> Sistema: Confirmación de actualización
+deactivate Temporada
+
+' Sistema de Rangos y Recompensas
+Jugador -> Sistema: Ver Rango / Recompensas
+Sistema -> SistemaRangos: Consultar rango
+activate SistemaRangos
+SistemaRangos --> Sistema: Rango del jugador
+deactivate SistemaRangos
+
+Sistema -> Recompensas: Consultar recompensas
+activate Recompensas
+Recompensas --> Sistema: Lista de recompensas
+deactivate Recompensas
+
+' Cerrar Sesión / Olvidar Contraseña
+Jugador -> Sistema: Cerrar Sesión / Olvidé mi Contraseña
+activate Sistema
+Sistema --> Jugador: Sesión cerrada / Instrucciones de recuperación
+deactivate Sistema
+
+@enduml

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operar</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <!-- estilos globales -->
+  
+  <link rel="stylesheet" href="../../styleGlobal/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../../styleGlobal/bootstrap/css/bootstrap.css">
+
+
+</head>
+
+<body>
+
+  <div class="container mt-5">
+
+
+    <div class="col-10 row forma">
+
+      <div class="formulario col-6">
+        <form class="row g-3 needs-validation" novalidate onsubmit="return operaciones()">
+          <div class="col-md-8">
+            <label for="txtNumUno" class="form-label">First number</label>
+            <input type="number" class="form-control" id="txtNumUno" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="col-md-8">
+            <label for="txtNumDos" class="form-label">Second number</label>
+            <input type="number" class="form-control" id="txtNumDos" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit"><i class="fa-solid fa-paper-plane"></i> Enviar</button>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="col-4 respuesta ">
+        <div id="saludo"></div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/operaciones.js"></script>
+
+
+
+
+</body>
+
+</html>

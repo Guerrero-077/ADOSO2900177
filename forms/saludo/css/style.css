@@ -1,0 +1,23 @@
+/* 
+fecha 17/06/2024
+saludo <- "Hola mundo"
+autor: Santiago GM
+*/
+
+.forma{
+    width: 1050px;
+    margin-top: 90px;
+}
+
+.formulario{
+    border: 1px solid #000;
+}
+.respuesta{
+    border: 1px solid #000;
+}
+.formulario, .respuesta{
+    margin-left: 10px;
+    border-radius: 6px;
+    padding: 30px;
+    color: blue;
+}
