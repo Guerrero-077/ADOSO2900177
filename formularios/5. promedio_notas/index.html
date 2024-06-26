@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Porcenaje de un número</title>
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- estilos globales -->
+  <link rel="stylesheet" href="../../styleGlobal/fontawesome/css/all.css">
+  <link rel="stylesheet" href="../../styleGlobal/bootstrap/css/bootstrap.css">
+  
+
+
+</head>
+
+<body>
+
+  <div class="container mt-5">
+
+
+    <div class="row forma justify-content-center">
+
+      
+      <div class="formulario col-6">
+        <form class="row g-3 needs-validation" novalidate onsubmit="return calculaPorcentaje()">
+          <div class="col-md-8">
+            <label for="txtSaludo" class="form-label">Digite un número: </label>
+            <input type="number" class="form-control" id="txtSaludo" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+
+          <div class="col-12 ">
+            <button class="btn btn-primary " type="submit" ><i class="fa-solid fa-paper-plane" ></i> Enviar</button>
+          </div>
+        </form>
+
+      </div>
+
+      <div class="col-4 respuesta">
+        <div id="saludo"></div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+  <script src="../../styleGlobal/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/porcentaje.js"></script>
+
+  
+
+
+</body>
+
+</html>

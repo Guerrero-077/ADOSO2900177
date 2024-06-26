@@ -1,0 +1,51 @@
+/* 
+fecha 17/06/2024
+saludo <- "Hola mundo"
+autor: Santiago GM
+*/
+html {
+    height: 100%;
+  }
+  
+ body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+.user-box input{
+    color: #fff;
+    border: none;
+    outline: none;
+    background: transparent;
+    border-bottom: 1px solid #fff;
+
+}
+
+.user-box label{
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+/* .forma{
+    margin-top: 90px;
+} */
+
+.formulario{
+    border: 1px solid #000;
+}
+.respuesta{
+    border: 1px solid #000;
+    color: #fff;
+
+}
+.formulario, .respuesta{
+    /* margin-left: 10px; */
+    border-radius: 6px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.6);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+
+}

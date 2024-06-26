@@ -18,7 +18,6 @@ function operaciones(){
     let rMultiplicacion
     let rDivision
 
-
     suma = numUno + numDos
     resta = numUno - numDos
     multiplicacion = numUno * numDos
@@ -28,7 +27,6 @@ function operaciones(){
     rResta = `resta: ${resta} <br>` 
     rMultiplicacion = `multiplcacion: ${multiplicacion} <br>` 
     rDivision = `division: ${division} <br>` 
-
     document.getElementById("saludo").innerHTML = rSuma + rResta + rMultiplicacion + rDivision
 
     return false
