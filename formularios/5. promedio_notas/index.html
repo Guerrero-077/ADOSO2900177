@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Porcenaje de un número</title>
+  <title>promedio de las notas</title>
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -18,23 +18,37 @@
 
 <body>
 
-  <div class="container mt-5">
+  <div class="container mt-5 mb-5">
 
 
-    <div class="row forma justify-content-center">
+    <div class="row forma">
 
       
       <div class="formulario col-6">
-        <form class="row g-3 needs-validation" novalidate onsubmit="return calculaPorcentaje()">
-          <div class="col-md-8">
-            <label for="txtSaludo" class="form-label">Digite un número: </label>
-            <input type="number" class="form-control" id="txtSaludo" value="" required>
+        <form class="row g-3 needs-validation justify-content-center" novalidate onsubmit="return calcularProm()">
+          <div class="col-md-8 user-box">
+            <label for="NumUno" class="form-label">Digite su primera nota: </label>
+            <input type="number" step="any" class="form-control" id="NumUno" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-8 user-box">
+            <label for="NumDos" class="form-label">Digite su segunda nota: </label>
+            <input type="number" step="any" class="form-control" id="NumDos" value="" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="col-md-8 user-box">
+            <label for="NumTres" class="form-label">Digite su tercera nota: </label>
+            <input type="number" step="any" class="form-control" id="NumTres" value="" required>
             <div class="valid-feedback">
               Looks good!
             </div>
           </div>
 
-          <div class="col-12 ">
+          <div class="col-12 text-center">
             <button class="btn btn-primary " type="submit" ><i class="fa-solid fa-paper-plane" ></i> Enviar</button>
           </div>
         </form>
@@ -53,7 +67,7 @@
 
   <script src="../../styleGlobal/bootstrap/js/bootstrap.bundle.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/porcentaje.js"></script>
+  <script src="js/promedio.js"></script>
 
   
 

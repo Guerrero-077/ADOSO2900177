@@ -3,49 +3,67 @@ fecha 17/06/2024
 saludo <- "Hola mundo"
 autor: Santiago GM
 */
-html {
-    height: 100%;
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/fondo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   
- body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(#141e30, #243b55);
-}
-.user-box input{
+  /* Estilos para formularios */
+  .user-box input {
     color: #fff;
     border: none;
     outline: none;
     background: transparent;
     border-bottom: 1px solid #fff;
-
-}
-
-.user-box label{
+  }
+  
+  .user-box label {
     color: #fff;
     pointer-events: none;
-    transition: 0.5s;
-}
-/* .forma{
-    margin-top: 90px;
-} */
-
-.formulario{
-    border: 1px solid #000;
-}
-.respuesta{
-    border: 1px solid #000;
-    color: #fff;
-
-}
-.formulario, .respuesta{
-    /* margin-left: 10px; */
-    border-radius: 6px;
-    padding: 30px;
-    background: rgba(0, 0, 0, 0.6);
-    box-sizing: border-box;
-    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Estilos para el botón */
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+  }
+  
+  .respuesta {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
     border-radius: 10px;
+    margin-top: 20px;
+    color: #fff;
+    max-height: 400px;
+    overflow-y: auto; /* Agregar desplazamiento vertical*/
+  }
+  
+  
+  .forma {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    padding: 20px;
 
-}
+    border-radius: 10px;
+    background: rgba(31, 50, 74, 0.7); 
+    border: 2px solid rgba(255, 255, 255, 0.3); 
+  }
+  
+
+  
+  .formulario,
+  .respuesta {
+    margin-top: 20px; /* Espacio entre los formularios y la respuesta */
+  }
+  
