@@ -21,9 +21,9 @@ function datos() {
       
       Su salario Bruto es: $${sueldo(diaT,valorD)} <br>
       Sus deducibles son: <br>
-      El porcentaje salud es: ${salud(sueldo(diaT,valorD))}% <br>
-      El porcentaje de pensión es: ${pension(sueldo(diaT,valorD))}% <br>
-      El porcentaje de ARL es: ${arl(sueldo(diaT,valorD))}% <br>
+      El porcentaje salud es: ${salud(sueldo(diaT,valorD))} <br>
+      El porcentaje de pensión es: ${pension(sueldo(diaT,valorD))} <br>
+      El porcentaje de ARL es: ${arl(sueldo(diaT,valorD))} <br>
       El pago Neto será de: $${pagoTotal(sueldo(diaT,valorD))}
       
       </p>

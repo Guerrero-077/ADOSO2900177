@@ -17,9 +17,9 @@ function datos() {
       <h1>Salario</h1>
       <p>
           Su salario Bruto es de: $${sueldo(diasT,valorD)} <br>
-          El porcenta de Salud es de: ${salud(sueldo(diasT,valorD))}% <br>
-          El porcenta de  Pensión es de: ${pension(sueldo(diasT,valorD))}% <br>
-          El porcenta de ARL es de: ${arl(sueldo(diasT,valorD))}% <br>
+          El porcenta de Salud es de: ${salud(sueldo(diasT,valorD))} <br>
+          El porcenta de  Pensión es de: ${pension(sueldo(diasT,valorD))} <br>
+          El porcenta de ARL es de: ${arl(sueldo(diasT,valorD))} <br>
           El subsidio de trasporte es de: $${subTras(sueldo(diasT,valorD))} <br>
           La retencion es de:  ${reten(sueldo(diasT,valorD)) }<br>
           Su salario Neto será de: ${pagoT(sueldo(diasT,valorD))}
@@ -79,7 +79,6 @@ function pagoT(pago) {
   let saludE = salud(pago);
   let pensionE = pension(pago);
   let arlE = arl(pago);
-
   let retencion = reten(pago);
   let subTrasporte = subTras(pago);
 

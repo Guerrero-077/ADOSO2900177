@@ -6,9 +6,9 @@ autor: Santiago GM
 
 function calculaPorcentaje(){
     
-    let notaUno = parseFloat(document.getElementById("NumUno").value)
-    let notaDos = parseFloat(document.getElementById("NumDos").value) 
-    let notaTres = parseFloat(document.getElementById("NumTres").value) 
+    let notaUno = parseFloat(document.getElementById("NumUno").value.replace(/[,\.]/g, ''))
+    let notaDos = parseFloat(document.getElementById("NumDos").value.replace(/[,\.]/g, '')) 
+    let notaTres = parseFloat(document.getElementById("NumTres").value.replace(/[,\.]/g, '')) 
 
     
     if (notaUno && notaDos && notaTres) {
@@ -39,11 +39,11 @@ function validar(suma) {
     let pantalla = ''
 
 
-    if (suma > 4.5) {
+    if (suma > 45) {
       pantalla = "La calificación es Superior " + suma;
-    } else if (suma <= 4.5 && suma > 3.5) {
+    } else if (suma <= 45 && suma > 35) {
       pantalla = "La calificaciom es Buena " + suma;
-    } else if (suma >= 3 && suma <= 3.5) {
+    } else if (suma >= 30 && suma <= 35) {
       pantalla ="La calificacion es Media " + suma;
     } else {
       pantalla ="la calificacion es Mala" + suma;
