@@ -4,7 +4,7 @@ funcion saludo
 autor: Santiago GM
 */
 
-function calcularProm() {
+function numMayor() {
 
     let numUno = parseFloat(document.getElementById("NumUno").value)
     let numDos = parseFloat(document.getElementById("NumDos").value)
@@ -20,18 +20,12 @@ function calcularProm() {
             pantalla = "El número uno es mayor: " + numUno
         }else{
             pantalla = "El número dos es mayor: " + numDos
-            
         }
 
         document.getElementById("pantalla").innerHTML = 
         `
             <h4>${pantalla}</h4>
-        `
-
-
-
-
-
+        `;
 
     } else {
         document.getElementById("pantalla").innerHTML = `<strong>Todos los campos deben estar llenos </strong>`

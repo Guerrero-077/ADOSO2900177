@@ -15,7 +15,8 @@ function contar(){
     
         while (contador < numero) {
             contador = contador + 1;
-            resultado +=  contador + "<br>"; 
+
+            resultado +=`${contador} <br>` 
         }
         document.getElementById("pantalla").innerHTML= `<strong>${resultado}</strong>`
     } else {

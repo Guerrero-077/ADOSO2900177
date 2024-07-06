@@ -8,7 +8,6 @@ function datos() {
     let opcion = document.getElementById("opcion").value;
     let campos = document.getElementById("campos");
 
-
     if (opcion == "cuadrado") {
         campos.innerHTML = `
         <div class="row justify-content-center">
@@ -65,41 +64,34 @@ function datos() {
 
 
 
-function areasCuadrado(plado){
-    let lado = plado
+function areasCuadrado(lado){
     let areaCu; //area Cuadrado
     
     areaCu = lado*lado;
     return areaCu;
     
 }
-function areaRectangulo(pbaseRe,palturaRe){
+
+function areaRectangulo(baseRe,alturaRe){
     
-    let baseRe;      //basa rectangulo
-    let alturaRe;    //altura rectangulo
     let areaRe;      //area Rectangulo
     
-    baseRe = pbaseRe;
-    alturaRe = palturaRe;
     
     areaRe = baseRe * alturaRe;
     return areaRe;
 }
 
-function areaTriangulo(pbaseTri,palturaTri){
+function areaTriangulo(baseTri, alturaTri){
     
-    let baseTri;     //base Triangulo 
-    let alturaTri;    //altura Triangulo 
     let areaTri;     //area Triangulo
-    baseTri = pbaseTri;
-    alturaTri = palturaTri;
+    
     areaTri = (baseTri * alturaTri)/2
     return areaTri;
 }
 
 function calcularArea() {
     var opcion = document.getElementById("opcion").value;
-    var resultado = document.getElementById("saludo");
+    var resultado = document.getElementById("pantalla");
     let  area;
 
     if (opcion === "cuadrado") {

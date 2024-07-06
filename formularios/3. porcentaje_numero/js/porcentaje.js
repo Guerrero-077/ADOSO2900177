@@ -1,21 +1,21 @@
 /* 
 fecha 17/06/2024
-funcion saludo 
+funcion calcular el porcentaje de un número
 autor: Santiago GM
 */
 
 function calculaPorcentaje(){
     
-    let porcentaje = parseFloat(document.getElementById("txtSaludo").value) 
+    let numero = parseFloat(document.getElementById("numero").value) 
 
-    if (porcentaje) {
-        let pPorcentaje 
+    if (numero) {
+        let porcentaje 
     
-        pPorcentaje = porcentaje / 100
-        document.getElementById("saludo").innerHTML= `<strong> El porcentaje de su número es: ${pPorcentaje}% </strong>`
+        porcentaje = numero / 100
+        document.getElementById("pantalla").innerHTML= `<strong> El porcentaje de ${numero} es: ${porcentaje}% </strong>`
         
     } else {
-        document.getElementById("saludo").innerHTML= `<strong>Todos los campos deben estar llenos</strong>`
+        document.getElementById("pantalla").innerHTML= `<strong>Todos los campos deben estar llenos</strong>`
         
     }
 

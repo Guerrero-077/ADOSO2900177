@@ -1,39 +1,37 @@
 /* 
 fecha 17/06/2024
-funcion saludo 
+funcion calcular promedio
 autor: Santiago GM
 */
 
 function calcularProm() {
 
-    let notaUno = parseFloat(document.getElementById("NumUno").value)
-    let notaDos = parseFloat(document.getElementById("NumDos").value)
-    let notaTres = parseFloat(document.getElementById("NumTres").value)
+    let notaUno = parseFloat(document.getElementById("notaUno").value)
+    let notaDos = parseFloat(document.getElementById("notaDos").value)
+    let notaTres = parseFloat(document.getElementById("notaTres").value)
 
     if (notaUno && notaDos && notaTres) {
 
-        let nota1
-        let nota2
-        let nota3
+        let promedioUno = notaUno * 0.3
+        let promedioDos = notaDos * 0.3 
+        let promedioTres = notaTres * 0.4
 
-        nota1 = notaUno * 0.3
-        nota2 = notaDos * 0.3
-        nota3 = notaDos * 0.4
+        let sumar
 
-        let suma
+        sumar = promedioUno + promedioDos + promedioTres
 
-        suma = nota1 + nota2 + nota3
-        document.getElementById("saludo").innerHTML = `<strong> 
-        Datos: <br> la primera nota es: ${notaUno} su porcentaje es: ${nota1}% <br>  
-        la segunda nota es: ${notaDos} su porcentaje es: ${nota2}% <br>
-        la tercera nota es: ${notaTres} su porcentje es:  ${nota3}% <br>
-        la suma es: ${suma}</strong>`
+        document.getElementById("pantalla").innerHTML = `
+            <strong>
+                Datos: <br>
+                Primera nota: ${notaUno}, su porcentaje es: ${promedioUno.toFixed(1)}% <br>
+                Segunda nota: ${notaDos}, su porcentaje es: ${promedioDos.toFixed(1)}% <br>
+                Tercera nota: ${notaTres}, su porcentaje es: ${promedioTres.toFixed(1)}% <br>
+                Su promedio ea: ${sumar.toFixed(2)}
+            </strong>`;
 
     } else {
-        document.getElementById("saludo").innerHTML = `<strong>Todos los campos deben esta llenos </strong>`
+        document.getElementById("panatlla").innerHTML = `<strong>Todos los campos deben esta llenos </strong>`
 
     }
-
-
     return false
 }

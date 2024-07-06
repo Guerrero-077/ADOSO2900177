@@ -24,20 +24,13 @@ function tablasM(){
         document.getElementById("pantalla").innerHTML= 
         `
             <strong>
-                <h4>Tabla</h4>
+                <h4>Tabla del ${tablas}</h4>
                 ${msg}
-            </strong>
-        `
+            </strong> `
         
     } else {
-        document.getElementById("pantalla").innerHTML= `<strong>Todos los campos deben estar llenos</strong>`
-                
+        document.getElementById("pantalla").innerHTML= `<strong>Todos los campos deben estar llenos</strong>`             
     }
 
     return false
 }
-
-document.getElementById("operaciones").innerHTML= 
-`
-    <strong>Edad uno: ${pantalla}</strong>
-`

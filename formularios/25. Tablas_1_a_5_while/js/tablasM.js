@@ -32,9 +32,7 @@ function tablasM() {
     <p>
       Número de pares: ${par}<br>
       Número de impares: ${impar}
-    </p>
-  
-  `;
+    </p>`;
   par = 0;
   impar = 0;
 
@@ -42,11 +40,15 @@ function tablasM() {
 }
 
 function validar(resultado) {
+
+  let msg = ''
+  
   if (resultado % 2 == 0) {
     par++;
-    return " Buzz <br>";
+    msg =  " Buzz <br>";
   } else {
     impar++;
-    return " Bass <br>";
+    msg = " Bass <br>";
   }
+  return msg
 }

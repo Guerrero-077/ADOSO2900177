@@ -23,7 +23,7 @@ function tablasM(){
             document.getElementById("pantalla").innerHTML= 
             `
                 <strong>
-                    Tablas<br>
+                    Tablas ${tablas}<br>
                     ${msg}
                 </strong>
             `
@@ -33,18 +33,17 @@ function tablasM(){
         
     }
 
-
-
-
-
-
     return false
 }
+
 function validar(resultado){
+    let msg = ''
+
     if(resultado %2==0){
 
-       return "par <br>";
+       msg = "par <br>";
     }else{
-       return "impar <br>"
+       msg = "impar <br>"
     }
+    return msg
 }

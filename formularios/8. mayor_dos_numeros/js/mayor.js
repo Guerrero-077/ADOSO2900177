@@ -4,7 +4,7 @@ funcion saludo
 autor: Santiago GM
 */
 
-function calcularProm() {
+function numMayor() {
 
     let numUno = parseFloat(document.getElementById("NumUno").value)
     let numDos = parseFloat(document.getElementById("NumDos").value)

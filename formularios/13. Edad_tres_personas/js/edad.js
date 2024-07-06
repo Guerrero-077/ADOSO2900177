@@ -48,10 +48,14 @@ function calcular(fechas) {
 
   return edad;
 }
+
 function validar(edad) {
+  let pantalla = ''
+
   if (edad >= 18) {
-    return `${edad} Es mayor de edad <br>`;
+    pantalla = `${edad} Es mayor de edad <br>`;
   } else {
-    return `${edad} años. Es menor de edad <br>`;
+    pantalla = `${edad} años. Es menor de edad <br>`;
   }
+  return pantalla
 }

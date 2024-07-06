@@ -23,10 +23,10 @@ function operaciones(){
     multiplicacion = numUno * numDos
     division = numUno / numDos
 
-    rSuma = `suma: ${suma} <br>` 
-    rResta = `resta: ${resta} <br>` 
-    rMultiplicacion = `multiplcacion: ${multiplicacion} <br>` 
-    rDivision = `division: ${division} <br>` 
+    rSuma = `El resultado de sumar ${numUno} y ${numDos} es: ${suma} <br>` 
+    rResta = `El resultado de restar ${numUno} y ${numDos} es: ${resta} <br>` 
+    rMultiplicacion = `El resultado de multiplicar ${numUno} y ${numDos} es: ${multiplicacion} <br>` 
+    rDivision = `El resultado de dividir ${numUno} y ${numDos} es: ${division} <br>` 
     document.getElementById("saludo").innerHTML = rSuma + rResta + rMultiplicacion + rDivision
 
     return false

@@ -1,13 +1,13 @@
-/*
-salario
-autor: Juan M. Gutierrez
-fecha: 24 de junio de 2024
+/* 
+fecha 17/06/2024
+funcion saludo 
+autor: Santiago GM
 */
-const salarioM = 1300000;
+
 function datos() {
 
   let diasT = parseInt(document.getElementById('diaT').value)
-  let valorD = parseFloat(document.getElementById('valorD').value)
+  let valorD = parseFloat(document.getElementById('valorD').value.replace(/[,\.]/g, ''))
   let pantalla = document.getElementById('pantalla')
 
   if (diasT && valorD ) {
@@ -72,17 +72,20 @@ function reten(pago) {
   }
   return retencion;
 }
+
+
 function pagoT(pago) {
-  let salario = pago;
+  
   let saludE = salud(pago);
   let pensionE = pension(pago);
   let arlE = arl(pago);
 
   let retencion = reten(pago);
   let subTrasporte = subTras(pago);
+
   let descuento = saludE + pensionE + arlE;
 
-  let totalSalario = salario + subTrasporte - (retencion + descuento);
+  let totalSalario = pago + subTrasporte - (retencion + descuento);
 
   return totalSalario;
 }

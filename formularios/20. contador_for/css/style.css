@@ -67,3 +67,6 @@ body {
     margin-top: 20px; /* Espacio entre los formularios y la respuesta */
   }
   
+  #pantalla{
+    text-align: center;
+  }

@@ -6,8 +6,7 @@ autor: Santiago GM
 
 function tablasM(){
     
-    let tablas = parseInt(document.getElementById("tablas").value) 
-
+  let tablas = parseInt(document.getElementById("tablas").value) 
     let contador = 0;
     let resultado
     let msg = ''
@@ -34,12 +33,14 @@ function tablasM(){
 
 function validar(resultado){
 
-
+  let msg = ''
     if(resultado%2==0){
-     return "El resultado es  par <br>";
+     msg = "El resultado es  par <br>";
         
     }else{
-     return"El resultado es impar <br>";
+     msg = "El resultado es impar <br>";
     }
+
+    return msg
    
 }

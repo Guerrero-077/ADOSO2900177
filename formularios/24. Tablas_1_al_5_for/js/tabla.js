@@ -6,7 +6,6 @@ autor: Santiago GM
 
 let par = 0;
 let impar = 0;
-let resultado;
 
 function tablasM() {
   let tablas = document.getElementById("tablas").value;
