@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promedio de tres notas</title>
+    <script src="js/promedio.js"></script>
+</head>
+<body>
+    <script>
+        let nota1 = calcularPromExp(5.0,0.3);
+        let nota2 = calcularPromExp(3.0,0.3);
+        let nota3 = calcularPromExp(4.0,0.4);
+        let suma;
+
+        console.log("El porcentaje de la nota 1 como Expresión es: " + nota1 + "%");
+        console.log("El porcentaje de la nota 2 como Expresión es: " + nota2 + "%");
+        console.log("El porcentaje de la nota 3 como Expresión es: " + nota3 + "%");
+        
+        suma = (nota1 + nota2 + nota3);
+        console.log("La suma del porcentaje de sus notas es de: "+suma + "%");
+    </script>
+</body>
+</html>

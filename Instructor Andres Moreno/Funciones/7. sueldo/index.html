@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="js/sueldo.js"></script>
+</head>
+
+<body>
+  <script>
+
+    valorD = 43333;
+    diaT = 10;
+
+    let sueldoE = sueldo(diaT, valorD);
+    let saludE = salud(sueldoE);
+    let pensionE = pension(sueldoE);
+    let arlE = arl(sueldoE);
+    let pagoTo = pagoTotal(sueldoE)
+
+    console.log("Su salario Bruto es de: $" + sueldoE + "." + "\n");
+
+    console.log("Los deducibles son: " + "\n" + "salud: " + saludE + "%");
+
+    console.log("pensión:" + pensionE + "% \n");
+
+    console.log("arl: " + arlE + "%");
+
+    console.log("El pago total será de: $" + pagoTo);
+
+
+  </script>
+</body>
+
+</html>

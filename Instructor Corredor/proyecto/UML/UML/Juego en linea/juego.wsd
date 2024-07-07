@@ -1,0 +1,56 @@
+@startuml juego en linea
+participant Jugador
+participant Sistema
+participant SalaEspera
+participant Emparejador
+participant RankingGlobal
+participant SalaPrivada
+
+Jugador -> Sistema: Inicia sesión
+activate Sistema
+Sistema -> Sistema: Verifica credenciales
+Sistema -> Sistema: Carga perfil de jugador
+Sistema -> RankingGlobal: Obtener puntuación
+activate RankingGlobal
+RankingGlobal --> Sistema: Puntuación del jugador
+deactivate RankingGlobal
+
+Sistema -> SalaEspera: Entrar a sala de espera
+activate SalaEspera
+SalaEspera --> Sistema: Lista de jugadores en espera
+Sistema -> SalaEspera: Esperar a otros jugadores
+deactivate SalaEspera
+Sistema -> Emparejador: Solicitar emparejamiento
+activate Emparejador
+Emparejador --> Sistema: Lista de jugadores emparejados
+deactivate Emparejador
+Sistema -> SalaEspera: Notificar emparejamiento
+activate SalaEspera
+Sistema -> SalaEspera: Esperar a que todos estén listos
+Sistema -> SalaEspera: Comenzar partida
+deactivate SalaEspera
+Sistema -> Sistema: Crear instancia de partida
+
+Sistema -> SalaPrivada: Crear sala privada
+activate SalaPrivada
+SalaPrivada --> Sistema: Confirmación de creación
+Sistema -> SalaPrivada: Invitar amigos
+SalaPrivada --> Sistema: Confirmación de invitación
+Sistema -> SalaPrivada: Unirse a sala privada
+SalaPrivada --> Sistema: Confirmación de unión
+
+Sistema -> SalaEspera: Esperar a que todos estén listos
+activate SalaEspera
+deactivate SalaEspera
+Sistema -> SalaPrivada: Comenzar partida
+
+deactivate SalaPrivada
+Sistema -> Sistema: Jugar partida
+Sistema -> Sistema: Actualizar puntuación
+Sistema -> RankingGlobal: Actualizar puntuación
+activate RankingGlobal
+RankingGlobal --> Sistema: Confirmación de actualización
+deactivate RankingGlobal
+Sistema -> Jugador: Mostrar resultados
+deactivate Sistema
+@enduml

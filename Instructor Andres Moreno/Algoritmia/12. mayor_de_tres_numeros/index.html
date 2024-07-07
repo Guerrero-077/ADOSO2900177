@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mayor de tres numeros</title>
+</head>
+<body>
+
+<script>
+  
+let numeroUno;
+let numeroDos;
+let numeroTres;
+numeroUno = 2;
+numeroDos = 3;
+numeroTres = 4;
+console.log(numeroUno)
+console.log(numeroDos)
+console.log(numeroTres)
+
+if (numeroUno !== "" && numeroDos !== "" && numeroTres !== "") {
+
+    if (parseFloat(numeroUno) !== parseFloat(numeroDos) ||
+        parseFloat(numeroUno) !== parseFloat(numeroTres) ||
+        parseFloat(numeroTres) !== parseFloat(numeroDos)) {
+
+        if (parseFloat(numeroUno) > parseFloat(numeroDos) && parseFloat(numeroUno) > parseFloat(numeroTres)) {
+            console.log("Número uno es mayor", numeroUno)
+        } else {
+            if (parseFloat(numeroDos) > parseFloat(numeroUno) && parseFloat(numeroDos) > parseFloat(numeroTres)) {
+                console.log("Número dos es mayor", numeroDos)
+            } else {
+                console.log("Número tres es mayor", numeroTres)
+            }
+        }
+    } else {
+
+        console.log("Datos Iguales")
+    }
+} else {
+    console.log("Ingrese un Número")
+}
+    </script>
+</body>
+</html>

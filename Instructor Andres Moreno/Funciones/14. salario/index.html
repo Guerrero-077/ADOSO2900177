@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="js/salario.js"></script>
+  </head>
+  <body>
+    <script>
+      diaT = 10;
+      valorD = 43333;
+
+      let pago = sueldoExp(diaT, valorD);
+      console.log("El pago como Expresión es: $"+pago);
+
+      let salud1 = saludExp(pago);
+      console.log("El porcentaje para la salud como Expresión es: "+salud1 + "%");
+
+      let pension1 = pensionExp(pago);
+      console.log("El porcentaje para la pensión como Expresión es: "+pension1 + "%");
+
+      let arl1 = arlExp(pago);
+      console.log("El porcentaje para el arl como Expresión es: "+arl1 + "%");
+
+      let trasportep = subTrasExp(pago)
+      console.log("El subsidio de transporte como Expresión es: $"+trasportep);
+
+      let retencion = retenExp(pago);
+      console.log("La retencion como Expresión es: $" + retencion);
+
+      let pagoTotal = pagoTExp(pago);
+      console.log("Su pago total será de: $"+pagoTotal);
+
+    </script>
+  </body>
+</html>
