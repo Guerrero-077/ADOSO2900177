@@ -1,6 +1,6 @@
 /* 
 fecha 17/06/2024
-funcion saludo 
+funcion contador con while
 autor: Santiago GM
 */
 

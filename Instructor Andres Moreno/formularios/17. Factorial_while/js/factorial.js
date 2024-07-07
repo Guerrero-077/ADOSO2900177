@@ -1,6 +1,6 @@
 /* 
 fecha 17/06/2024
-funcion saludo 
+funcion factorial con while
 autor: Santiago GM
 */
 

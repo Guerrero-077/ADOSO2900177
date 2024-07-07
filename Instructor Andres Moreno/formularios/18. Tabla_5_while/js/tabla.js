@@ -1,6 +1,6 @@
 /* 
 fecha 17/06/2024
-funcion saludo 
+funcion tabla del 5 while
 autor: Santiago GM
 */
 

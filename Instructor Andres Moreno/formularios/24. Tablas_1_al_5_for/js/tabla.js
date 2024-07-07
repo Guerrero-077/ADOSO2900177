@@ -1,6 +1,6 @@
 /* 
 fecha 17/06/2024
-funcion saludo 
+funcion tablas del  1 al 5 for
 autor: Santiago GM
 */
 

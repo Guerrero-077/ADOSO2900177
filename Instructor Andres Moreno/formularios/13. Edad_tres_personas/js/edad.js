@@ -1,6 +1,6 @@
 /* 
 fecha 17/06/2024
-funcion saludo 
+funcion edad de tres personas y promedio mayor o menor de edad
 autor: Santiago GM
 */
 

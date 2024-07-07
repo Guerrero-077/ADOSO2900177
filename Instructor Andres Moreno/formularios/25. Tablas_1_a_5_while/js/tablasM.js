@@ -1,8 +1,8 @@
-/**
- * Tablas del 1 al 5 que me idique que dato es par e impar
- * Autor: Santiago GM
- * 03/04/2024
- */
+/* 
+fecha 17/06/2024
+funcion tablas del  1 al 5 while
+autor: Santiago GM
+*/
 let par = 0;
 let impar = 0;
 

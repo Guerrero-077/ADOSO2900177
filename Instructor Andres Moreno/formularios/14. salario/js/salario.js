@@ -1,6 +1,6 @@
 /* 
 fecha 17/06/2024
-funcion saludo 
+funcion salario de una persona (Nomina)
 autor: Santiago GM
 */
 

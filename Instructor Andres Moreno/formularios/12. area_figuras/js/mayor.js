@@ -1,6 +1,6 @@
 /* 
 fecha 17/06/2024
-funcion saludo 
+funcion mayor igual area de tres cuadrados
 autor: Santiago GM
 */
 
