@@ -56,10 +56,13 @@ console.log("");
 let x1 = [];
 
 function mostrar(xp) {
-    let org = xp;
+    // Ordenar el arreglo xp
+    xp.sort((a, b) => a - b); // Ordena los datos de menor a mayor
 
-    let imp = new Set(org);
-    let result = [...imp];
+    let org = xp; 
+
+    let imp = new Set(org); // Sset(org) elimina los datos repetidos
+    let result = [...imp]; // se convierte de nuevo en un arreglo con spread [...]
     return result;
 }
 
@@ -68,7 +71,6 @@ for (iteracion1 = 0; iteracion1 < 5; iteracion1++) {
     x1.push(bingo[iteracion1][4 - iteracion1]);
 }
 
-x1.sort((a,b) => a - b); // quita lo numeros repetidos
 console.log("xGrande " + mostrar(x1));
 
 let x2 = [];
@@ -80,20 +82,20 @@ for (iteracion1 = 0; iteracion1 < 3; iteracion1++) {
     //Sacar x pequeña
     x2.push(bingo[iteracion1][1 + iteracion1]);
     x2.push(bingo[iteracion1][3 - iteracion1]);
-
+    
     //Sacar x Mediana
     x3.push(bingo[iteracion1 + 2][iteracion1]);
     x3.push(bingo[iteracion1 + 2][2 - iteracion1]);
-
+    
     //Sacar x Mini
     x4.push(bingo[2 + iteracion1][2 + iteracion1]);
     x4.push(bingo[2 + iteracion1][4 - iteracion1]);
 }
 
-x2.sort((a,b) => a - b);
-x3.sort((a,b) => a - b);
-x4.sort((a,b) => a - b);
-
+// x1.sort((a,b) => a - b);  organiza los datos de menor a mayor
+// x2.sort((a,b) => a - b);
+// x3.sort((a,b) => a - b);
+// x4.sort((a,b) => a - b);
 
 
 console.log('xMedia '+mostrar(x2));
