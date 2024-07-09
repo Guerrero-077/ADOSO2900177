@@ -61,7 +61,7 @@ function mostrar(xp) {
 
     let org = xp; 
 
-    let imp = new Set(org); // Sset(org) elimina los datos repetidos
+    let imp = new Set(org); // Set(org)
     let result = [...imp]; // se convierte de nuevo en un arreglo con spread [...]
     return result;
 }
