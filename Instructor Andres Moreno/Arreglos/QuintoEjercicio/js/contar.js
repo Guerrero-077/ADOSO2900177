@@ -13,7 +13,6 @@ array = [1,2,3,4,5,6,7,8,9,10]
 
 for (iteracion = 0; iteracion < array.length; iteracion++) {
 
-    numero = iteracion + 1
     mostrarLista += '<option>' + array[iteracion] + '</option>'; 
 }   
 
@@ -33,7 +32,6 @@ mostrarLista = '' //volvemos la variable a vacia para que no se acumulen los dat
 
 for (let iteracion = 0; iteracion < array.length; iteracion++) {
 
-    numero = iteracion + 1
     mostrarLista += '<option>' + array[iteracion] + '</option>'; 
 }   
 
@@ -64,3 +62,6 @@ for (iteracion = 0; iteracion < array.length; iteracion++) {
 }   
 
 document.getElementById("lista-tres").innerHTML = mostrarLista
+
+
+
