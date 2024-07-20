@@ -1,28 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bingo</title>
 
-    <link
-      rel="stylesheet"
-      href="../../styleGlobal/bootstrap/css/bootstrap.css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div class="container">
-   
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bingo</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="../../styleGlobal/bootstrap/css/bootstrap.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row justify-content-center forma mt-5">
+      <div class="col-md-4 mt-5 user-box" >
+        <label for="numero" class="form-label">Ingrese un número para generar su Bingo</label>
+        <input type="number" class="form-control" id="numero" />
+        <div id="mensajeError" class="mt-2 text-danger"></div>
+      </div>
+
+      <div class="col-12 text-center mt-3">
+        <button class="btn btn-primary" type="submit" id="btnEnviar">
+          Generar Bingo
+        </button>
+      </div>
+
+      <div class="row">
+        
+        <div class="col text-center mt-3">
+          <button class="btn btn-primary" type="submit" style="display: none" id="btnB">
+            letra B
+          </button>
+        </div>
+        
+        <div class="col text-center mt-3">
+          <button class="btn btn-primary" type="submit" style="display: none" id="btnI">
+            letra I
+          </button>
+        </div>
+  
+        <div class="col text-center mt-3">
+          <button class="btn btn-primary" type="submit" style="display: none" id="btnN">
+            letra N
+          </button>
+        </div>
+  
+        <div class="col text-center mt-3">
+          <button class="btn btn-primary" type="submit" style="display: none" id="btnG">
+            letra G
+          </button>
+        </div>
+        
+        <div class="col text-center mt-3">
+          <button class="btn btn-primary" type="submit" style="display: none" id="btnO">
+            letra O
+          </button>
+        </div>
+
+        <div class="col text-center mt-3">
+          <button class="btn btn-primary" type="submit" style="display: none" id="btnX">
+            mostrarX
+          </button>
+        </div>
+
+        <div class="col text-center mt-3">
+          <button class="btn btn-primary" type="submit" style="display: none" id="btnXx">
+            X pequeñas
+          </button>
+        </div>
+
+      </div>
+
+
+      <div class="col-6">
         <div id="mostrar" class="mt-5"></div>
-      
+
+      </div>
     </div>
+  </div>
 
-    <script src="../../styleGlobal/bootstrap/js/bootstrap.bundle.js"></script>
-    <script src="../../styleGlobal/bootstrap/js/bootstrap.js"></script>
-    <!-- <script src="js/bingo.js"></script> -->
-    <script src="js/bingo.js"></script>
-  </body>
+  <!-- <script src="js/bingo.js"></script> -->
+  <script src="../../styleGlobal/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/bingo.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
-
-
