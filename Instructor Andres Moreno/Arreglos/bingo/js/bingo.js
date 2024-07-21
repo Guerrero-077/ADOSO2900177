@@ -5,129 +5,18 @@
  */
 
 document.addEventListener("DOMContentLoaded", function () {
-  
-  //contenedor para mostrar la informacion 
-
   let info = document.getElementById("mostrar");
 
-  
-  
-  //botones para generar las x
-  let boton = document.getElementById("btnEnviar");
-  let botonB = document.getElementById('btnB')
-  let botonI = document.getElementById('btnI')
-  let botonN = document.getElementById('btnN')
-  let botonG = document.getElementById('btnG')
-  let botonO = document.getElementById('btnO')
-  let botonX = document.getElementById('btnX')
-  let botonXx = document.getElementById('btnXx')
-  
-  //mensaje para la validacion 
-  let mensajeError = document.getElementById('mensajeError')
-  
-  //boton para generar el carton
-  
-  boton.addEventListener("click", function () {
-    //capturamos el dato
-    let limite = document.getElementById('numero').value
+  let btnEnviar = document.getElementById("btnEnviar");
+  let btnB = document.getElementById("btnB");
+  let btnI = document.getElementById("btnI");
+  let btnN = document.getElementById("btnN");
+  let btnG = document.getElementById("btnG");
+  let btnO = document.getElementById("btnO");
+  let btnXG = document.getElementById("btnXG");
+  let btnXP = document.getElementById("btnXP");
 
-    if (limite) {
-      mensajeError.textContent = "";
-
-      let bingo = matriz(limite); 
-      let mostrarB = mostrarBingo(bingo);
-      
-      botonB.style.display = 'block'
-      botonI.style.display = 'block'
-      botonN.style.display = 'block'
-      botonG.style.display = 'block'
-      botonO.style.display = 'block'
-      botonX.style.display = 'block'
-      botonXx.style.display = 'block'
-      
-      info.innerHTML = mostrarB;
-    } else {
-            
-      botonB.style.display = 'none'
-      botonI.style.display = 'none'
-      botonN.style.display = 'none'
-      botonG.style.display = 'none'
-      botonO.style.display = 'none'
-      botonX.style.display = 'none'
-      botonXx.style.display = 'none'
-      mensajeError.textContent = "Por favor ingrese un número antes de enviar.";
-      info.innerHTML = ""; // Limpiar el contenido mostrado
-    }
-  });
-
-  
-  //boton para iluminar la letra B
-  
-  botonB.addEventListener("click", function () {
-    let  limite = numero.value.trim();
-    let bingo = matriz(limite); 
-    let mostrarB = letraB(bingo)
-    info.innerHTML = mostrarB
-    
-  })
-  //boton para iluminar la letra I
-
-  botonI.addEventListener("click", function () {
-    let  limite = numero.value.trim();
-    let bingo = matriz(limite); 
-    let mostrarO = letraI(bingo)
-    info.innerHTML = mostrarO
-    
-  })
-  //boton para iluminar la letra N
-  
-  botonN.addEventListener("click", function () {
-    let  limite = numero.value.trim();
-    let bingo = matriz(limite); 
-    let mostrarN = letraN(bingo)
-    info.innerHTML = mostrarN
-    
-  })
-  //boton para iluminar la letra G
-  
-  botonG.addEventListener("click", function () {
-    let  limite = numero.value.trim();
-    let bingo = matriz(limite); 
-    let mostrarG = letraG(bingo)
-    info.innerHTML = mostrarG
-    
-  })
-  //boton para iluminar la letra O
-  
-  botonO.addEventListener("click", function () {
-    let  limite = numero.value.trim();
-    let bingo = matriz(limite); 
-    let mostrarO = letraO(bingo)
-    info.innerHTML = mostrarO
-    
-  })
-  
-  //boton para generar la x Grande 
-
-  botonX.addEventListener("click", function () {
-
-    let  limite = numero.value.trim(); 
-    let bingo = matriz(limite); 
-    let mostrarBX = mostrarX(bingo)
-    info.innerHTML = mostrarBX
-  })
-
-    //boton para generar la x peque 
-
-    botonXx.addEventListener("click", function () {
-
-      let  limite = numero.value.trim(); 
-      let bingo = matriz(limite); 
-      let mostrarBXx = mostrarXx(bingo)
-      info.innerHTML = mostrarBXx
-    })
-  
-  function matriz(limite) {
+  function matriz(numero) {
     let bingo = [];
     let tablas = [];
     let contadorM = 0;
@@ -137,22 +26,314 @@ document.addEventListener("DOMContentLoaded", function () {
       tablas = [];
       for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
         contadorM++;
-        resultado = contadorM * limite;
+        resultado = contadorM * numero;
         tablas.push(resultado);
       }
       bingo.push(tablas);
     }
-
     return bingo;
   }
 
-  
-  function mostrarBingo(bingo) {
-    let pantalla = "";
+  btnEnviar.addEventListener("click", function () {
+    let numero = document.getElementById("numero").value;
+    let msgError = document.getElementById("msgError");
 
-    pantalla += `
+    if (numero) {
+      msgError.textContent = "";
+
+      btnB.style.display = "block";
+      btnI.style.display = "block";
+      btnN.style.display = "block";
+      btnG.style.display = "block";
+      btnO.style.display = "block";
+      btnXG.style.display = "block";
+      btnXP.style.display = "block";
+
+      let bingo = matriz(numero);
+      let generarB = generarBingo(bingo);
+      info.innerHTML = generarB;
+    } else {
+      btnB.style.display = "none";
+      btnI.style.display = "none";
+      btnN.style.display = "none";
+      btnG.style.display = "none";
+      btnO.style.display = "none";
+      btnXG.style.display = "none";
+      btnXP.style.display = "none";
+
+      msgError.textContent = "Por favor ingrese un número";
+      info.innerHTML = "";
+    }
+
+    function generarBingo(bingo) {
+      let pantalla = "";
+
+      pantalla += `
+      <table class="table table-success table-bordered border-primary">
+          <thead>
+            <tr>
+              <th scope="col">B</th>
+              <th scope="col">I</th>
+              <th scope="col">N</th>
+              <th scope="col">G</th>
+              <th scope="col">O</th>
+            </tr>
+          </thead>
+          <tbody class="table-group-divider">
+      `;
+
+      for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
+        pantalla += `<tr>`;
+        for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
+          pantalla += `<td>${bingo[iteracionT][iteracionM]}</td>`;
+        }
+        pantalla += `</tr>`;
+      }
+
+      pantalla += `
+          </tbody>
+        </table>
+      `;
+      return pantalla;
+    }
+  });
+
+  btnB.addEventListener("click", function () {
+    let numero = document.getElementById("numero").value;
+
+    let bingo = matriz(numero);
+    let mostrarB = letraB(bingo);
+
+    function letraB(bingo) {
+      let pantalla = "";
+
+      pantalla += `
     
-    <table class="table table-bordered border-primary">
+    <table class="table table-success table-bordered border-dark">
+    <thead>
+      <tr>
+        <th scope="col" class='x2'>B</th>
+        <th scope="col">I</th>
+        <th scope="col">N</th>
+        <th scope="col">G</th>
+        <th scope="col">O</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">`;
+      for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
+        pantalla += `<tr> `;
+        for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
+          if (iteracionM == 0) {
+            pantalla += `  <td class='x2'>${bingo[iteracionT][0]}</td>`;
+          } else {
+            pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
+          }
+        }
+        pantalla += ` </tr> `;
+      }
+      pantalla += `
+    </tbody>
+  </table>`;
+      return pantalla;
+    }
+
+    info.innerHTML = mostrarB;
+  });
+
+  btnI.addEventListener("click", function () {
+    let numero = document.getElementById("numero").value;
+
+    let bingo = matriz(numero);
+    let mostrarI = letraI(bingo);
+
+    function letraI(bingo) {
+      let pantalla = "";
+
+      pantalla += `
+    
+      <table class="table table-success table-bordered border-dark">
+      <thead>
+        <tr>
+          <th scope="col">B</th>
+          <th scope="col" class='x2'>I</th>
+          <th scope="col">N</th>
+          <th scope="col">G</th>
+          <th scope="col">O</th>
+        </tr>
+      </thead>
+      <tbody class="table-group-divider">
+
+`;
+      for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
+        pantalla += `<tr> `;
+        for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
+          if (iteracionM == 1) {
+            pantalla += `  <td class='x2'>${bingo[iteracionT][1]}</td>`;
+          } else {
+            pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
+          }
+        }
+        pantalla += ` </tr> `;
+      }
+      pantalla += `
+      </tbody>
+    </table>
+    `;
+
+      return pantalla;
+    }
+
+    info.innerHTML = mostrarI;
+  });
+
+  btnN.addEventListener("click", function () {
+    let numero = document.getElementById("numero").value;
+
+    let bingo = matriz(numero);
+    let mostrarN = letraN(bingo);
+
+    function letraN(bingo) {
+      let pantalla = "";
+
+      pantalla += `
+    
+      <table class="table table-success table-bordered border-dark">
+  <thead>
+    <tr>
+      <th scope="col">B</th>
+      <th scope="col">I</th>
+      <th scope="col" class='x2'>N</th>
+      <th scope="col">G</th>
+      <th scope="col">O</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+
+`;
+      for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
+        pantalla += `<tr> `;
+        for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
+          if (iteracionM == 2) {
+            pantalla += `  <td class='x2'>${bingo[iteracionT][2]}</td>`;
+          } else {
+            pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
+          }
+        }
+        pantalla += ` </tr> `;
+      }
+      pantalla += `
+      </tbody>
+    </table>
+    `;
+
+      return pantalla;
+    }
+
+    info.innerHTML = mostrarN;
+  });
+
+  btnG.addEventListener("click", function () {
+    let numero = document.getElementById("numero").value;
+
+    let bingo = matriz(numero);
+    let mostrarG = letraG(bingo);
+
+    function letraG(bingo) {
+      let pantalla = "";
+
+      pantalla += `
+    
+      <table class="table table-success table-bordered border-dark">
+  <thead>
+    <tr>
+      <th scope="col">B</th>
+      <th scope="col">I</th>
+      <th scope="col">N</th>
+      <th scope="col" class='x2'>G</th>
+      <th scope="col">O</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+
+`;
+      for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
+        pantalla += `<tr> `;
+        for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
+          if (iteracionM == 3) {
+            pantalla += `  <td class='x2'>${bingo[iteracionT][3]}</td>`;
+          } else {
+            pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
+          }
+        }
+        pantalla += ` </tr> `;
+      }
+      pantalla += `
+      </tbody>
+    </table>
+    `;
+
+      return pantalla;
+    }
+
+    info.innerHTML = mostrarG;
+  });
+
+  btnO.addEventListener("click", function () {
+    let numero = document.getElementById("numero").value;
+    let bingo = matriz(numero);
+    let mostrarO = letraO(bingo);
+
+    function letraO(bingo) {
+      let pantalla = "";
+
+      pantalla += `
+    
+      <table class="table table-success table-bordered border-dark">
+  <thead>
+    <tr>
+      <th scope="col">B</th>
+      <th scope="col">I</th>
+      <th scope="col">N</th>
+      <th scope="col">G</th>
+      <th scope="col" class='x2'>O</th>
+    </tr>
+  </thead>
+  <tbody class="table-group-divider">
+
+`;
+      for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
+        pantalla += `<tr> `;
+        for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
+          if (iteracionM == 4) {
+            pantalla += `  <td class='x2'>${bingo[iteracionT][4]}</td>`;
+          } else {
+            pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
+          }
+        }
+        pantalla += ` </tr> `;
+      }
+      pantalla += `
+      </tbody>
+    </table>
+    `;
+
+      return pantalla;
+    }
+
+    info.innerHTML = mostrarO;
+  });
+
+  btnXG.addEventListener("click", function () {
+    let numero = document.getElementById("numero").value;
+    let bingo = matriz(numero);
+    let mostrarXG = xGrande(bingo);
+
+    function xGrande(bingo) {
+      let pantalla = "";
+
+      pantalla += `
+      
+      <table class="table table-success table-bordered border-dark">
     <thead>
       <tr>
         <th scope="col">B</th>
@@ -162,325 +343,98 @@ document.addEventListener("DOMContentLoaded", function () {
         <th scope="col">O</th>
       </tr>
     </thead>
-    <tbody>
-
-`;
-    for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
-      pantalla += `<tr> `;
-      for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
-        pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
-      }
-      pantalla += ` </tr> `;
-    }
-    pantalla += `
-      </tbody>
-    </table>
-    `;
-
-    return pantalla;
-  }
-
-
-  function letraB(bingo) {
-    let pantalla = "";
-
-    pantalla += `
-    
-    <table class="table table-bordered border-primary">
-  <thead>
-    <tr>
-      <th scope="col" class='x2'>B</th>
-      <th scope="col">I</th>
-      <th scope="col">N</th>
-      <th scope="col">G</th>
-      <th scope="col">O</th>
-    </tr>
-  </thead>
-  <tbody>
-
-`;
-    for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
-      pantalla += `<tr> `;
-      for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
-        if (iteracionM==0) {
-          
-          pantalla += `  <td class='x2'>${bingo[iteracionT][0]}</td>`;
-        } else {
-          
-          pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
+    <tbody class="table-group-divider">
+  
+  `;
+      for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
+        pantalla += `<tr> `;
+        for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
+          if (
+            iteracionT == iteracionM ||
+            bingo.length - 1 == iteracionT + iteracionM
+          ) {
+            pantalla += `  <td class='x1'>${bingo[iteracionT][iteracionM]}</td>`;
+          } else {
+            pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
+          }
         }
+        pantalla += ` </tr> `;
       }
-      pantalla += ` </tr> `;
+      pantalla += `
+        </tbody>
+      </table>
+      `;
+
+      return pantalla;
     }
-    pantalla += `
-      </tbody>
-    </table>
-    `;
+    info.innerHTML = mostrarXG;
+  });
 
-    return pantalla;
-  }
+  btnXP.addEventListener("click", function () {
+    let numero = document.getElementById("numero").value;
+    let bingo = matriz(numero);
+    let mostrarXP = xPeque(bingo);
 
-  function letraI(bingo) {
-    let pantalla = "";
+    function xPeque(bingo) {
+      let pantalla = "";
 
-    pantalla += `
-    
-    <table class="table table-bordered border-primary">
-  <thead>
-    <tr>
-      <th scope="col">B</th>
-      <th scope="col"  class='x2'>I</th>
-      <th scope="col">N</th>
-      <th scope="col">G</th>
-      <th scope="col">O</th>
-    </tr>
-  </thead>
-  <tbody>
+      x2 = [];
+      x3 = [];
+      x4 = [];
+      for (let iteracionM = 0; iteracionM < 3; iteracionM++) {
+        x2.push(bingo[iteracionM][iteracionM + 1]);
+        x2.push(bingo[iteracionM][3 - iteracionM]);
 
-`;
-    for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
-      pantalla += `<tr> `;
-      for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
-        if (iteracionM==1) {
-          
-          pantalla += `  <td class='x2'>${bingo[iteracionT][1]}</td>`;
-        } else {
-          
-          pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
-        }
+        x3.push(bingo[2 + iteracionM][iteracionM]);
+        x3.push(bingo[2 + iteracionM][2 - iteracionM]);
+
+        x4.push(bingo[2 + iteracionM][iteracionM + 2]);
+        x4.push(bingo[2 + iteracionM][4 - iteracionM]);
       }
-      pantalla += ` </tr> `;
-    }
-    pantalla += `
-      </tbody>
-    </table>
-    `;
-
-    return pantalla;
-  }
-
-  function letraN(bingo) {
-    let pantalla = "";
-
-    pantalla += `
-    
-    <table class="table table-bordered border-primary">
-  <thead>
-    <tr>
-      <th scope="col">B</th>
-      <th scope="col">I</th>
-      <th scope="col"  class='x2'>N</th>
-      <th scope="col">G</th>
-      <th scope="col">O</th>
-    </tr>
-  </thead>
-  <tbody>
-
-`;
-    for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
-      pantalla += `<tr> `;
-      for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
-        if (iteracionM==2) {
-          
-          pantalla += `  <td class='x2'>${bingo[iteracionT][2]}</td>`;
-        } else {
-          
-          pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
-        }
-      }
-      pantalla += ` </tr> `;
-    }
-    pantalla += `
-      </tbody>
-    </table>
-    `;
-
-    return pantalla;
-  }
-
-  function letraG(bingo) {
-    let pantalla = "";
-
-    pantalla += `
-    
-    <table class="table table-bordered border-primary">
-  <thead>
-    <tr>
-      <th scope="col">B</th>
-      <th scope="col">I</th>
-      <th scope="col">N</th>
-      <th scope="col"  class='x2'>G</th>
-      <th scope="col">O</th>
-    </tr>
-  </thead>
-  <tbody>
-
-`;
-    for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
-      pantalla += `<tr> `;
-      for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
-        if (iteracionM==3) {
-          
-          pantalla += `  <td class='x2'>${bingo[iteracionT][3]}</td>`;
-        } else {
-          
-          pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
-        }
-      }
-      pantalla += ` </tr> `;
-    }
-    pantalla += `
-      </tbody>
-    </table>
-    `;
-
-    return pantalla;
-  }
-  function letraO(bingo) {
-    let pantalla = "";
-
-    pantalla += `
-    
-    <table class="table table-bordered border-primary">
+      pantalla += `
+      
+      <table class="table table-success table-bordered border-dark">
     <thead>
       <tr>
         <th scope="col">B</th>
         <th scope="col">I</th>
         <th scope="col">N</th>
         <th scope="col">G</th>
-        <th scope="col"  class='x2'>O</th>
+        <th scope="col">O</th>
       </tr>
     </thead>
-    <tbody>
-
-`;
-    for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
-      pantalla += `<tr> `;
-      for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
-        if (iteracionM==4) {
-          
-          pantalla += `  <td class='x2'>${bingo[iteracionT][4]}</td>`;
-        } else {
-          
-          pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
-        }
-      }
-      pantalla += ` </tr> `;
-    }
-    pantalla += `
-      </tbody>
-    </table>
-    `;
-
-    return pantalla;
-  }
-
-  function mostrarX(bingo) {
-    let pantalla = "";
-
-    pantalla += `
-    
-    <table class="table table-bordered border-primary">
-  <thead>
-    <tr>
-      <th scope="col">B</th>
-      <th scope="col">I</th>
-      <th scope="col">N</th>
-      <th scope="col">G</th>
-      <th scope="col">O</th>
-    </tr>
-  </thead>
-  <tbody>
-
-`;
-    for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
-      pantalla += `<tr> `;
-      for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
-        if (iteracionT== iteracionM ||  bingo.length - 1 == iteracionT + iteracionM) {
-          
-          pantalla += `  <td class='x1'>${bingo[iteracionT][iteracionM]}</td>`;
-        } else {
-          
-          pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
-        }
-      }
-      pantalla += ` </tr> `;
-    }
-    pantalla += `
-      </tbody>
-    </table>
-    `;
-
-    return pantalla;
-  }
+    <tbody class="table-group-divider">
   
-  function mostrarXx(bingo) {
-    let pantalla = "";
+  `;
+      for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
+        pantalla += `<tr> `;
+        for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
+          let clase = "";
+          if (x2.includes(bingo[iteracionT][iteracionM])) {
+            clase = "x2";
+          } else if (x3.includes(bingo[iteracionT][iteracionM])) {
+            clase = "x3";
+          } else if (x4.includes(bingo[iteracionT][iteracionM])) {
+            clase = "x4";
+          } else {
+            clase = "";
+          }
 
-    // mostrar las x
-
-    let x2 = [];
-    let x3 = [];
-    let x4 = [];
-
-    for (let iteracionM = 0; iteracionM < 3; iteracionM++) {
-      //Sacar x media
-      x2.push(bingo[iteracionM][1 + iteracionM]);
-      x2.push(bingo[iteracionM][3 - iteracionM]);
-
-      // Sacar x Mediana
-
-      x3.push(bingo[iteracionM + 2][iteracionM]);
-      x3.push(bingo[iteracionM + 2][2 - iteracionM]);
-
-      //Sacar x chiquita
-
-      x4.push(bingo[2 + iteracionM][2 + iteracionM]);
-      x4.push(bingo[2 + iteracionM][4 - iteracionM]);
-    }
-    pantalla += `
-
-<table class="table table-bordered border-primary">
-  <thead>
-    <tr>
-      <th scope="col">B</th>
-      <th scope="col">I</th>
-      <th scope="col">N</th>
-      <th scope="col">G</th>
-      <th scope="col">O</th>
-    </tr>
-  </thead>
-  <tbody>
-`;
-
-    for (let iteracionT = 0; iteracionT < bingo.length; iteracionT++) {
-      pantalla += `<tr>`;
-      for (let iteracionM = 0; iteracionM < 5; iteracionM++) {
-        let clase = "";
-        if (x2.includes(bingo[iteracionT][iteracionM])) {
-          clase = "x2"; // Clase para x2
-        } else if (x3.includes(bingo[iteracionT][iteracionM])) {
-          clase = "x3"; // Clase para x3
-        } else if (x4.includes(bingo[iteracionT][iteracionM])) {
-          clase = "x4"; // Clase para x4
+          if (clase !== "") {
+            pantalla += `  <td class='${clase}'>${bingo[iteracionT][iteracionM]}</td>`;
+          } else {
+            pantalla += `  <td>${bingo[iteracionT][iteracionM]}</td>`;
+          }
         }
-
-        if (clase !== "") {
-          pantalla += `<td class="${clase}">${bingo[iteracionT][iteracionM]}</td>`;
-        } else {
-          pantalla += `<td>${bingo[iteracionT][iteracionM]}</td>`;
-        }
+        pantalla += ` </tr> `;
       }
-      pantalla += `</tr>`;
+      pantalla += `
+        </tbody>
+      </table>
+      `;
+
+      return pantalla;
     }
-
-    pantalla += `
-  </tbody>
-</table>
-
-
-`;
-
-    return pantalla;
-  }
+    info.innerHTML = mostrarXP;
+  });
 });

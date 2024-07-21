@@ -23,16 +23,26 @@ body {
   }
   
   /* Estilos para el botón */
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+  button {
+    font-family: inherit;
+    padding: 0.6em 1.3em;
+    font-weight: 900;
+    font-size: 18px;
+    border: 3px solid black;
+    border-radius: 0.4em;
+    box-shadow: 0.1em 0.1em;
+    cursor: pointer;
   }
   
-  .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+  button:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em;
   }
   
+  button:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em;
+  }
  
   .forma {
     display: flex;
@@ -47,18 +57,19 @@ body {
   }
   
 
+
   
 .x1{
-    background-color: red !important;
+    background-color:#ff0303 !important;
 }
 .x2{
-    background-color: blue !important;
+    background-color: #0404e2 !important;
 }
 .x3{
-    background-color: palegreen !important;
+    background-color: #36fc70 !important;
 }
 .x4{
-    background-color: tomato !important;
+    background-color: #fc4b08 !important;
 }
 .table{
   text-align: center;
