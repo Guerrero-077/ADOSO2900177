@@ -61,16 +61,26 @@ body {
   
 .x1{
     background-color:#ff0303 !important;
-}
-.x2{
+    font-weight: bold;
+  }
+  .x2{
     background-color: #0404e2 !important;
-}
-.x3{
+    font-weight: bold;
+  }
+  .x3{
     background-color: #36fc70 !important;
-}
-.x4{
+    font-weight: bold;
+  }
+  .x4{
     background-color: #fc4b08 !important;
+    font-weight: bold;
 }
-.table{
+table{
   text-align: center;
+  background: rgba(31, 50, 74, 0.7); 
+  /* background-color: #0808ff00 !important; */
+  
 }
+/* th, td{
+  padding: 40px;
+} */

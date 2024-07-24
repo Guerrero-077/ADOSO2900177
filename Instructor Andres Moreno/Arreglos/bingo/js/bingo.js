@@ -16,6 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
   let btnXG = document.getElementById("btnXG");
   let btnXP = document.getElementById("btnXP");
 
+  // creamos la matriz que va a contener el bingo 
   function matriz(numero) {
     let bingo = [];
     let tablas = [];
@@ -34,11 +35,12 @@ document.addEventListener("DOMContentLoaded", function () {
     return bingo;
   }
 
+  // capturamos los datos que necesitamos y mostramos el Bingo 
   btnEnviar.addEventListener("click", function () {
     let numero = document.getElementById("numero").value;
     let msgError = document.getElementById("msgError");
 
-    if (numero) {
+    if (numero && numero > 0) {
       msgError.textContent = "";
 
       btnB.style.display = "block";
@@ -69,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function () {
       let pantalla = "";
 
       pantalla += `
-      <table class="table table-success table-bordered border-primary">
+      <table class="table table-info table-bordered border-primary">
           <thead>
             <tr>
               <th scope="col">B</th>
@@ -109,7 +111,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       pantalla += `
     
-    <table class="table table-success table-bordered border-dark">
+    <table class="table table-info table-bordered border-dark">
     <thead>
       <tr>
         <th scope="col" class='x2'>B</th>
@@ -151,7 +153,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       pantalla += `
     
-      <table class="table table-success table-bordered border-dark">
+      <table class="table table-info table-bordered border-dark">
       <thead>
         <tr>
           <th scope="col">B</th>
@@ -197,7 +199,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       pantalla += `
     
-      <table class="table table-success table-bordered border-dark">
+      <table class="table table-info table-bordered border-dark">
   <thead>
     <tr>
       <th scope="col">B</th>
@@ -243,7 +245,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       pantalla += `
     
-      <table class="table table-success table-bordered border-dark">
+      <table class="table table-info table-bordered border-dark">
   <thead>
     <tr>
       <th scope="col">B</th>
@@ -288,7 +290,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       pantalla += `
     
-      <table class="table table-success table-bordered border-dark">
+      <table class="table table-info table-bordered border-dark">
   <thead>
     <tr>
       <th scope="col">B</th>
@@ -333,7 +335,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
       pantalla += `
       
-      <table class="table table-success table-bordered border-dark">
+      <table class="table table-info table-bordered border-dark">
     <thead>
       <tr>
         <th scope="col">B</th>
@@ -384,7 +386,7 @@ document.addEventListener("DOMContentLoaded", function () {
       for (let iteracionM = 0; iteracionM < 3; iteracionM++) {
         x2.push(bingo[iteracionM][iteracionM + 1]);
         x2.push(bingo[iteracionM][3 - iteracionM]);
-
+w
         x3.push(bingo[2 + iteracionM][iteracionM]);
         x3.push(bingo[2 + iteracionM][2 - iteracionM]);
 
@@ -393,7 +395,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
       pantalla += `
       
-      <table class="table table-success table-bordered border-dark">
+      <table class="table table-info table-bordered border-dark">
     <thead>
       <tr>
         <th scope="col">B</th>
@@ -437,4 +439,5 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     info.innerHTML = mostrarXP;
   });
+
 });

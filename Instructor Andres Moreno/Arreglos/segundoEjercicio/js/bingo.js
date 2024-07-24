@@ -51,20 +51,17 @@ console.log("");
 
 
 console.log("");
-//Sacar la X Grande
 
-let x1 = [];
 
 function mostrar(xp) {
-    // Ordenar el arreglo xp
-    xp.sort((a, b) => a - b); // Ordena los datos de menor a mayor
-
-    let org = xp; 
-
-    let imp = new Set(org); // Set(org)
-    let result = [...imp]; // se convierte de nuevo en un arreglo con spread [...]
-    return result;
+    // Me ayuda a acomodar los datos de menor a mayor
+    xp.sort((a, b) => a - b);
+    
+    return xp
 }
+
+//Sacar la X Grande
+let x1 = [];
 
 for (iteracion1 = 0; iteracion1 < 5; iteracion1++) {
     x1.push(bingo[iteracion1][iteracion1]);
@@ -92,10 +89,6 @@ for (iteracion1 = 0; iteracion1 < 3; iteracion1++) {
     x4.push(bingo[2 + iteracion1][4 - iteracion1]);
 }
 
-// x1.sort((a,b) => a - b);  organiza los datos de menor a mayor
-// x2.sort((a,b) => a - b);
-// x3.sort((a,b) => a - b);
-// x4.sort((a,b) => a - b);
 
 
 console.log('xMedia '+mostrar(x2));
