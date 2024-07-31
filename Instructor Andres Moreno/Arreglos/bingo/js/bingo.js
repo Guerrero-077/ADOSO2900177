@@ -386,7 +386,6 @@ document.addEventListener("DOMContentLoaded", function () {
       for (let iteracionM = 0; iteracionM < 3; iteracionM++) {
         x2.push(bingo[iteracionM][iteracionM + 1]);
         x2.push(bingo[iteracionM][3 - iteracionM]);
-w
         x3.push(bingo[2 + iteracionM][iteracionM]);
         x3.push(bingo[2 + iteracionM][2 - iteracionM]);
 
