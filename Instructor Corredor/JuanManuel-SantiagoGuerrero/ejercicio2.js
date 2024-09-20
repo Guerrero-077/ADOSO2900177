@@ -5,6 +5,9 @@ class Persona {
         this.edad = edad;    
     }
     
+    saludar(){
+        console.log(`Hola, me llamo ${this.nombre} y tengo ${this.edad} años`)
+    }
 }
 const persona1 = new Persona('Juan',18)
-console.log(persona1)
+persona1.saludar();

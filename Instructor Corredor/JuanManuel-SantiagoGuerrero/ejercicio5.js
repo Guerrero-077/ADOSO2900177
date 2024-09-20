@@ -8,38 +8,41 @@ class Persona {
         this.#edad = edad;    
     }
     
-    set Nombre(nombre){
+    setNombre(nombre){
         this.#nombre = nombre;
     }
-    get Nombre(){
+    getNombre(){
         return this.#nombre;
     }
 
-    set Edad(edad){
+    setEdad(edad){
         this.#edad = edad;
     }
-    get Edad(){
+    getEdad(){
         return this.#edad;
     }
 
-    saludar(){
-        console.log(`Hola, me llamo ${this.#nombre} y tengo ${this.#edad} años`)
+    describir(){
+        console.log(`Soy ${this.#nombre} y tengo ${this.#edad} años`);
     }
 }
 
 class Estudiante extends Persona{
+
     constructor(nombre,edad,grado){
         super(nombre,edad);
         this.grado = grado;
     }
 
     estudiar(){
-        console.log('Estoy estudiando')
+        console.log('Estoy estudiando');
+    }
+    describir(){
+        console.log(`${this.getNombre()}, tengo ${this.getEdad()} estoy en ${this.grado} grado`);
     }
 }
 
-const persona1 = new Estudiante('Juan',18,10)
-persona1.saludar();
-persona1.estudiar();
+const persona1 = new Estudiante('Juan',28,10);
+persona1.describir();
 
-// CIpersona1.Nombre;
+

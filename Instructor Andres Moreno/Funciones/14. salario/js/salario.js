@@ -110,6 +110,7 @@ const pensionExp = function(pago) {
     }
     return retencion;
   }
+  
   const pagoTExp = function(pago) {
     let salario = pago;
     let saludE = salud(pago);

@@ -1,0 +1,204 @@
+@startuml
+
+class Perfil {
+  - nombrePerfil: String
+  - idioma: String
+  - historial: Historial
+
+  + obtenerInformacionPerfil()
+  + guardarInformacionPerfil()
+}
+
+class Netflix {
+
+  - titulo: String
+  - descripcion: String
+  - categoria: String
+  - duracion: Int
+  - Ranking: Int
+  - genero: String
+  - reparto String
+  - region: String
+  - productora: String
+  - fechaLanzamiento: Date
+
+
+  + guardarDetalles()
+  + obtenerDetalles()
+  
+}
+
+
+
+class Categoria {
+  - nombreCategoria: String
+
+  + guardarCategoria()
+  + obtenerCategoria()
+}
+
+
+
+class Genero {
+  - nombreGenero: String
+
+  + guardarGenero()
+  + obtenerGenero()
+}
+
+
+
+class Pelicula {
+  - nombreDirector: String
+
+
+  + obtenerInformacionPelicula()
+  + guardarInformacionPelicula()
+}
+
+
+class Serie {
+  - nombreEscritor: String
+
+  + obtenerInformacionSerie()
+  + guardarInformacionSerie()
+}
+
+
+class Novela {
+  - autor: String
+  
+  + obtenerInformacionNovela()
+  + guardarInformacionNovela()
+}
+
+class Documental {
+  - nombreDirector: String
+
+  + obtenerInformacionDocumental()
+  + guardarInformacionDocumental()
+}
+
+
+class Temporada {
+  - numeroTemporadas: Int
+  - episodios: Int
+
+  + obtenerInformacionTemporada()
+  + guardarInformacionTemporada()
+}
+
+class Ranking{
+
+  - numeroPuntuacion: Int
+
+  + guardarPuntuacion()
+  + obtenerPuntuacion()
+}
+
+
+class Reparto {
+  - nombreActor: String
+  - nombrePersonaje: String
+  - descripcion: String
+
+  + obtenerInformacionReparto()
+  + guardarInformacionReparto()
+}
+
+class Historial {
+  - perfil: String
+
+  + guardarHistorial()
+}
+
+class Productora {
+  - nombreProductora: String
+  - descripcion: String
+
+  + obtenerInformacionProductora()
+  + guardarInformacionProductora()
+}
+
+class Region {
+  - pais: String
+  - idioma: String
+  - restricciónEdad: Int
+
+   + obtenerInformacionRegion()
+   + guardarInformacionRegion()
+}
+
+class Factura {
+  - fecha: Date
+  - monto: Float
+
+  + generarFactura()
+}
+
+class Cuenta {
+  - nombre: String
+  - correo: String
+  - contraseña: String
+
+  + obtenerInformacionCuenta()
+  + guardarInformacionCuenta()
+}
+
+class Suscripcion {
+  - tipoPlan: String
+  - fechaInicio: Date
+  - fechaFin: Date
+
+  + obtenerInformacionSuscripcion()
+  + guardarInformacionSuscripcion()
+
+}
+
+
+
+class MetodoPago {
+  - cuenta: String
+  - tarjeta: String
+
+  + pago()
+}
+
+class Configuracion {
+  - idioma: String
+
+  + obtenerInformacionConfiguracion()
+  + guardarInformacionConfiguracion()
+}
+
+Netflix <|-- Pelicula
+Netflix <|-- Serie
+Netflix <|-- Documental
+Netflix <|-- Novela
+
+Perfil -- Netflix
+Netflix -- Categoria
+Netflix -- Reparto
+Netflix -- Genero
+Netflix -- Productora
+Netflix -- Region
+Netflix -- Ranking
+
+Factura -- Cuenta
+Perfil -- Configuracion
+Factura -- Suscripcion
+
+Serie o-- Temporada
+Novela o-- Temporada
+
+Perfil o-- Historial
+
+
+Suscripcion <-- Perfil
+
+Suscripcion <.. Cuenta 
+Suscripcion <.. MetodoPago
+
+
+
+@enduml
