@@ -4,13 +4,21 @@ include('libreria/nomina.php');
 $datos = new Datos();
 $nomina = new Nomina();
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $diaT = $_POST['diaT'];
-    $valorD = $_POST['valorD'];
+if (!empty($_POST['diaT']) && !empty($_POST['valorD'])){
+        $diaT = $_POST['diaT'];
+        $valorD = $_POST['valorD'];
 
+        
     $datos->setDiasT($diaT);
     $datos->setValorD($valorD);
-}
+    
+    }else{
+        $diaT = 0;
+        $valorD = 0;
+    
+    }
+
+
 ?>
 
 <!DOCTYPE html>
@@ -52,6 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <div class="col-4 respuesta">
             <div id="pantalla">
+
                     <p>El pago de la persona es: <?= $nomina->pagoPersona($datos->getDiasT(), $datos->getValorD()) ?></p>
                     <p>La salud es de: <?= $nomina->saludP() ?></p>
                     <p>La pensión es de: <?= $nomina->pensionP() ?></p>

@@ -2,8 +2,8 @@
 
 
 class Datos{
-    public $diasT;
-    public $valorD;
+    private $diasT;
+    private $valorD;
 
     public function setDiasT($diasT){
         $this->diasT = $diasT;
