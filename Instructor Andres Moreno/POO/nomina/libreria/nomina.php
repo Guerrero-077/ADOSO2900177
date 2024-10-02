@@ -1,105 +1,73 @@
 <?php
+    class Nomina{
+
+        private $valorD;
+        private $diasT;
+        private $salarioM;
 
 
-class Datos{
-    private $diasT;
-    private $valorD;
+        public $pagoP;
 
-    public function setDiasT($diasT){
-        $this->diasT = $diasT;
-    }
+        public $saludP;
+        public $pensionP;
+        public $arlP;
 
-    public function getDiasT(){
-        return $this->diasT;
-    }
+        public $transporte;
+        public $retencion;
 
-    public function setValorD($valorD){
-        $this->valorD = $valorD;
-    }
+        public $pagoTotal;
 
-    public function getValorD(){
-        return $this->valorD;
-    }
-    
-}
-
-
-class Nomina{
-
-    public $valorD;
-    public $diasT;
-
-    public $salud;
-    public $pension;
-    public $arl;
-    
-    public $subTransporte; 
-    public $reten;
-
-    public $salarioM;
-    public  $pagoTotal;
-
-    public $sueldo;
-
-
-    public function pagoPersona($diasTP, $valorDP){
-        $this->diasT = $diasTP;
-        $this->valorD = $valorDP;
-
-        $this->sueldo = $this->valorD * $this->diasT;
-
-        return $this -> sueldo;
-    }
-
-    public function saludP(){
-        $this->salud = $this->sueldo * 0.12;
-        return $this -> salud;
-    }
-
-    public function pensionP() {
-        $this->pension = $this->sueldo * 0.16;
-        return $this -> pension;
-        
-    }
-
-    public function arlP(){
-        $this->arl = $this->sueldo * 0.52;
-        return $this -> arl;
-        
-    }
-
-    public function subTransporteP() {
-        $this -> salarioM = 1300000;
-        
-        if ($this -> sueldo <=$this ->salarioM ) {
-            $this -> subTransporte = 114000;
-            
-        }else{
-            
-            $this -> subTransporte = 0;
+        public function __construct(Datos $valores) {
+            $this->valorD = $valores;
+            $this->diasT = $valores;
+            $this->salarioM = $valores;
         }
 
-        return $this-> subTransporte;
-    }
-
-    public function retenP(){
-        $salarioM = 1300000;
-
-        if ($this -> sueldo >= $salarioM * 4) {
-
-            $this -> reten = 0.04;
-        }else{
-            $this -> reten = 0;
+        public function pago() {
+            $this -> pagoP =   $this -> diasT->getDiasT() * $this ->  valorD->getValorD();
+            return $this->pagoP;
         }
-        return $this -> reten;
 
+        // deducible
+
+        public function salud() {
+            $this -> saludP = $this -> pagoP  * 0.12;
+            return $this-> saludP;
+        }
+
+        public function pension(){
+            $this -> pensionP =  $this -> pagoP * 0.16;
+            return $this-> pensionP;
+        }
+
+        public function arl(){
+            $this -> arlP = $this -> pagoP * 0.052;
+            return $this-> arlP;
+        }
+
+        public function subTransporte(){
+
+            if ($this -> pagoP <= $this->salarioM->getSalarioM()*2) {
+                $this-> transporte = 114000;
+            } else {
+                $this-> transporte = 0;
+            }
+            return  $this-> transporte;
+        }
+
+        public function reten(){
+            if ($this -> pagoP > $this -> salarioM->getSalarioM() * 4) {
+                $this -> retencion = 0.04;
+            } else {
+                $this -> retencion = 0;
+            }
+            return $this -> retencion;
+        }
+
+        // pago total de la persona
+
+        public  function pagoTotal(){
+            $this -> pagoTotal = ($this -> pagoP + $this->transporte) -($this -> saludP + $this -> pensionP + $this -> arlP + $this->retencion);
+            return $this->pagoTotal;
+        }
     }
-
-    public function pagoTotalP() {
-        $this-> pagoTotal = ($this -> sueldo + $this -> subTransporte) - ($this -> salud + $this -> pension + $this -> arl + $this -> reten);
-
-        return $this -> pagoTotal;
-        
-    }
-}
-?>

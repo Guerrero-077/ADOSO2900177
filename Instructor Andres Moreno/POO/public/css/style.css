@@ -7,9 +7,13 @@ autor: Santiago GM
 /* Estilos generales */
 body {
     font-family: Arial, sans-serif;
-    background-image: url(../../img/fondo.jpg);
+    background-image: url(../img/fondo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   /* Estilos para formularios */

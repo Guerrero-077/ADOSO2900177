@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operaciones</title>
+
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/style.css">
+  <script src="js/nomina.js"></script>
+</head>
+
+<body>
+    <div class="container mt-5 mb-5">
+        <div class="row forma">
+            <div class="formulario col-6">
+                <form class="row g-3 needs-validation justify-content-center" onsubmit="nomina(); return false;">
+                <div class="col-md-8 user-box">
+                    <label for="diasT" class="form-label">Digete los Dias Trabajados:</label>
+                    <input type="number" class="form-control" id="diasT" name="diasT" required>
+                </div>
+
+                <div class="col-md-8 user-box">
+                    <label for="valorD" class="form-label">Digite el valor Dia:</label>
+                    <input type="number" class="form-control" id="valorD" name="valorD" required>
+                </div>
+
+                <div class="col-md-8 user-box">
+                    <label for="salariM" class="form-label">Digite el salario Minimo:</label>
+                    <input type="number" class="form-control" id="salariM" name="salariM" required>
+                </div>
+
+
+                <div class="col-12 text-center">
+                    <button class="btn btn-primary" type="submit">
+                    Enviar
+                    </button>
+                </div>
+                </form>
+            </div>
+
+            <div class="col-4 respuesta">
+                <div id="pantalla">
+                <!-- <p id="resultadoSuma"></p> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../public/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

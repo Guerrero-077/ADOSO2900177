@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Operaciones</title>
+
+  <link rel="stylesheet" href="../public/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../public/css/style.css">
+  <script src="js/operaciones.js"></script>
+</head>
+
+<body>
+  <div class="container mt-5 mb-5">
+    <div class="row forma">
+      <div class="formulario col-6">
+        <form class="row g-3 needs-validation justify-content-center" onsubmit="realizarTodasOpereciones(); return false;">
+          <div class="col-md-8 user-box">
+            <label for="txtNumUno" class="form-label">Digite el primer número:</label>
+            <input type="number" class="form-control" id="txtNumUno" name="txtNumUno" required>
+          </div>
+
+          <div class="col-md-8 user-box">
+            <label for="txtNumDos" class="form-label">Digite el segundo número:</label>
+            <input type="number" class="form-control" id="txtNumDos" name="txtNumDos" required>
+          </div>
+
+          <div class="col-12 text-center">
+            <button class="btn btn-primary" type="submit">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-4 respuesta">
+        <div id="saludo">
+          <p id="resultadoSuma"></p>
+          <p id="resultadoResta"></p>
+          <p id="resultadoMultiplicacion"></p>
+          <p id="resultadoDivision"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../public/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
