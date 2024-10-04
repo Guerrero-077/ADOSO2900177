@@ -71,3 +71,9 @@ body {
     margin-top: 20px; /* Espacio entre los formularios y la respuesta */
   }
   
+
+  .centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

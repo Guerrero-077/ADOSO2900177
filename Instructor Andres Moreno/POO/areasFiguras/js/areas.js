@@ -51,8 +51,8 @@ function areas() {
         if (data.error) {
             alert(data.error);
         } else {
-            document.getElementById('pantalla').innerHTML = `
-                <p>Resultado: ${data.resultado}</p>
+            document.getElementById('pantalla').innerHTML = /*html*/`
+            <p class="m-0 p-0">El area del ${figura} es: ${data.resultado}</p>
             `;
         }
     })
