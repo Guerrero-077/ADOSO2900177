@@ -52,7 +52,7 @@ function areas() {
             alert(data.error);
         } else {
             document.getElementById('pantalla').innerHTML = /*html*/`
-            <p class="m-0 p-0">El area del ${figura} es: ${data.resultado}</p>
+                <p class="m-0 p-0">El area del ${figura} es: ${data.resultado}</p>
             `;
         }
     })

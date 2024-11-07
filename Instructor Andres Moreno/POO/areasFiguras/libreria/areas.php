@@ -24,4 +24,3 @@ class AreaFiguras {
         return $this->base && $this->altura ? ($this->base->getValor() * $this->altura->getValor()) / 2 : null;
     }
 }
-?>

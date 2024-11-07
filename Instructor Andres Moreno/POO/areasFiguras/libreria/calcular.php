@@ -3,7 +3,7 @@
 include('datos.php');
 include('areas.php');
 
-// Obtenemos los datos enviados por el usuario 
+// Obtenemos los datos enviados por el usuario
 $data = json_decode(file_get_contents('php://input'), true);
 
 $figura = $data['figura'];
@@ -18,14 +18,15 @@ if ($figura === 'cuadrado') {
     $altura = new Datos($data['altura']);
     $area = new AreaFiguras(null, $base, $altura);
 
-    if ($figura === 'rectangulo') {
-        $response['resultado'] = $area->areaRectangulo();
-    } else {
-        $response['resultado'] = $area->areaTriangulo();
-    }
+    $figura === 'rectangulo' ? $response['resultado'] = $area->areaRectangulo() : $response['resultado'] = $area->areaTriangulo();
+
+    // if ($figura === 'rectangulo') {
+    //     $response['resultado'] = $area->areaRectangulo();
+    // } else {
+    //     $response['resultado'] = $area->areaTriangulo();
+    // }
 }
 
 // Enviar la respuesta en formato JSON
 header('Content-Type: application/json');
 echo json_encode($response);
-?>
