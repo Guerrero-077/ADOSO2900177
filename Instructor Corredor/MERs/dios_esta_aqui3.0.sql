@@ -1,165 +1,47 @@
+-- ============================================================== 
 -- SENTENCIAS DDL
+-- ============================================================== 
 
 CREATE TABLE genero (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    genero VARCHAR(30) NOT NULL
-);
-
-CREATE TABLE peliculas (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    titulo VARCHAR(100) NOT NULL,
-    estreno DATE NOT NULL,
-    id_genero INT NOT NULL,
-    FOREIGN KEY (id_genero) REFERENCES genero(id)
-);
-
-CREATE TABLE persona (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100) NOT NULL
-);
-
-CREATE TABLE roles (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    rol VARCHAR(30) NOT NULL
-);
-
-CREATE TABLE cines (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    nombre VARCHAR(100) NOT NULL,
-    direccion VARCHAR(100) NOT NULL
-);
-
-CREATE TABLE funciones (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    id_pelicula INT NOT NULL,
-    id_cine INT NOT NULL,
-    hora TIMESTAMP NOT NULL,
-    FOREIGN KEY (id_pelicula) REFERENCES peliculas(id),
-    FOREIGN KEY (id_cine) REFERENCES cines(id)
-);
-
-CREATE TABLE elenco (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    id_pelicula INT NOT NULL,
-    id_persona INT NOT NULL,
-    id_rol INT NOT NULL,
-    FOREIGN KEY (id_pelicula) REFERENCES peliculas(id),
-    FOREIGN KEY (id_persona) REFERENCES persona(id),
-    FOREIGN KEY (id_rol) REFERENCES roles(id)
-);
-
-
-CREATE TABLE pelicula_cine (
-    id INT PRIMARY KEY AUTO_INCREMENT,
-    id_cine INT NOT NULL,
-    id_pelicula INT NOT NULL,
-    FOREIGN KEY (id_cine) REFERENCES cines(id),
-    FOREIGN KEY (id_pelicula) REFERENCES peliculas(id)
-);
-
--- SENTENCIAS DML
-INSERT INTO genero (genero) 
-            VALUES 
-            ('Acción'),
-            ('Animación'),
-            ('Drama'),
-            ('Terror');
-
-
-INSERT INTO peliculas (titulo, estreno, id_genero) 
-                    VALUES 
-                    ('Avengers: Endgame', '2019-04-26', 1),  
-                    ('El Rey León', '2024-12-20', 2),  
-                    ('Joker 2', '2016-10-02', 3),  
-                    ('It 2', '2017-09-04', 4);
-
-
-INSERT INTO persona (nombre) 
-                    VALUES 
-                    ('Robert Downey Jr.'),
-                    ('Ellen DeGeneres'),
-                    ('Joaquín Phoenix'),
-                    ('Josh Cooley');
-
-
-INSERT INTO roles (rol) 
-                VALUES 
-                ('Protagonista'),
-                ('Antagonista'),
-                ('Actor Secundario'),
-                ('Director');
-
-
-INSERT INTO cines (nombre, direccion) 
-                VALUES 
-                ('Cinemark', 'Calle 8 N.38'),
-                ('Royal Films', 'Calle 64 N. 64'),
-                ('Cineland', 'Calle 8 N.50');
-
-
-INSERT INTO funciones (id_pelicula, id_cine, hora) 
-                    VALUES 
-                    (1, 1, '2024-11-05 20:00:00'),   
-                    (2, 2, '2024-11-06 18:30:00'),   
-                    (3, 3, '2024-11-07 21:00:00'),   
-                    (4, 1, '2024-11-08 22:00:00');  
-
-
-INSERT INTO elenco (id_pelicula, id_persona, id_rol) 
-                    VALUES 
-                    (1, 1, 1),  
-                    (2, 2, 1),   
-                    (3, 3, 2),   
-                    (4, 4, 4);  
-
-
-INSERT INTO pelicula_cine(id_cine, id_pelicula) 
-                        VALUES 
-                        (1, 1), 
-                        (1, 2),
-                        (2, 3);
-
-UPDATE persona 
-SET  nombre = 'Josh Cooley'
-WHERE id  = 4;
-
-DELETE FROM peliculas
-WHERE id = 2;
-
-
--- ==============================================================
--- SENTENCIAS DDL
-CREATE TABLE genero (
-    id SERIAL PRIMARY KEY,
     tipo_genero VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE peliculas (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(100) NOT NULL,
     estreno DATE NOT NULL,
     id_genero INT NOT NULL,
     FOREIGN KEY (id_genero) REFERENCES genero(id)
 );
 
+CREATE TABLE pelicula_genero (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    id_pelicula INT NOT NULL,
+    id_genero INT NOT NULL,
+    FOREIGN KEY (id_pelicula) REFERENCES peliculas(id),
+    FOREIGN KEY (id_genero) REFERENCES genero(id)
+);
+
+
 CREATE TABLE persona (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE roles (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     rol VARCHAR(30) NOT NULL
 );
 
 CREATE TABLE cines (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     nombre VARCHAR(100) NOT NULL,
     direccion VARCHAR(100) NOT NULL
 );
 
 CREATE TABLE funciones (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     id_pelicula INT NOT NULL,
     id_cine INT NOT NULL,
     hora TIMESTAMP NOT NULL,
@@ -168,7 +50,7 @@ CREATE TABLE funciones (
 );
 
 CREATE TABLE elenco (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     id_pelicula INT NOT NULL,
     id_persona INT NOT NULL,
     id_rol INT NOT NULL,
@@ -179,17 +61,23 @@ CREATE TABLE elenco (
 
 
 CREATE TABLE pelicula_cine (
-    id SERIAL PRIMARY KEY,
+    id INT PRIMARY KEY AUTO_INCREMENT,
     id_cine INT NOT NULL,
     id_pelicula INT NOT NULL,
     FOREIGN KEY (id_cine) REFERENCES cines(id),
     FOREIGN KEY (id_pelicula) REFERENCES peliculas(id)
 );
 
+
+
+-- ==============================================================
+-- PROCEDIMIENTOS DE ALMACENADO 
+-- ==============================================================
+
 DELIMITER $$
 
 -- ==============================================================
--- INSERTAR DARTOS 
+-- INSERTAR DATOS genero
 -- ==============================================================
 
 	
@@ -208,7 +96,7 @@ DELIMITER $$
 	END $$
     
 -- ============================================================== 
--- ACTUALIZAR DATOS 
+-- ACTUALIZAR DATOS genero
 -- ============================================================== 
 
 CREATE PROCEDURE actualizar_genero(
@@ -227,9 +115,9 @@ BEGIN
 END $$ 
 
 
--- ============================================================== 
--- ELIMINAR DATOS 
--- ============================================================== 
+    -- ============================================================== 
+    -- ELIMINAR DATOS genero
+    -- ============================================================== 
 
 CREATE PROCEDURE eliminar_genero(
     IN id_p INT
@@ -245,7 +133,7 @@ BEGIN
 END $$ 
 
 -- ==============================================================
--- INSERTAR DATOS 
+-- INSERTAR DATOS peliculas
 -- ==============================================================
 
 	CREATE PROCEDURE insertar_pelicula(
@@ -266,7 +154,7 @@ END $$
 	END $$
 
 -- ==============================================================
--- ACTUALIZAR PELÍCULA
+-- ACTUALIZAR DATOS peliculas
 -- ==============================================================
 CREATE PROCEDURE actualizar_pelicula(
     IN id_p INT,
@@ -284,7 +172,7 @@ BEGIN
 END $$ 
 
 -- ==============================================================
--- ELIMINAR PELÍCULA
+-- ELIMINAR DATOS peliculas
 -- ==============================================================
 CREATE PROCEDURE eliminar_pelicula(
     IN id_p INT
@@ -301,7 +189,7 @@ END $$
 
 
 -- ==============================================================
--- INSERTAR DARTOS 
+-- INSERTAR DARTOS  persona
 -- ==============================================================
 
 	CREATE PROCEDURE insertar_persona(
@@ -320,7 +208,7 @@ END $$
 	END $$
     
     -- ==============================================================
--- ACTUALIZAR PERSONA
+-- ACTUALIZAR DATOS persona
 -- ==============================================================
 CREATE PROCEDURE actualizar_persona(
     IN id_p INT,
@@ -338,7 +226,7 @@ BEGIN
 END $$ 
 
 -- ==============================================================
--- ELIMINAR PERSONA
+-- ELIMINAR DATOS persona
 -- ==============================================================
 CREATE PROCEDURE eliminar_persona(
     IN id_p INT
@@ -355,7 +243,7 @@ END $$
 
     
 -- ==============================================================
--- INSERTAR DARTOS 
+-- INSERTAR DARTOS roles
 -- ==============================================================
 
 	CREATE PROCEDURE insertar_rol(
@@ -374,7 +262,7 @@ END $$
 	END $$
     
 -- ==============================================================
--- ACTUALIZAR ROL
+-- ACTUALIZAR DATOS roles
 -- ==============================================================
 CREATE PROCEDURE actualizar_rol(
     IN id_p INT,
@@ -392,7 +280,7 @@ BEGIN
 END $$ 
 
 -- ==============================================================
--- ELIMINAR ROL
+-- ELIMINAR DATOS roles
 -- ==============================================================
 CREATE PROCEDURE eliminar_rol(
     IN id_p INT
@@ -409,7 +297,7 @@ END $$
 
 
 -- ==============================================================
--- INSERTAR DARTOS 
+-- INSERTAR DARTOS cines
 -- ==============================================================
 
 	CREATE PROCEDURE insertar_cine(
@@ -429,7 +317,7 @@ END $$
 	END $$
     
     -- ==============================================================
--- ACTUALIZAR CINE
+-- ACTUALIZAR DATOS cines
 -- ==============================================================
 CREATE PROCEDURE actualizar_cine(
     IN id_p INT,
@@ -447,7 +335,7 @@ BEGIN
 END $$ 
 
 -- ==============================================================
--- ELIMINAR CINE
+-- ELIMINAR DATOS cines
 -- ==============================================================
 CREATE PROCEDURE eliminar_cine(
     IN id_p INT
@@ -463,7 +351,7 @@ BEGIN
 END $$ 
 
 -- ==============================================================
--- INSERTAR DARTOS 
+-- INSERTAR DARTOS funciones
 -- ==============================================================
 	
 	CREATE PROCEDURE insertar_funcion(
@@ -484,7 +372,7 @@ END $$
 	END $$
     
     -- ==============================================================
--- ACTUALIZAR FUNCIÓN
+-- ACTUALIZAR DATOS funciones
 -- ==============================================================
 CREATE PROCEDURE actualizar_funcion(
     IN id_p INT,
@@ -502,7 +390,7 @@ BEGIN
 END $$ 
 
 -- ==============================================================
--- ELIMINAR FUNCIÓN
+-- ELIMINAR DATOS funciones
 -- ==============================================================
 CREATE PROCEDURE eliminar_funcion(
     IN id_p INT
@@ -519,7 +407,7 @@ END $$
 
 
 -- ==============================================================
--- INSERTAR DARTOS 
+-- INSERTAR DATOS elenco
 -- ==============================================================
 
 	CREATE PROCEDURE insertar_elenco(
@@ -540,7 +428,7 @@ END $$
 	END $$
     
     -- ==============================================================
--- ACTUALIZAR ELENCO
+-- ACTUALIZAR DATOS elenco
 -- ==============================================================
 CREATE PROCEDURE actualizar_elenco(
     IN id_p INT,
@@ -558,7 +446,7 @@ BEGIN
 END $$ 
 
 -- ==============================================================
--- ELIMINAR ELENCO
+-- ELIMINAR DATOS elenco
 -- ==============================================================
 CREATE PROCEDURE eliminar_elenco(
     IN id_p INT
@@ -575,7 +463,7 @@ END $$
 
 
 -- ==============================================================
--- INSERTAR DARTOS 
+-- INSERTAR DATO pelicula_cine
 -- ==============================================================
 
 	CREATE PROCEDURE insertar_pelicula_cine(
@@ -629,3 +517,203 @@ BEGIN
 END $$ 
 
 DELIMITER $$;
+
+
+-- ==============================================================
+-- TRANSACCIONES ACTUALIZAR GENERO
+-- ==============================================================
+
+DELIMITER $$
+
+CREATE PROCEDURE actualizar_generos_proceso()
+BEGIN
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        ROLLBACK;
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: Ocurrió un problema al insertar géneros. Transacción revertida.';
+    END;
+
+    START TRANSACTION;
+    
+
+    CALL actualizar_genero(1, "Ficcion");
+    CALL actualizar_genero(2, "Suspenso");
+    
+    COMMIT;
+END $$
+
+DELIMITER ;
+
+-- ==============================================================
+-- TRANSACCIONES ELIMINAR GENERO
+-- ==============================================================
+
+DELIMITER $$
+
+CREATE PROCEDURE eliminar_generos_proceso()
+BEGIN
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        ROLLBACK;
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: Ocurrió un problema al eliminar géneros. Transacción revertida.';
+    END;
+
+    START TRANSACTION;
+    
+
+    CALL eliminar_genero(4);
+    
+    COMMIT;
+    SELECT * FROM genero;
+END $$
+
+DELIMITER ;
+
+
+-- ==============================================================
+-- TRANSACCIONES INSERTAR GENERO
+-- ==============================================================
+
+DELIMITER $$
+
+CREATE PROCEDURE insertar_generos_proceso()
+BEGIN
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        ROLLBACK;
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: Ocurrió un problema al insertar géneros. Transacción revertida.';
+    END;
+
+    START TRANSACTION;
+    
+    -- Llamadas para insertar géneros
+    CALL insertar_genero('Acción');
+    CALL insertar_genero('Animación');
+    CALL insertar_genero('Drama');
+    CALL insertar_genero('Terror');
+    CALL insertar_genero('Comedia');
+
+    
+    CALL actualizar_generos_proceso();
+    CALL eliminar_generos_proceso();
+    COMMIT;
+    
+END $$
+
+DELIMITER ;
+
+
+-- ==============================================================
+-- TRANSACCIONES ACTUALIZAR pelicula
+-- ==============================================================
+
+DELIMITER $$
+
+CREATE PROCEDURE actualizar_pelicula_proceso()
+BEGIN
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        ROLLBACK;
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: Ocurrió un problema al insertar pelicula. Transacción revertida.';
+    END;
+
+    START TRANSACTION;
+    
+
+    -- ?
+    CALL actualizar_pelicula(1, "Operación zombie");
+    CALL actualizar_pelicula(2, "El Tiempo Que Tenemos");
+    
+    COMMIT;
+END $$
+
+DELIMITER ;
+
+-- ==============================================================
+-- TRANSACCIONES ELIMINAR GENERO
+-- ==============================================================
+
+DELIMITER $$
+
+CREATE PROCEDURE eliminar_pelicula_proceso()
+BEGIN
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        ROLLBACK;
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: Ocurrió un problema al eliminar pelicula. Transacción revertida.';
+    END;
+
+    START TRANSACTION;
+    
+
+    CALL eliminar_pelicula(4);
+    
+    COMMIT;
+    SELECT * FROM pelicula;
+END $$
+
+DELIMITER ;
+
+
+-- ==============================================================
+-- TRANSACCIONES INSERTAR PELICULA
+-- ==============================================================
+
+
+DELIMITER $$
+
+CREATE PROCEDURE insertar_peliculas_proceso()
+BEGIN
+    DECLARE genero VARCHAR(30);
+
+    
+    DECLARE EXIT HANDLER FOR SQLEXCEPTION
+    BEGIN
+        ROLLBACK;
+        SIGNAL SQLSTATE '45000'
+        SET MESSAGE_TEXT = 'Error: Ocurrió un problema al insertar películas. Transacción revertida.';
+    END;
+
+    START TRANSACTION;
+
+    CALL insertar_pelicula('operacion zombi', '2024-11-07', 1);
+    CALL insertar_pelicula('El tiempo que tenemo', '2024-11-08', 3);
+    CALL insertar_pelicula('Código Traje Rojo', '2024-11-09', 5);
+    CALL insertar_pelicula('La Patasola', '2024-11-09', 4);
+
+    
+    SET genero = "Dios mio";  
+    CALL insertar_pelicula('Venon: El Último Baile', '2024-11-09', genero);
+
+
+    actualizar_pelicula_proceso()
+
+    eliminar_pelicula_proceso()
+    
+    COMMIT;
+END $$
+
+DELIMITER ;
+
+
+-- ==============================================================
+-- TRANSACCIONES TODO PODEROSO
+-- ==============================================================
+
+DELIMITER $$
+
+CREATE PROCEDURE todo_poderoso()
+BEGIN
+    -- Llamar al procedimiento de inserción de géneros
+    CALL insertar_generos_proceso();
+
+    -- Llamar al procedimiento de inserción de películas
+    CALL insertar_peliculas_proceso();
+END $$
+
+DELIMITER ;
