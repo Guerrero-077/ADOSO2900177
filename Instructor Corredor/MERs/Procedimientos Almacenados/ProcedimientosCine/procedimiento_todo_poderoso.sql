@@ -1,31 +1,16 @@
 DELIMITER $$
-
     CREATE PROCEDURE procedimiento_todo_poderoso()
             BEGIN
-                DECLARE EXIT HANDLER FOR SQLEXCEPTION
-                BEGIN
-                    ROLLBACK;
-                    SELECT 'Error: Ha ocurrido un problema con las transacciones.' AS resultado;
-                END;
-
-                START TRANSACTION;
-
-                    CALL todo_poderoso_persona();
-                    CALL todo_poderoso_roles();
-                    CALL todo_poderoso_cine();  
-                    CALL todo_poderoso_pelicula();
-                    
-
-                    CALL todo_poderoso_genero();
-                    
-                    CALL todo_poderoso_pelicula_genero();
-                    CALL todo_poderoso_elenco();
-                    
-                    CALL todo_poderoso_pelicula_cine();
-                    CALL todo_poderoso_funciones(); 
-
-                COMMIT;
-
+                CALL general_persona();
+                CALL general_rol();
+                CALL general_cine();  
+                CALL general_pelicula();
+                CALL general_genero();                
+                CALL general_pelicula_genero();
+                CALL general_elenco();
+                CALL general_pelicula_cine();
+                CALL general_funcion(); 
+                
                 SELECT 'Transacción de todo poderoso completada con éxito' AS resultado;
                 SELECT * FROM persona;
                 SELECT * FROM roles;
@@ -36,7 +21,5 @@ DELIMITER $$
                 SELECT * FROM elenco;
                 SELECT * FROM pelicula_cine;
                 SELECT * FROM funciones;
-                
             END $$
-
 DELIMITER ;

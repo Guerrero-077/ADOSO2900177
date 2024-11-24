@@ -1,41 +1,26 @@
 DELIMITER $$
-
     CREATE PROCEDURE procedimiento_todo_poderoso()
             BEGIN
-                DECLARE EXIT HANDLER FOR SQLEXCEPTION
-                BEGIN
-                
-                    ROLLBACK;
-                    SELECT 'Error: Ha ocurrido un problema con las transacciones de todo poderoso, ninguna operación se realizó.';
-                END;
-
-                START TRANSACTION;
-
-                    CALL todo_poderoso_persona(); 
-                    CALL todo_poderoso_tipo_vehiculo(); 
-                    CALL todo_poderoso_vehiculo(); 
-                    CALL todo_poderoso_concesionario(); 
-                    CALL todo_poderoso_metodo_pago(); 
-                    CALL todo_poderoso_reserva(); 
-                    CALL todo_poderoso_factura(); 
-                    CALL todo_poderoso_lista_vehiculo(); 
-                    CALL todo_poderoso_historial_uso();
-
-                    CALL todo_poderoso_persona_concesionario(); 
-
-                COMMIT;
-
+                CALL general_persona(); 
+                CALL general_tipo_vehiculo(); 
+                CALL general_vehiculo(); 
+                CALL general_concesionario(); 
+                CALL general_metodo_pago(); 
+                CALL general_reserva(); 
+                CALL general_factura(); 
+                CALL general_lista_vehiculo(); 
+                CALL general_historial_uso();
+                CALL general_visitas();
                 SELECT 'Transacción de todo poderoso completada con éxito' AS resultado;
-
-                    SELECT * FROM persona;
-                    SELECT * FROM tipo_vehiculo;
-                    SELECT * FROM vehiculo;
-                    SELECT * FROM concesionario;
-                    SELECT * FROM metodoPago;
-                    SELECT * FROM reserva;
-                    SELECT * FROM factura;
-                    SELECT * FROM listaVehiculo;
-                    SELECT * FROM historialUso;
-                    SELECT * FROM persona_concesionario;
+                select * from persona;
+                select * from tipo_vehiculo;
+                select * from vehiculo;
+                select * from concesionario;
+                select * from metodoPago;
+                select * from reserva;
+                select * from factura;
+                select * from listaVehiculo;
+                select * from historialuso;
+                select * from visita;
             END $$
 DELIMITER ;

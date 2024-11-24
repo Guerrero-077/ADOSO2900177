@@ -67,7 +67,7 @@ CREATE TABLE historialUso (
     FOREIGN KEY (id_cliente) REFERENCES persona(id)
 );
 
-CREATE TABLE persona_concesionario (
+CREATE TABLE visita (
     id INT PRIMARY KEY AUTO_INCREMENT,
     id_persona INT NOT NULL,
     id_concesionario INT NOT NULL,

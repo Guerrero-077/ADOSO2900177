@@ -40,9 +40,9 @@ CREATE TABLE cines (
 
 CREATE TABLE funciones (
     id INT PRIMARY KEY AUTO_INCREMENT,
-    id_pelicula INT NOT NULL,
     id_cine INT NOT NULL,
-    hora TIMESTAMP NOT NULL,
+    id_pelicula INT NOT NULL,
+    funcion TIMESTAMP NOT NULL,
     FOREIGN KEY (id_pelicula) REFERENCES peliculas(id),
     FOREIGN KEY (id_cine) REFERENCES cines(id)
 );

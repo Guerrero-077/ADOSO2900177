@@ -103,7 +103,7 @@ CREATE PROCEDURE actualizar_rol_proceso()
         CALL actualizar_rol(2, 'Antagonista');
         
         SET rolError = 'Hola Mundo';
-        CALL actualizar_rol(rolError, 'Antagonista');
+        -- CALL actualizar_rol(rolError, 'Antagonista');
 
         
         COMMIT;
