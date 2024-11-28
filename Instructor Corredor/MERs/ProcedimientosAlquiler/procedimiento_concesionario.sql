@@ -1,4 +1,4 @@
-SET @id_p = 5, @nombre_p = 'Distoyotas', @direccion_p = 'Carrera 5 N. 10';
+SET @id_p = 'fgjffggh', @nombre_p = 'Distoyotas', @direccion_p = 'Carrera 5 N. 10';
 DELIMITER $$
     CREATE PROCEDURE insertar_concesionario()
         BEGIN

@@ -3,13 +3,6 @@ DELIMITER $$
     CREATE PROCEDURE procedimiento_todo_poderoso()
             BEGIN
                 DECLARE EXIT HANDLER FOR SQLEXCEPTION
-                BEGIN
-                
-                    ROLLBACK;
-                    SELECT 'Error: Ha ocurrido un problema con las transacciones de todo poderoso, ninguna operación se realizó.';
-                END;
-
-                START TRANSACTION;
 
                     -- CALL general_persona(); 
                     CALL general_tipo_vehiculo(); 
