@@ -1,0 +1,133 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Controllers\\LaptopsControllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiWebAPI\\Controllers\\LaptopsControllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Migrations\\20250201174446_TablaLaptops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiWebAPI\\Migrations\\20250201174446_TablaLaptops.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Entidades\\Laptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiWebAPI\\Entidades\\Laptop.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiWebAPI\\ApplicationDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiWebAPI\\WeatherForecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiWebAPI\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MiWebAPI\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LaptopsControllers.cs",
+              "DocumentMoniker": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Controllers\\LaptopsControllers.cs",
+              "RelativeDocumentMoniker": "MiWebAPI\\Controllers\\LaptopsControllers.cs",
+              "ToolTip": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Controllers\\LaptopsControllers.cs",
+              "RelativeToolTip": "MiWebAPI\\Controllers\\LaptopsControllers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T17:50:39.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250201174446_TablaLaptops.cs",
+              "DocumentMoniker": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Migrations\\20250201174446_TablaLaptops.cs",
+              "RelativeDocumentMoniker": "MiWebAPI\\Migrations\\20250201174446_TablaLaptops.cs",
+              "ToolTip": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Migrations\\20250201174446_TablaLaptops.cs",
+              "RelativeToolTip": "MiWebAPI\\Migrations\\20250201174446_TablaLaptops.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T17:44:46.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Laptop.cs",
+              "DocumentMoniker": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Entidades\\Laptop.cs",
+              "RelativeDocumentMoniker": "MiWebAPI\\Entidades\\Laptop.cs",
+              "ToolTip": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Entidades\\Laptop.cs",
+              "RelativeToolTip": "MiWebAPI\\Entidades\\Laptop.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T17:35:20.765Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MiWebAPI\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MiWebAPI\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T17:08:57.809Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "MiWebAPI\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\WeatherForecast.cs",
+              "RelativeToolTip": "MiWebAPI\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T16:52:08.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "MiWebAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\appsettings.json",
+              "RelativeToolTip": "MiWebAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-01T16:49:35.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Program.cs",
+              "RelativeDocumentMoniker": "MiWebAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Guerrero\\Desktop\\Angular\\MiWebAPI\\MiWebAPI\\Program.cs",
+              "RelativeToolTip": "MiWebAPI\\Program.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAABUAAACUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-01T16:49:29.187Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
