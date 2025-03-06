@@ -7,16 +7,52 @@
       "RelativeMoniker": "D:0:0:{6098694B-30AD-4203-BC30-8E6675F25C07}|Diagram\\Diagram.csproj|solutionrelative:diagram\\model1.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6098694B-30AD-4203-BC30-8E6675F25C07}|Diagram\\Diagram.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\diagram\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\module.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\resource.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\typeidentification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\typeidentification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\permission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\sesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\accesslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\accesslog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6098694B-30AD-4203-BC30-8E6675F25C07}|Diagram\\Diagram.csproj|D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\diagram\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6098694B-30AD-4203-BC30-8E6675F25C07}|Diagram\\Diagram.csproj|solutionrelative:diagram\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2FFAFE28-89B1-424B-81A4-46B16A2D861C}|Data\\Data.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2FFAFE28-89B1-424B-81A4-46B16A2D861C}|Data\\Data.csproj|solutionrelative:data\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|d:\\1. sena\\repositorios\\adoso2900177\\c#\\solution2\\entity\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DFE4019-5CC3-4F89-BA84-2D9A4EE39D9A}|Entity\\Entity.csproj|solutionrelative:entity\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +62,138 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 10,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form.cs",
+              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Form.cs",
+              "RelativeDocumentMoniker": "Entity\\Form.cs",
+              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Form.cs",
+              "RelativeToolTip": "Entity\\Form.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:08:02.021Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Resource.cs",
+              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Resource.cs",
+              "RelativeDocumentMoniker": "Entity\\Resource.cs",
+              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Resource.cs",
+              "RelativeToolTip": "Entity\\Resource.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:07:52.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Module.cs",
+              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Module.cs",
+              "RelativeDocumentMoniker": "Entity\\Module.cs",
+              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Module.cs",
+              "RelativeToolTip": "Entity\\Module.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:06:40.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TypeIdentification.cs",
+              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\TypeIdentification.cs",
+              "RelativeDocumentMoniker": "Entity\\TypeIdentification.cs",
+              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\TypeIdentification.cs",
+              "RelativeToolTip": "Entity\\TypeIdentification.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:06:21.287Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Permission.cs",
+              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Permission.cs",
+              "RelativeDocumentMoniker": "Entity\\Permission.cs",
+              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Permission.cs",
+              "RelativeToolTip": "Entity\\Permission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:05:34.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Person.cs",
+              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Person.cs",
+              "RelativeDocumentMoniker": "Entity\\Person.cs",
+              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Person.cs",
+              "RelativeToolTip": "Entity\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:04:44.419Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Sesion.cs",
+              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Sesion.cs",
+              "RelativeDocumentMoniker": "Entity\\Sesion.cs",
+              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Sesion.cs",
+              "RelativeToolTip": "Entity\\Sesion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:04:24.969Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AccessLog.cs",
+              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\AccessLog.cs",
+              "RelativeDocumentMoniker": "Entity\\AccessLog.cs",
+              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\AccessLog.cs",
+              "RelativeToolTip": "Entity\\AccessLog.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:04:12.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\User.cs",
+              "RelativeDocumentMoniker": "Entity\\User.cs",
+              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\User.cs",
+              "RelativeToolTip": "Entity\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:03:57.574Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Rol.cs",
+              "RelativeDocumentMoniker": "Entity\\Rol.cs",
+              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Rol.cs",
+              "RelativeToolTip": "Entity\\Rol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T14:03:45.093Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -42,7 +208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 11,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Diagram\\Class1.cs",
               "RelativeDocumentMoniker": "Diagram\\Class1.cs",
@@ -50,12 +216,11 @@
               "RelativeToolTip": "Diagram\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T01:21:01.088Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T01:21:01.088Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "Class1.cs",
               "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Data\\Class1.cs",
               "RelativeDocumentMoniker": "Data\\Class1.cs",
@@ -63,21 +228,7 @@
               "RelativeToolTip": "Data\\Class1.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T01:20:18.691Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Class1.cs",
-              "DocumentMoniker": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Class1.cs",
-              "RelativeDocumentMoniker": "Entity\\Class1.cs",
-              "ToolTip": "D:\\1. Sena\\Repositorios\\ADOSO2900177\\C#\\Solution2\\Entity\\Class1.cs",
-              "RelativeToolTip": "Entity\\Class1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T01:19:35.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T01:20:18.691Z"
             }
           ]
         }

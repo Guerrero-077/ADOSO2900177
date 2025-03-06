@@ -25,10 +25,6 @@
           <EntitySet Name="SesionSet" EntityType="Model1.Sesion" />
           <EntitySet Name="AccessLogSet" EntityType="Model1.AccessLog" />
           <EntitySet Name="ResourceSet" EntityType="Model1.Resource" />
-          <AssociationSet Name="RolRolPermission" Association="Model1.RolRolPermission">
-            <End Role="Rol" EntitySet="RolSet" />
-            <End Role="RolPermission" EntitySet="RolPermissionSet" />
-          </AssociationSet>
           <AssociationSet Name="PermissionRolPermission" Association="Model1.PermissionRolPermission">
             <End Role="Permission" EntitySet="PermissionSet" />
             <End Role="RolPermission" EntitySet="RolPermissionSet" />
@@ -74,6 +70,10 @@
             <End Role="Resource" EntitySet="ResourceSet" />
             <End Role="AccessLog" EntitySet="AccessLogSet" />
           </AssociationSet>
+          <AssociationSet Name="RolRolPermission" Association="Model1.RolRolPermission">
+            <End Role="Rol" EntitySet="RolSet" />
+            <End Role="RolPermission" EntitySet="RolPermissionSet" />
+          </AssociationSet>
         </EntityContainer>
         <EntityType Name="User">
           <Key>
@@ -112,9 +112,9 @@
           <Property Name="Description" Type="String" Nullable="false" />
           <Property Name="Code" Type="String" Nullable="false" />
           <Property Name="Active" Type="String" Nullable="false" />
-          <NavigationProperty Name="RolPermission" Relationship="Model1.RolRolPermission" FromRole="Rol" ToRole="RolPermission" />
           <Property Name="UserId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="RolUser" Relationship="Model1.RolRolUser" FromRole="Rol" ToRole="RolUser" />
+          <NavigationProperty Name="RolPermission" Relationship="Model1.RolRolPermission" FromRole="Rol" ToRole="RolPermission" />
         </EntityType>
         <EntityType Name="TypeIdentification">
           <Key>
@@ -171,9 +171,10 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="IdForm" Type="String" Nullable="false" />
           <Property Name="IdPermission" Type="String" Nullable="false" />
-          <NavigationProperty Name="IdRol" Relationship="Model1.RolRolPermission" FromRole="RolPermission" ToRole="Rol" />
           <NavigationProperty Name="PermissionId" Relationship="Model1.PermissionRolPermission" FromRole="RolPermission" ToRole="Permission" />
           <Property Name="PermissionId1" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="IdRol" Relationship="Model1.RolRolPermission" FromRole="RolPermission" ToRole="Rol" />
+          <Property Name="RolId" Type="Int32" Nullable="false" />
         </EntityType>
         <EntityType Name="Sesion">
           <Key>
@@ -217,18 +218,6 @@
           <Property Name="PermissionId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="AccessLog" Relationship="Model1.ResourceAccessLog" FromRole="Resource" ToRole="AccessLog" />
         </EntityType>
-        <Association Name="RolRolPermission">
-          <End Type="Model1.Rol" Role="Rol" Multiplicity="1" />
-          <End Type="Model1.RolPermission" Role="RolPermission" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Rol">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="RolPermission">
-              <PropertyRef Name="RolId1" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <Association Name="PermissionRolPermission">
           <End Type="Model1.Permission" Role="Permission" Multiplicity="1" />
           <End Type="Model1.RolPermission" Role="RolPermission" Multiplicity="*" />
@@ -355,6 +344,18 @@
             </Principal>
             <Dependent Role="AccessLog">
               <PropertyRef Name="ResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RolRolPermission">
+          <End Type="Model1.Rol" Role="Rol" Multiplicity="1" />
+          <End Type="Model1.RolPermission" Role="RolPermission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Rol">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="RolPermission">
+              <PropertyRef Name="RolId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
