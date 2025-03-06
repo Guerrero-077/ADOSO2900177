@@ -8,12 +8,15 @@ let nomina = [];
 let pagoNomina = [];
 
 nomina = [
-  {tipoDocumento: "T.I", documento: 1080291867, nombres: "Ingrid Yulissa", apellidos: "Medina Esquivel", edad: 17, estrato: 1, valorDia: 10000, diasTrabajados: 10 },
+  { tipoDocumento: "T.I",
+    documento: 1080291867,
+    nombres: "Ingrid Yulissa",
+    apellidos: "Medina Esquivel", edad: 17, estrato: 1, valorDia: 10000, diasTrabajados: 10 },
   { tipoDocumento: "C.C", documento: 1075225119, nombres: "yerson stiven", apellidos: "Rubiano Cuellar", edad: 18, estrato: 2, valorDia: 20000, diasTrabajados: 20 },
   { tipoDocumento: "T.I", documento: 10757793091, nombres: "Karol Natalia", apellidos: "Osorio Poveda", edad: 17, estrato: 3, valorDia: 30000, diasTrabajados: 30 },
   { tipoDocumento: "T.I", documento: 1077724121, nombres: "Camilo Andres", apellidos: "Losada Ramirez", edad: 17, estrato: 4, valorDia: 40000, diasTrabajados: 40 },
   { tipoDocumento: "C.C", documento: 1076503317, nombres: "Jesus Fernando ", apellidos: "Carvajal Anacona", edad: 18, estrato: 5, valorDia: 50000, diasTrabajados: 50 },
-  { tipoDocumento: "T.I", documento: 1130024111, nombres: "Juan Manuel", apellidos: "Gutierrez Fierro", edad: 17, estrato: 6, valorDia: 60000, diasTrabajados: 60},
+  { tipoDocumento: "T.I", documento: 1130024111, nombres: "Juan Manuel", apellidos: "Gutierrez Fierro", edad: 17, estrato: 6, valorDia: 60000, diasTrabajados: 60 },
   { tipoDocumento: "C.C", documento: 85456043, nombres: "Arnulfo Antonio", apellidos: "Yusunguaira", edad: 19, estrato: 7, valorDia: 70000, diasTrabajados: 70 },
   { tipoDocumento: "C.C", documento: 1084331856, nombres: "Jesus David", apellidos: "Fierro", edad: 18, estrato: 8, valorDia: 80000, diasTrabajados: 80 },
   { tipoDocumento: "C.C", documento: 1075231111, nombres: "Daniel Felipe", apellidos: "Bata", edad: 18, estrato: 9, valorDia: 90000, diasTrabajados: 90 },
@@ -34,7 +37,7 @@ let pension;
 let arl;
 let salud;
 let deducibles;
-let salario; 
+let salario;
 
 for (iteracion = 0; iteracion < nomina.length; iteracion++) {
   pago = nomina[iteracion].diasTrabajados * nomina[iteracion].valorDia;
@@ -46,9 +49,9 @@ for (iteracion = 0; iteracion < nomina.length; iteracion++) {
   arlNomina(pago);
   retencionNomina(pago, nomina[iteracion].estrato);
 
-  reten  = pago * retencion
+  reten = pago * retencion
 
-  salario = ( pago + subTransporte + abono)-(salud+pension+arl+reten)
+  salario = (pago + subTransporte + abono) - (salud + pension + arl + reten)
   pagoNomina.push({
     tipoDocumento: nomina[iteracion].tipoDocumento,
     numeroDocumento: nomina[iteracion].documento,
@@ -86,7 +89,7 @@ function subT(pago) {
 //Abono
 function bono(pago, estrato) {
   if (pago < salarioM && estrato == 1 ||
-      pago < salarioM && estrato == 2){
+    pago < salarioM && estrato == 2) {
     abono = 100000;
   } else {
     abono = 0;
@@ -114,8 +117,8 @@ function arlNomina(pago) {
 //Retencion
 
 function retencionNomina(pago, estrato) {
-  
-  if (pago > 8 * salarioM && estrato == 6 ) {
+
+  if (pago > 8 * salarioM && estrato == 6) {
     retencion = 0.05;
   } else if (pago > salarioM * 6) {
     retencion = 0.04;
@@ -126,23 +129,23 @@ function retencionNomina(pago, estrato) {
   }
   return retencion;
 }
-  
-  // console.log(`  
-  //   Tipo de Documento: ${nomina[iteracion].tipoDocumento}
-  //   N° documento: ${nomina[iteracion].documento}
-  //   Nombres: ${nomina[iteracion].nombres} ${nomina[iteracion].apellidos}
-  //   Edad: ${nomina[iteracion].edad}
-  //   Estrato: ${nomina[iteracion].estrato}
-  //   ValorDia: ${nomina[iteracion].valorDia}
-  //   Dias Trabajados: ${nomina[iteracion].diasTrabajados}
-  //   Salario Bruto: ${pago}
-  //   Salud: ${salud}
-  //   Pension: ${pension}
-  //   ARL: ${arl}
-  //   Transporste: ${subTransporte}
-  //   Abono: ${abono}
-  //   Retencion: ${retencion}
-  //   Cantidad Retenida: ${reten}
-  //   SalarioNeto: ${salario}
-  //   -----------------------------------------
-  //   `);
+
+// console.log(`
+//   Tipo de Documento: ${nomina[iteracion].tipoDocumento}
+//   N° documento: ${nomina[iteracion].documento}
+//   Nombres: ${nomina[iteracion].nombres} ${nomina[iteracion].apellidos}
+//   Edad: ${nomina[iteracion].edad}
+//   Estrato: ${nomina[iteracion].estrato}
+//   ValorDia: ${nomina[iteracion].valorDia}
+//   Dias Trabajados: ${nomina[iteracion].diasTrabajados}
+//   Salario Bruto: ${pago}
+//   Salud: ${salud}
+//   Pension: ${pension}
+//   ARL: ${arl}
+//   Transporste: ${subTransporte}
+//   Abono: ${abono}
+//   Retencion: ${retencion}
+//   Cantidad Retenida: ${reten}
+//   SalarioNeto: ${salario}
+//   -----------------------------------------
+//   `);
