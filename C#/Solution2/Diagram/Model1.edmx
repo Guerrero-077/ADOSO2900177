@@ -16,63 +16,44 @@
           <EntitySet Name="UserSet" EntityType="Model1.User" />
           <EntitySet Name="PersonSet" EntityType="Model1.Person" />
           <EntitySet Name="RolSet" EntityType="Model1.Rol" />
-          <EntitySet Name="TypeIdentificationSet" EntityType="Model1.TypeIdentification" />
           <EntitySet Name="UserRolSet" EntityType="Model1.UserRol" />
           <EntitySet Name="ModuleSet" EntityType="Model1.Module" />
           <EntitySet Name="FormSet" EntityType="Model1.Form" />
-          <EntitySet Name="PermissionSet" EntityType="Model1.Permission" />
-          <EntitySet Name="RolPermissionSet" EntityType="Model1.RolPermission" />
-          <EntitySet Name="SesionSet" EntityType="Model1.Sesion" />
-          <EntitySet Name="AccessLogSet" EntityType="Model1.AccessLog" />
-          <EntitySet Name="ResourceSet" EntityType="Model1.Resource" />
-          <AssociationSet Name="PermissionRolPermission" Association="Model1.PermissionRolPermission">
-            <End Role="Permission" EntitySet="PermissionSet" />
-            <End Role="RolPermission" EntitySet="RolPermissionSet" />
-          </AssociationSet>
-          <AssociationSet Name="UserPerson" Association="Model1.UserPerson">
-            <End Role="User" EntitySet="UserSet" />
-            <End Role="Person" EntitySet="PersonSet" />
-          </AssociationSet>
-          <AssociationSet Name="PersonTypeIdentification" Association="Model1.PersonTypeIdentification">
-            <End Role="Person" EntitySet="PersonSet" />
-            <End Role="TypeIdentification" EntitySet="TypeIdentificationSet" />
-          </AssociationSet>
-          <AssociationSet Name="FormResource" Association="Model1.FormResource">
-            <End Role="Form" EntitySet="FormSet" />
-            <End Role="Resource" EntitySet="ResourceSet" />
-          </AssociationSet>
-          <AssociationSet Name="ModuleResource" Association="Model1.ModuleResource">
-            <End Role="Module" EntitySet="ModuleSet" />
-            <End Role="Resource" EntitySet="ResourceSet" />
-          </AssociationSet>
-          <AssociationSet Name="PermissionResource" Association="Model1.PermissionResource">
-            <End Role="Permission" EntitySet="PermissionSet" />
-            <End Role="Resource" EntitySet="ResourceSet" />
-          </AssociationSet>
-          <AssociationSet Name="UserSesion" Association="Model1.UserSesion">
-            <End Role="User" EntitySet="UserSet" />
-            <End Role="Sesion" EntitySet="SesionSet" />
-          </AssociationSet>
+          <EntitySet Name="TaskSet" EntityType="Model1.Task" />
+          <EntitySet Name="FollowSet" EntityType="Model1.Follow" />
+          <EntitySet Name="ModuleFormSet" EntityType="Model1.ModuleForm" />
           <EntitySet Name="RolUserSet" EntityType="Model1.RolUser" />
-          <AssociationSet Name="RolRolUser" Association="Model1.RolRolUser">
-            <End Role="Rol" EntitySet="RolSet" />
-            <End Role="RolUser" EntitySet="RolUserSet" />
+          <AssociationSet Name="PersonUser" Association="Model1.PersonUser">
+            <End Role="Person" EntitySet="PersonSet" />
+            <End Role="User" EntitySet="UserSet" />
           </AssociationSet>
           <AssociationSet Name="UserRolUser" Association="Model1.UserRolUser">
             <End Role="User" EntitySet="UserSet" />
             <End Role="RolUser" EntitySet="RolUserSet" />
           </AssociationSet>
-          <AssociationSet Name="UserAccessLog" Association="Model1.UserAccessLog">
-            <End Role="User" EntitySet="UserSet" />
-            <End Role="AccessLog" EntitySet="AccessLogSet" />
-          </AssociationSet>
-          <AssociationSet Name="ResourceAccessLog" Association="Model1.ResourceAccessLog">
-            <End Role="Resource" EntitySet="ResourceSet" />
-            <End Role="AccessLog" EntitySet="AccessLogSet" />
-          </AssociationSet>
-          <AssociationSet Name="RolRolPermission" Association="Model1.RolRolPermission">
+          <AssociationSet Name="RolRolUser" Association="Model1.RolRolUser">
             <End Role="Rol" EntitySet="RolSet" />
-            <End Role="RolPermission" EntitySet="RolPermissionSet" />
+            <End Role="RolUser" EntitySet="RolUserSet" />
+          </AssociationSet>
+          <AssociationSet Name="ModuleModuleF" Association="Model1.ModuleModuleF">
+            <End Role="Module" EntitySet="ModuleSet" />
+            <End Role="ModuleF" EntitySet="ModuleFormSet" />
+          </AssociationSet>
+          <AssociationSet Name="FormModuleF" Association="Model1.FormModuleF">
+            <End Role="Form" EntitySet="FormSet" />
+            <End Role="ModuleF" EntitySet="ModuleFormSet" />
+          </AssociationSet>
+          <AssociationSet Name="ModuleTask" Association="Model1.ModuleTask">
+            <End Role="Module" EntitySet="ModuleSet" />
+            <End Role="Task" EntitySet="TaskSet" />
+          </AssociationSet>
+          <AssociationSet Name="RolUserTask" Association="Model1.RolUserTask">
+            <End Role="RolUser" EntitySet="RolUserSet" />
+            <End Role="Task" EntitySet="TaskSet" />
+          </AssociationSet>
+          <AssociationSet Name="ModuleFormFollow" Association="Model1.ModuleFormFollow">
+            <End Role="ModuleForm" EntitySet="ModuleFormSet" />
+            <End Role="Follow" EntitySet="FollowSet" />
           </AssociationSet>
         </EntityContainer>
         <EntityType Name="User">
@@ -83,11 +64,10 @@
           <Property Name="UserName" Type="String" Nullable="false" />
           <Property Name="Password" Type="String" Nullable="false" />
           <Property Name="CreatedAt" Type="String" Nullable="false" />
-          <Property Name="Status" Type="String" Nullable="false" />
-          <NavigationProperty Name="IdPerson" Relationship="Model1.UserPerson" FromRole="User" ToRole="Person" />
-          <NavigationProperty Name="Sesion" Relationship="Model1.UserSesion" FromRole="User" ToRole="Sesion" />
+          <Property Name="State" Type="String" Nullable="false" />
+          <NavigationProperty Name="IdPerson" Relationship="Model1.PersonUser" FromRole="User" ToRole="Person" />
+          <Property Name="PersonId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="RolUser" Relationship="Model1.UserRolUser" FromRole="User" ToRole="RolUser" />
-          <NavigationProperty Name="AccessLog" Relationship="Model1.UserAccessLog" FromRole="User" ToRole="AccessLog" />
         </EntityType>
         <EntityType Name="Person">
           <Key>
@@ -96,12 +76,8 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="FirstName" Type="String" Nullable="false" />
           <Property Name="LastName" Type="String" Nullable="false" />
-          <Property Name="DataBirth" Type="String" Nullable="false" />
-          <Property Name="identification" Type="String" Nullable="false" />
           <Property Name="Email" Type="String" Nullable="false" />
-          <Property Name="UserId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="User" Relationship="Model1.UserPerson" FromRole="Person" ToRole="User" />
-          <NavigationProperty Name="IdTypeIdentification" Relationship="Model1.PersonTypeIdentification" FromRole="Person" ToRole="TypeIdentification" />
+          <NavigationProperty Name="User" Relationship="Model1.PersonUser" FromRole="Person" ToRole="User" />
         </EntityType>
         <EntityType Name="Rol">
           <Key>
@@ -111,19 +87,8 @@
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="Description" Type="String" Nullable="false" />
           <Property Name="Code" Type="String" Nullable="false" />
-          <Property Name="Active" Type="String" Nullable="false" />
-          <Property Name="UserId" Type="Int32" Nullable="false" />
+          <Property Name="State" Type="String" Nullable="false" />
           <NavigationProperty Name="RolUser" Relationship="Model1.RolRolUser" FromRole="Rol" ToRole="RolUser" />
-          <NavigationProperty Name="RolPermission" Relationship="Model1.RolRolPermission" FromRole="Rol" ToRole="RolPermission" />
-        </EntityType>
-        <EntityType Name="TypeIdentification">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Type" Type="String" Nullable="false" />
-          <Property Name="NameIdentification" Type="String" Nullable="false" />
-          <NavigationProperty Name="Person" Relationship="Model1.PersonTypeIdentification" FromRole="TypeIdentification" ToRole="Person" />
         </EntityType>
         <EntityType Name="UserRol">
           <Key>
@@ -139,8 +104,9 @@
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="Description" Type="String" Nullable="false" />
-          <Property Name="Staus" Type="String" Nullable="false" />
-          <NavigationProperty Name="Resource" Relationship="Model1.ModuleResource" FromRole="Module" ToRole="Resource" />
+          <Property Name="State" Type="String" Nullable="false" />
+          <NavigationProperty Name="ModuleF" Relationship="Model1.ModuleModuleF" FromRole="Module" ToRole="ModuleF" />
+          <NavigationProperty Name="Task" Relationship="Model1.ModuleTask" FromRole="Module" ToRole="Task" />
         </EntityType>
         <EntityType Name="Form">
           <Key>
@@ -150,164 +116,64 @@
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="Description" Type="String" Nullable="false" />
           <Property Name="DateCreation" Type="String" Nullable="false" />
-          <Property Name="Status" Type="String" Nullable="false" />
-          <Property Name="ModuleId" Type="String" Nullable="false" />
-          <NavigationProperty Name="Resource" Relationship="Model1.FormResource" FromRole="Form" ToRole="Resource" />
+          <Property Name="State" Type="String" Nullable="false" />
+          <NavigationProperty Name="ModuleF" Relationship="Model1.FormModuleF" FromRole="Form" ToRole="ModuleF" />
         </EntityType>
-        <EntityType Name="Permission">
+        <EntityType Name="Task">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Name" Type="String" Nullable="false" />
           <Property Name="Description" Type="String" Nullable="false" />
-          <NavigationProperty Name="RolPermission" Relationship="Model1.PermissionRolPermission" FromRole="Permission" ToRole="RolPermission" />
-          <NavigationProperty Name="Resource" Relationship="Model1.PermissionResource" FromRole="Permission" ToRole="Resource" />
+          <NavigationProperty Name="IdModule" Relationship="Model1.ModuleTask" FromRole="Task" ToRole="Module" />
+          <NavigationProperty Name="IdRolUser" Relationship="Model1.RolUserTask" FromRole="Task" ToRole="RolUser" />
+          <Property Name="RolUserId" Type="Int32" Nullable="false" />
         </EntityType>
-        <EntityType Name="RolPermission">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="IdForm" Type="String" Nullable="false" />
-          <Property Name="IdPermission" Type="String" Nullable="false" />
-          <NavigationProperty Name="PermissionId" Relationship="Model1.PermissionRolPermission" FromRole="RolPermission" ToRole="Permission" />
-          <Property Name="PermissionId1" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="IdRol" Relationship="Model1.RolRolPermission" FromRole="RolPermission" ToRole="Rol" />
-          <Property Name="RolId" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="Sesion">
-          <Key>
-            <PropertyRef Name="Id" />
-          </Key>
-          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Token" Type="String" Nullable="false" />
-          <Property Name="DateCreation" Type="String" Nullable="false" />
-          <Property Name="DateExpiration" Type="String" Nullable="false" />
-          <NavigationProperty Name="IdUser" Relationship="Model1.UserSesion" FromRole="Sesion" ToRole="User" />
-          <Property Name="UserId1" Type="Int32" Nullable="false" />
-        </EntityType>
-        <EntityType Name="AccessLog">
+        <EntityType Name="Follow">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Action" Type="String" Nullable="false" />
           <Property Name="Timestamp" Type="String" Nullable="false" />
-          <Property Name="Status" Type="String" Nullable="false" />
+          <Property Name="State" Type="String" Nullable="false" />
           <Property Name="Details" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="IdUser" Relationship="Model1.UserAccessLog" FromRole="AccessLog" ToRole="User" />
-          <Property Name="UserId" Type="Int32" Nullable="false" />
-          <Property Name="ResourceId1" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="IdResource" Relationship="Model1.ResourceAccessLog" FromRole="AccessLog" ToRole="Resource" />
+          <Property Name="ModuleId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="IdModuleForm" Relationship="Model1.ModuleFormFollow" FromRole="Follow" ToRole="ModuleForm" />
+          <Property Name="ModuleFormId" Type="Int32" Nullable="false" />
         </EntityType>
-        <EntityType Name="Resource">
+        <EntityType Name="ModuleForm">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="Type" Type="String" Nullable="false" />
-          <Property Name="Name" Type="String" Nullable="false" />
-          <Property Name="Description" Type="String" Nullable="false" />
+          <NavigationProperty Name="IdModule" Relationship="Model1.ModuleModuleF" FromRole="ModuleF" ToRole="Module" />
           <Property Name="ModuleId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="IdForm" Relationship="Model1.FormResource" FromRole="Resource" ToRole="Form" />
+          <NavigationProperty Name="IdForm" Relationship="Model1.FormModuleF" FromRole="ModuleF" ToRole="Form" />
           <Property Name="FormId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="IdModule" Relationship="Model1.ModuleResource" FromRole="Resource" ToRole="Module" />
-          <Property Name="ModuleId1" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="IdPermission" Relationship="Model1.PermissionResource" FromRole="Resource" ToRole="Permission" />
-          <Property Name="PermissionId" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="AccessLog" Relationship="Model1.ResourceAccessLog" FromRole="Resource" ToRole="AccessLog" />
+          <NavigationProperty Name="Follow" Relationship="Model1.ModuleFormFollow" FromRole="ModuleForm" ToRole="Follow" />
         </EntityType>
-        <Association Name="PermissionRolPermission">
-          <End Type="Model1.Permission" Role="Permission" Multiplicity="1" />
-          <End Type="Model1.RolPermission" Role="RolPermission" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Permission">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="RolPermission">
-              <PropertyRef Name="PermissionId1" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="UserPerson">
-          <End Type="Model1.User" Role="User" Multiplicity="1" />
-          <End Type="Model1.Person" Role="Person" Multiplicity="1" />
-        </Association>
-        <Association Name="PersonTypeIdentification">
-          <End Type="Model1.Person" Role="Person" Multiplicity="1" />
-          <End Type="Model1.TypeIdentification" Role="TypeIdentification" Multiplicity="1" />
-        </Association>
-        <Association Name="FormResource">
-          <End Type="Model1.Form" Role="Form" Multiplicity="1" />
-          <End Type="Model1.Resource" Role="Resource" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Form">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Resource">
-              <PropertyRef Name="FormId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="ModuleResource">
-          <End Type="Model1.Module" Role="Module" Multiplicity="1" />
-          <End Type="Model1.Resource" Role="Resource" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Module">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Resource">
-              <PropertyRef Name="ModuleId1" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="PermissionResource">
-          <End Type="Model1.Permission" Role="Permission" Multiplicity="1" />
-          <End Type="Model1.Resource" Role="Resource" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Permission">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Resource">
-              <PropertyRef Name="PermissionId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="UserSesion">
-          <End Type="Model1.User" Role="User" Multiplicity="1" />
-          <End Type="Model1.Sesion" Role="Sesion" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="User">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="Sesion">
-              <PropertyRef Name="UserId1" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityType Name="RolUser">
           <Key>
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <NavigationProperty Name="IdRol" Relationship="Model1.RolRolUser" FromRole="RolUser" ToRole="Rol" />
-          <Property Name="RolId" Type="Int32" Nullable="false" />
           <NavigationProperty Name="IdUser" Relationship="Model1.UserRolUser" FromRole="RolUser" ToRole="User" />
           <Property Name="UserId" Type="Int32" Nullable="false" />
-          <Property Name="AssigedDate" Type="String" Nullable="false" />
-          <Property Name="AssignedBy" Type="String" Nullable="false" />
-          <Property Name="Active" Type="String" Nullable="false" />
+          <NavigationProperty Name="IdRol" Relationship="Model1.RolRolUser" FromRole="RolUser" ToRole="Rol" />
+          <Property Name="RolId" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Task" Relationship="Model1.RolUserTask" FromRole="RolUser" ToRole="Task" />
         </EntityType>
-        <Association Name="RolRolUser">
-          <End Type="Model1.Rol" Role="Rol" Multiplicity="1" />
-          <End Type="Model1.RolUser" Role="RolUser" Multiplicity="*" />
+        <Association Name="PersonUser">
+          <End Type="Model1.Person" Role="Person" Multiplicity="1" />
+          <End Type="Model1.User" Role="User" Multiplicity="1" />
           <ReferentialConstraint>
-            <Principal Role="Rol">
+            <Principal Role="Person">
               <PropertyRef Name="Id" />
             </Principal>
-            <Dependent Role="RolUser">
-              <PropertyRef Name="RolId" />
+            <Dependent Role="User">
+              <PropertyRef Name="PersonId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -323,39 +189,75 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="UserAccessLog">
-          <End Type="Model1.User" Role="User" Multiplicity="1" />
-          <End Type="Model1.AccessLog" Role="AccessLog" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="User">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="AccessLog">
-              <PropertyRef Name="UserId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="ResourceAccessLog">
-          <End Type="Model1.Resource" Role="Resource" Multiplicity="1" />
-          <End Type="Model1.AccessLog" Role="AccessLog" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="Resource">
-              <PropertyRef Name="Id" />
-            </Principal>
-            <Dependent Role="AccessLog">
-              <PropertyRef Name="ResourceId" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="RolRolPermission">
+        <Association Name="RolRolUser">
           <End Type="Model1.Rol" Role="Rol" Multiplicity="1" />
-          <End Type="Model1.RolPermission" Role="RolPermission" Multiplicity="*" />
+          <End Type="Model1.RolUser" Role="RolUser" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Rol">
               <PropertyRef Name="Id" />
             </Principal>
-            <Dependent Role="RolPermission">
+            <Dependent Role="RolUser">
               <PropertyRef Name="RolId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ModuleModuleF">
+          <End Type="Model1.Module" Role="Module" Multiplicity="1" />
+          <End Type="Model1.ModuleForm" Role="ModuleF" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Module">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ModuleF">
+              <PropertyRef Name="ModuleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FormModuleF">
+          <End Type="Model1.Form" Role="Form" Multiplicity="1" />
+          <End Type="Model1.ModuleForm" Role="ModuleF" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Form">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="ModuleF">
+              <PropertyRef Name="FormId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ModuleTask">
+          <End Type="Model1.Module" Role="Module" Multiplicity="1" />
+          <End Type="Model1.Task" Role="Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Module">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="ModuleId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="RolUserTask">
+          <End Type="Model1.RolUser" Role="RolUser" Multiplicity="1" />
+          <End Type="Model1.Task" Role="Task" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="RolUser">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Task">
+              <PropertyRef Name="RolUserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ModuleFormFollow">
+          <End Type="Model1.ModuleForm" Role="ModuleForm" Multiplicity="1" />
+          <End Type="Model1.Follow" Role="Follow" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModuleForm">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Follow">
+              <PropertyRef Name="ModuleFormId" />
             </Dependent>
           </ReferentialConstraint>
         </Association>

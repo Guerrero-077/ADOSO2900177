@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6a3f3c811a714ea4bb649b978f98327d" Name="Diagram1" >
+        <EntityTypeShape EntityType="Model1.User" Width="1.5" PointX="0.5" PointY="3.875" />
+        <EntityTypeShape EntityType="Model1.Rol" Width="1.5" PointX="2.5" PointY="1.25" />
+        <EntityTypeShape EntityType="Model1.Zoologico" Width="1.5" PointX="13" PointY="4.25" />
+        <EntityTypeShape EntityType="Model1.Animal" Width="1.5" PointX="4.625" PointY="1.125" />
+        <EntityTypeShape EntityType="Model1.TypeAnimal" Width="1.5" PointX="7.375" PointY="3.875" />
+        <EntityTypeShape EntityType="Model1.Food" Width="1.5" PointX="5.125" PointY="3.875" />
+        <EntityTypeShape EntityType="Model1.RolUser" Width="1.5" PointX="2.75" PointY="3.625" />
+        <EntityTypeShape EntityType="Model1.ZooAlimal" Width="1.5" PointX="13.25" PointY="2.5" />
+        <EntityTypeShape EntityType="Model1.Habitat" Width="1.5" PointX="10.375" PointY="3.875" />
+        <EntityTypeShape EntityType="Model1.Person" Width="1.5" PointX="0.5" PointY="1.125" />
+        <AssociationConnector Association="Model1.UserPerson" />
+        <AssociationConnector Association="Model1.UserRolUser" />
+        <AssociationConnector Association="Model1.RolRolUser" />
+        <AssociationConnector Association="Model1.FoodTypeAnimal" />
+        <AssociationConnector Association="Model1.TypeAnimalHabitat" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
