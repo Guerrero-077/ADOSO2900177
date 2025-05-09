@@ -1,0 +1,34 @@
+<h2>Laptops</h2>
+
+<div>
+
+    <button mat-flat-button routerLink="/productos/crear">
+        Crear Nueva Laptop
+    </button>
+</div>
+
+@if(laptops){
+
+<table mat-table [dataSource]="laptops" class="mat-elevation-z8 indice-elementos">
+    <ng-container matColumnDef="Nombre">
+        <th mat-header-cell *matHeaderCellDef>Nombre</th>
+        <td mat-cell *matCellDef="let laptop">{{laptop.nombre}}</td>
+    </ng-container>
+
+    <ng-container matColumnDef="Acciones">
+        <th mat-header-cell *matHeaderCellDef>Acciones</th>
+        <td mat-cell *matCellDef="let laptop">
+            <a mat-flat-button routerLink="/productos/editar/{{laptop.id}}">Editar</a>
+
+            <button mat-flat-button color="warn"
+                [swal]="{title: 'Configuración', text: 'Deseas borrar este registro?', showCancelButton: true}"
+                (confirm)="borrar(laptop.id)">Borrar</button>
+        </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="columnasAMostrar"></tr>
+    <tr mat-row *matRowDef="let row; columns: columnasAMostrar;"></tr>
+</table>
+}@else {
+<app-loanding></app-loanding>
+}

@@ -1,0 +1,39 @@
+<h2>{{title}}</h2>
+
+
+<form (submit)="save()" [formGroup]="form" class="form-container">
+    <div class="form-row">
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Seleccionar Módulo</mat-label>
+            <mat-select formControlName="moduleid" required>
+                <mat-option *ngFor="let m of modules" [value]="m.id">
+                    {{ m.name }} - {{ m.description }}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="form.get('moduleid')?.hasError('required')">
+                Seleccione un módulo
+            </mat-error>
+            <mat-hint>Busque y seleccione un módulo</mat-hint>
+        </mat-form-field>
+    </div>
+
+    <div class="form-row">
+        <mat-form-field appearance="fill" class="full-width">
+            <mat-label>Seleccionar Formulario</mat-label>
+            <mat-select formControlName="formid" required>
+                <mat-option *ngFor="let f of formModules" [value]="f.id">
+                    {{ f.name }} - {{ f.description }}
+                </mat-option>
+            </mat-select>
+            <mat-error *ngIf="form.get('formid')?.hasError('required')">
+                Seleccione un formulario
+            </mat-error>
+            <mat-hint>Seleccione el formulario a asignar</mat-hint>
+        </mat-form-field>
+    </div>
+
+    <div class="form-actions">
+        <button type="submit" mat-flat-button>Save</button>
+        <a mat-stroked-button routerLink="/formModule">Cancel</a>
+    </div>
+</form>

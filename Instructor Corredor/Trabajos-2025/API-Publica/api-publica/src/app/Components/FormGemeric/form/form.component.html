@@ -1,0 +1,48 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()" class="form-container">
+    <ng-container *ngFor="let field of fields">
+        <div class="form-group" [ngClass]="{ 'checkbox-group': field.type === 'checkbox' }">
+
+            <!-- Checkbox (dentro del label) -->
+            <label *ngIf="field.type === 'checkbox'" class="form-label checkbox-label">
+                <input type="checkbox" [formControlName]="field.name" class="form-checkbox" />
+                {{ field.label }}
+                <span *ngIf="form.get(field.name)?.errors && form.get(field.name)?.touched" class="error-message">
+                    {{ getErrorMessage(field.name) }}
+                </span>
+            </label>
+
+            <!-- Otros tipos de campos -->
+            <ng-container *ngIf="field.type !== 'checkbox'">
+                <label class="form-label">{{ field.label }}</label>
+
+                <!-- Inputs tipo text, number, date, password -->
+                <input *ngIf="['text', 'number', 'date', 'password'].includes(field.type)" [type]="field.type"
+                    [formControlName]="field.name" class="form-input" />
+
+                <!-- Select -->
+                <select *ngIf="field.type === 'select'" [formControlName]="field.name" class="form-input">
+                    <option *ngFor="let opt of field.options" [value]="opt.key">{{ opt.value }}</option>
+                </select>
+
+                <!-- Textarea -->
+                <textarea *ngIf="field.type === 'textarea'" [formControlName]="field.name"
+                    class="form-textarea"></textarea>
+
+                <!-- Mensaje de error -->
+                <span *ngIf="form.get(field.name)?.errors && form.get(field.name)?.touched" class="error-message">
+                    {{ getErrorMessage(field.name) }}
+                </span>
+            </ng-container>
+        </div>
+    </ng-container>
+
+    <div class="form-actions">
+        <button type="submit" mat-flat-button color="primary">
+            {{ submitButtonText }}
+        </button>
+
+        <button *ngIf="showCancelButton" type="button" mat-stroked-button (click)="onCancel()" class="cancel-button">
+            {{ cancelButtonText }}
+        </button>
+    </div>
+</form>

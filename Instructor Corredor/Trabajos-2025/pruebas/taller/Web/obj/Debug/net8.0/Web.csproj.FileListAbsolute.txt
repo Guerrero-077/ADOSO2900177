@@ -1,0 +1,433 @@
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.AssemblyReference.cache
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.AssemblyInfoInputs.cache
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.AssemblyInfo.cs
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.CoreCompileInputs.cache
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\appsettings.json
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Web.staticwebassets.endpoints.json
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Web.exe
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Web.deps.json
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Web.runtimeconfig.json
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Web.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Web.pdb
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Business.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Data.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Entity.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Utilities.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Business.pdb
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Data.pdb
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Entity.pdb
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Utilities.pdb
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\scopedcss\bundle\Web.styles.css
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.build.Web.props
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Web.props
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Web.props
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.Up2Date
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\refint\Web.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.pdb
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\ref\Web.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\obj\Debug\net8.0\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\System.Management.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\appsettings.Development.json
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\appsettings.json
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Web.staticwebassets.endpoints.json
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Web.exe
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Web.deps.json
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Web.runtimeconfig.json
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Web.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Web.pdb
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\AutoMapper.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Azure.Core.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Azure.Identity.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.Auth.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.Core.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.ClientModel.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.CodeDom.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Management.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Memory.Data.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Text.Json.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Business.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Data.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Entity.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Utilities.dll
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Business.pdb
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Data.pdb
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Entity.pdb
+D:\proyectos\pruebas\taller\Web\bin\Debug\net8.0\Utilities.pdb
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.AssemblyReference.cache
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.AssemblyInfoInputs.cache
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.AssemblyInfo.cs
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.CoreCompileInputs.cache
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.MvcApplicationPartsAssemblyInfo.cs
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.MvcApplicationPartsAssemblyInfo.cache
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\scopedcss\bundle\Web.styles.css
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.build.json
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.development.json
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.build.Web.props
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Web.props
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Web.props
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.pack.json
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.Up2Date
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.dll
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\refint\Web.dll
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.pdb
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
+D:\proyectos\pruebas\taller\Web\obj\Debug\net8.0\ref\Web.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\appsettings.Development.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\appsettings.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.staticwebassets.endpoints.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.exe
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.deps.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.runtimeconfig.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.pdb
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\AutoMapper.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Azure.Core.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Azure.Identity.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.Auth.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.Core.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.ClientModel.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.CodeDom.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Drawing.Common.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Formats.Asn1.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.IO.Pipelines.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Management.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Memory.Data.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Runtime.Caching.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Security.Permissions.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Text.Json.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Windows.Extensions.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Business.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Data.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Entity.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Utilities.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Business.pdb
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Data.pdb
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Entity.pdb
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Utilities.pdb
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.AssemblyReference.cache
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.AssemblyInfoInputs.cache
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.AssemblyInfo.cs
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.CoreCompileInputs.cache
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.MvcApplicationPartsAssemblyInfo.cs
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.MvcApplicationPartsAssemblyInfo.cache
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.sourcelink.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\scopedcss\bundle\Web.styles.css
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.build.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.development.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.build.Web.props
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Web.props
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Web.props
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.pack.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.Up2Date
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\refint\Web.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.pdb
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\ref\Web.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\appsettings.json
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.staticwebassets.endpoints.json
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.exe
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.deps.json
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.runtimeconfig.json
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Web.pdb
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Azure.Core.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Azure.Identity.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.Auth.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Google.Apis.Core.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Extensions.Primitives.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Identity.Client.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.ClientModel.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.CodeDom.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Configuration.ConfigurationManager.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Formats.Asn1.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.IO.Pipelines.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Management.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Memory.Data.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Runtime.Caching.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Security.Permissions.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Text.Encodings.Web.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Text.Json.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\System.Windows.Extensions.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Management.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Business.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Data.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Entity.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Utilities.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Business.pdb
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Data.pdb
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Entity.pdb
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\bin\Debug\net8.0\Utilities.pdb
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.AssemblyReference.cache
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.AssemblyInfoInputs.cache
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.AssemblyInfo.cs
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.CoreCompileInputs.cache
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\scopedcss\bundle\Web.styles.css
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.build.Web.props
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Web.props
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Web.props
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.csproj.Up2Date
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\refint\Web.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.pdb
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\Web.genruntimeconfig.cache
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Web\obj\Debug\net8.0\ref\Web.dll

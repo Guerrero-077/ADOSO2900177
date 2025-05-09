@@ -1,0 +1,93 @@
+.form-container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, #e0f7fa, #ffffff);
+    box-shadow: 0 12px 30px rgba(0, 150, 136, 0.2);
+    animation: floatIn 0.5s ease-out;
+}
+
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.95) translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.form-title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: #00796b;
+    text-align: center;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5px;
+    position: relative;
+}
+
+.form-title::after {
+    content: '✨';
+    position: absolute;
+    right: -1.5rem;
+    top: 0;
+    font-size: 1.2rem;
+    animation: blink 1.5s infinite alternate;
+}
+
+@keyframes blink {
+    from {
+        opacity: 0.4;
+        transform: scale(1);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+.form-field {
+    margin-bottom: 1.5rem;
+}
+
+mat-form-field {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+mat-form-field:hover {
+    transform: scale(1.01);
+}
+
+mat-error {
+    font-size: 0.85rem;
+    color: #d84315;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+button[mat-flat-button],
+a[mat-stroked-button] {
+    border-radius: 1.5rem;
+    padding: 0.5rem 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 150, 136, 0.2);
+}
+
+button[mat-flat-button]:hover,
+a[mat-stroked-button]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0, 150, 136, 0.3);
+}

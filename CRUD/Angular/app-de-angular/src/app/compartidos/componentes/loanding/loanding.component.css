@@ -1,0 +1,12 @@
+.imagen-espera{
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-espera img{
+    height: 100px;
+    width: 100px;
+}

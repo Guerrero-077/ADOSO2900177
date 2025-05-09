@@ -1,0 +1,69 @@
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\obj\Debug\net8.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\obj\Debug\net8.0\Data.AssemblyInfoInputs.cache
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\obj\Debug\net8.0\Data.AssemblyInfo.cs
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\bin\Debug\net8.0\Data.deps.json
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\bin\Debug\net8.0\Data.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\bin\Debug\net8.0\Data.pdb
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\bin\Debug\net8.0\Entity.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\bin\Debug\net8.0\Entity.pdb
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.Up2Date
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\obj\Debug\net8.0\Data.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\obj\Debug\net8.0\refint\Data.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\obj\Debug\net8.0\Data.pdb
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\bin\Debug\net8.0\Utilities.dll
+C:\Users\GUERRERO\Desktop\pruebas\taller\Data\bin\Debug\net8.0\Utilities.pdb
+D:\proyectos\pruebas\taller\Data\bin\Debug\net8.0\Data.deps.json
+D:\proyectos\pruebas\taller\Data\bin\Debug\net8.0\Data.dll
+D:\proyectos\pruebas\taller\Data\bin\Debug\net8.0\Data.pdb
+D:\proyectos\pruebas\taller\Data\bin\Debug\net8.0\Entity.dll
+D:\proyectos\pruebas\taller\Data\bin\Debug\net8.0\Utilities.dll
+D:\proyectos\pruebas\taller\Data\bin\Debug\net8.0\Entity.pdb
+D:\proyectos\pruebas\taller\Data\bin\Debug\net8.0\Utilities.pdb
+D:\proyectos\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
+D:\proyectos\pruebas\taller\Data\obj\Debug\net8.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\proyectos\pruebas\taller\Data\obj\Debug\net8.0\Data.AssemblyInfoInputs.cache
+D:\proyectos\pruebas\taller\Data\obj\Debug\net8.0\Data.AssemblyInfo.cs
+D:\proyectos\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.CoreCompileInputs.cache
+D:\proyectos\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.Up2Date
+D:\proyectos\pruebas\taller\Data\obj\Debug\net8.0\Data.dll
+D:\proyectos\pruebas\taller\Data\obj\Debug\net8.0\refint\Data.dll
+D:\proyectos\pruebas\taller\Data\obj\Debug\net8.0\Data.pdb
+D:\proyectos\pruebas\taller\Data\obj\Debug\net8.0\ref\Data.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Data.deps.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Data.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Data.pdb
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Entity.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Utilities.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Entity.pdb
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Utilities.pdb
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.AssemblyInfoInputs.cache
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.AssemblyInfo.cs
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.CoreCompileInputs.cache
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.sourcelink.json
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.Up2Date
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\refint\Data.dll
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.pdb
+D:\1. Sena\Repositorios\ADOSO2900177\Instructor Corredor\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\ref\Data.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Data.deps.json
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Data.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Data.pdb
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Entity.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Utilities.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Entity.pdb
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\bin\Debug\net8.0\Utilities.pdb
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.AssemblyReference.cache
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.AssemblyInfoInputs.cache
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.AssemblyInfo.cs
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.CoreCompileInputs.cache
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.csproj.Up2Date
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\refint\Data.dll
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\Data.pdb
+C:\Users\braya\Desktop\Trabajos-2025\pruebas\taller\Data\obj\Debug\net8.0\ref\Data.dll

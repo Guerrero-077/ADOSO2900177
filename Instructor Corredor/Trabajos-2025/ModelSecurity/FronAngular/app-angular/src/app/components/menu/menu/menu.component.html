@@ -1,0 +1,38 @@
+<mat-toolbar>
+    <!-- <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button> -->
+
+    <a routerLink="person" mat-button>
+        Person
+    </a>
+    <a routerLink="user" mat-button>
+        user
+    </a>
+    <a routerLink="rol" mat-button>
+        Rol
+    </a>
+    <a routerLink="form" mat-button>
+        Form
+    </a>
+    <a routerLink="module" mat-button>
+        Module
+    </a>
+    <a routerLink="permission" mat-button>
+        Permission
+    </a>
+    <a routerLink="rolFormPermission" mat-button>
+        Rol Form Permission
+    </a>
+    <a routerLink="rolUser" mat-button>
+        Rol User
+    </a>
+    <a routerLink="formModule" mat-button>
+        Form Module
+    </a>
+
+    <a mat-button routerLink="/" (click)="clearLocalStorage()">
+        <mat-icon>person</mat-icon>Cerrar sesion
+    </a>
+
+</mat-toolbar>

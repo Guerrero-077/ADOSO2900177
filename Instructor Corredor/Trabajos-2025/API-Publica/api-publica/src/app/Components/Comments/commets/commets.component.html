@@ -1,0 +1,55 @@
+@if (dataSource) {
+
+<button mat-flat-button routerLink="CreateCommets" style="margin-bottom:1rem;">Create Comments</button>
+
+<div class="mat-elevation-z8">
+    <table mat-table [dataSource]="dataSource" class="full-width-table">
+        <!-- Columna: ID -->
+        <ng-container matColumnDef="id">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let i = index"> {{ i + 1 }} </td>
+        </ng-container>
+
+        <!-- Columna: Nombre -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Nombre </th>
+            <td mat-cell *matCellDef="let element"> {{ element.name }} </td>
+        </ng-container>
+
+        <!-- Columna: Email -->
+        <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef> Email </th>
+            <td mat-cell *matCellDef="let element"> {{ element.email }} </td>
+        </ng-container>
+
+        <!-- Columna: Contenido -->
+        <ng-container matColumnDef="body">
+            <th mat-header-cell *matHeaderCellDef> Contenido </th>
+            <td mat-cell *matCellDef="let element"> {{ element.body }} </td>
+        </ng-container>
+
+        <!-- Columna: Actions -->
+        <ng-container matColumnDef="actions">
+            <th mat-header-cell *matHeaderCellDef> Actions</th>
+            <td mat-cell *matCellDef="let element">
+                <div class="" style="display: flex;">
+
+                    <!-- <button mat-flat-button routerLink="updateComments/{{element.id}}">Edit</button> -->
+                    <button mat-flat-button routerLink="updateComments/{{element.id}}">Edit</button>
+                    <a mat-stroked-button class="button" (click)="Delete(element.id)">Delete</a>
+                    <!-- <a class="button" mat-stroked-button>Delete</a> -->
+                </div>
+            </td>
+        </ng-container>
+
+        <!-- Fila de encabezado -->
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <!-- Fila de datos -->
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <!-- Paginador -->
+    <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Select page of periodic elements">
+    </mat-paginator>
+</div>
+}

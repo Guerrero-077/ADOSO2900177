@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{533419A9-F364-4BDC-B4F5-D1A53620F687}|Business\\Business.csproj|c:\\users\\guerrero\\desktop\\pruebas\\taller\\business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533419A9-F364-4BDC-B4F5-D1A53620F687}|Business\\Business.csproj|solutionrelative:business\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53EDADB9-875C-4833-B1FE-7017CFE667B6}|Data\\Data.csproj|c:\\users\\guerrero\\desktop\\pruebas\\taller\\data\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53EDADB9-875C-4833-B1FE-7017CFE667B6}|Data\\Data.csproj|solutionrelative:data\\interfaces\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{53EDADB9-875C-4833-B1FE-7017CFE667B6}|Data\\Data.csproj|c:\\users\\guerrero\\desktop\\pruebas\\taller\\data\\services\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{53EDADB9-875C-4833-B1FE-7017CFE667B6}|Data\\Data.csproj|solutionrelative:data\\services\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4242B4-10C7-4ACC-8E10-40541D901A92}|Web\\Web.csproj|c:\\users\\guerrero\\desktop\\pruebas\\taller\\web\\service\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4242B4-10C7-4ACC-8E10-40541D901A92}|Web\\Web.csproj|solutionrelative:web\\service\\applicationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4242B4-10C7-4ACC-8E10-40541D901A92}|Web\\Web.csproj|c:\\users\\guerrero\\desktop\\pruebas\\taller\\web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4242B4-10C7-4ACC-8E10-40541D901A92}|Web\\Web.csproj|solutionrelative:web\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{533419A9-F364-4BDC-B4F5-D1A53620F687}|Business\\Business.csproj|c:\\users\\guerrero\\desktop\\pruebas\\taller\\business\\custom\\tokenbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{533419A9-F364-4BDC-B4F5-D1A53620F687}|Business\\Business.csproj|solutionrelative:business\\custom\\tokenbusiness.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4242B4-10C7-4ACC-8E10-40541D901A92}|Web\\Web.csproj|c:\\users\\guerrero\\desktop\\pruebas\\taller\\web\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4242B4-10C7-4ACC-8E10-40541D901A92}|Web\\Web.csproj|solutionrelative:web\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4242B4-10C7-4ACC-8E10-40541D901A92}|Web\\Web.csproj|c:\\users\\guerrero\\desktop\\pruebas\\taller\\web\\controllers\\rolusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4242B4-10C7-4ACC-8E10-40541D901A92}|Web\\Web.csproj|solutionrelative:web\\controllers\\rolusercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CF4242B4-10C7-4ACC-8E10-40541D901A92}|Web\\Web.csproj|c:\\users\\guerrero\\desktop\\pruebas\\taller\\web\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CF4242B4-10C7-4ACC-8E10-40541D901A92}|Web\\Web.csproj|solutionrelative:web\\controllers\\rolcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Data\\Services\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Services\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Data\\Services\\UserRepository.cs",
+              "RelativeToolTip": "Data\\Services\\UserRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:58:19.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Data\\Interfaces\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Data\\Interfaces\\IUserRepository.cs",
+              "ToolTip": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Data\\Interfaces\\IUserRepository.cs",
+              "RelativeToolTip": "Data\\Interfaces\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:51:44.043Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Business\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Business\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Business\\Services\\UserService.cs",
+              "RelativeToolTip": "Business\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:48:09.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationService.cs",
+              "DocumentMoniker": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Web\\Service\\ApplicationService.cs",
+              "RelativeDocumentMoniker": "Web\\Service\\ApplicationService.cs",
+              "ToolTip": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Web\\Service\\ApplicationService.cs",
+              "RelativeToolTip": "Web\\Service\\ApplicationService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:46:13.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TokenBusiness.cs",
+              "DocumentMoniker": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Business\\Custom\\TokenBusiness.cs",
+              "RelativeDocumentMoniker": "Business\\Custom\\TokenBusiness.cs",
+              "ToolTip": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Business\\Custom\\TokenBusiness.cs",
+              "RelativeToolTip": "Business\\Custom\\TokenBusiness.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAD4vxIAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T15:20:05.516Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Web\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Web\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Web\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAD4vzcAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:40:43.601Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Web\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Web\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Web\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:27:34.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "RolUserController.cs",
+              "DocumentMoniker": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Web\\Controllers\\RolUserController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\RolUserController.cs",
+              "ToolTip": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Web\\Controllers\\RolUserController.cs",
+              "RelativeToolTip": "Web\\Controllers\\RolUserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:27:20.427Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "RolController.cs",
+              "DocumentMoniker": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Web\\Controllers\\RolController.cs",
+              "RelativeDocumentMoniker": "Web\\Controllers\\RolController.cs",
+              "ToolTip": "C:\\Users\\GUERRERO\\Desktop\\pruebas\\taller\\Web\\Controllers\\RolController.cs",
+              "RelativeToolTip": "Web\\Controllers\\RolController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T14:27:02.974Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

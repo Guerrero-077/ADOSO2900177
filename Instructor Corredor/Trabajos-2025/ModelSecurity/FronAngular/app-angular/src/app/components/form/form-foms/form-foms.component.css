@@ -1,0 +1,72 @@
+.form-container {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 2.5rem;
+    border-radius: 2rem;
+    background: linear-gradient(135deg, #f0f4ff, #ffffff);
+    box-shadow: 0 12px 24px rgba(63, 81, 181, 0.2);
+    animation: appear 0.6s ease;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-title {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #3f51b5;
+    font-weight: 700;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.form-field {
+    margin-bottom: 1.6rem;
+}
+
+mat-form-field {
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+mat-form-field:hover {
+    transform: scale(1.01);
+}
+
+mat-error {
+    font-size: 0.85rem;
+    color: #e53935;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+button[mat-flat-button],
+a[mat-stroked-button] {
+    border-radius: 1.5rem;
+    min-width: 140px;
+    font-weight: 500;
+    padding: 0.5rem 1.2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 10px rgba(63, 81, 181, 0.1);
+}
+
+button[mat-flat-button]:hover,
+a[mat-stroked-button]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(63, 81, 181, 0.3);
+}

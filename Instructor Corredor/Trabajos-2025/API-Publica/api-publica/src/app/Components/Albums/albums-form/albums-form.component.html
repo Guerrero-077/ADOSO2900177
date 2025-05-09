@@ -1,0 +1,27 @@
+<h2>{{title}}</h2>
+
+<form (submit)="Save()" [formGroup]="form">
+    <div class="">
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre del Álbum</mat-label>
+            <input [formControl]="form.controls.title" matInput>
+
+            <mat-error *ngIf="titleControl.hasError('required')">
+                El nombre del álbum es requerido
+            </mat-error>
+            <mat-error *ngIf="titleControl.hasError('minlength')">
+                El nombre debe tener al menos 3 caracteres
+            </mat-error>
+            <mat-error *ngIf="titleControl.hasError('maxlength')">
+                El nombre no puede exceder los 50 caracteres
+            </mat-error>
+            <mat-error *ngIf="titleControl.hasError('pattern')">
+                Solo se permiten letras, números y espacios
+            </mat-error>
+        </mat-form-field>
+    </div>
+    <div class="form-actions">
+        <button type="submit" mat-flat-button color="primary" [disabled]="form.invalid">Guardar</button>
+        <a mat-stroked-button routerLink="/album">Cancelar</a>
+    </div>
+</form>

@@ -1,0 +1,67 @@
+.container {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+.titulo-tabla {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0d47a1;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.tabla-cards {
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card-fila {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-fila:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #1e88e5;
+    margin-bottom: 10px;
+}
+
+.icono-usuario {
+    font-size: 28px;
+}
+
+.card-content .info-linea {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    padding: 6px 0;
+    border-bottom: 1px solid #eee;
+    color: #333;
+}
+
+.card-actions {
+    margin-top: 12px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}

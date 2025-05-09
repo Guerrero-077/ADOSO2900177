@@ -1,0 +1,14 @@
+<mat-toolbar color="primary" class="custom-toolbar">
+    <div class="toolbar-links">
+        <a routerLink="user" mat-button>Usuario</a>
+        <a routerLink="rol" mat-button>Rol</a>
+        <a routerLink="rolUser" mat-button>Rol Usuario</a>
+    </div>
+
+    <div class="toolbar-actions">
+        <a mat-button routerLink="/login" (click)="clearLocalStorage()">
+            <mat-icon>person</mat-icon>
+            <span class="logout-text">Cerrar sesión</span>
+        </a>
+    </div>
+</mat-toolbar>

@@ -1,0 +1,62 @@
+<h2>{{title}}</h2>
+
+<form (submit)="Save()" [formGroup]="form">
+    <div class="form-field">
+        <mat-form-field appearance="outline">
+            <mat-label>Nombre</mat-label>
+            <input [formControl]="form.controls.name" matInput required>
+
+            <mat-error *ngIf="nameControl.hasError('required')">
+                El nombre es requerido
+            </mat-error>
+            <mat-error *ngIf="nameControl.hasError('minlength')">
+                Mínimo 2 caracteres
+            </mat-error>
+            <mat-error *ngIf="nameControl.hasError('maxlength')">
+                Máximo 50 caracteres
+            </mat-error>
+            <mat-error *ngIf="nameControl.hasError('pattern')">
+                Solo letras y espacios
+            </mat-error>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input [formControl]="form.controls.email" matInput required type="email">
+
+            <mat-error *ngIf="emailControl.hasError('required')">
+                El email es requerido
+            </mat-error>
+            <mat-error *ngIf="emailControl.hasError('email')">
+                Ingrese un email válido
+            </mat-error>
+            <mat-error *ngIf="emailControl.hasError('maxlength')">
+                Máximo 100 caracteres
+            </mat-error>
+        </mat-form-field>
+    </div>
+
+    <div class="form-field">
+        <mat-form-field appearance="outline">
+            <mat-label>Contenido</mat-label>
+            <textarea [formControl]="form.controls.body" matInput required rows="4"></textarea>
+
+            <mat-error *ngIf="bodyControl.hasError('required')">
+                El contenido es requerido
+            </mat-error>
+            <mat-error *ngIf="bodyControl.hasError('minlength')">
+                Mínimo 10 caracteres
+            </mat-error>
+            <mat-error *ngIf="bodyControl.hasError('maxlength')">
+                Máximo 500 caracteres
+            </mat-error>
+        </mat-form-field>
+    </div>
+
+    <div class="form-actions">
+        <button type="submit" mat-flat-button color="primary" [disabled]="form.invalid">Guardar</button>
+        <a mat-stroked-button routerLink="/commets">Cancelar</a>
+    </div>
+</form>

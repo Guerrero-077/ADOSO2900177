@@ -1,0 +1,52 @@
+@if (rols) {
+<div class="container">
+    <h2 class="titulo-tabla">Crear Rol</h2>
+
+    <form #rolForm="ngForm" (ngSubmit)="createRole()" class="form-rol">
+
+        <mat-form-field appearance="fill">
+            <mat-label>Nombre del rol</mat-label>
+            <input matInput name="name" [(ngModel)]="newRole.name" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Descripción</mat-label>
+            <textarea matInput name="description" [(ngModel)]="newRole.description" required></textarea>
+        </mat-form-field>
+
+        <button mat-raised-button color="primary" type="submit" [disabled]="rolForm.invalid">
+            Crear
+        </button>
+    </form>
+
+    <hr>
+
+    <h2 class="titulo-tabla">Lista de Roles</h2>
+
+    <div class="tabla-cards">
+
+        <div class="card-fila" *ngFor="let rol of rols">
+            <div class="card-header">
+                <mat-icon>supervisor_account</mat-icon>
+                <span class="card-title">{{ rol.name }}</span>
+            </div>
+
+            <div class="card-content">
+                <div class="info-linea">
+                    <strong>Description:</strong>
+                    <span>{{ rol.description }}</span>
+                </div>
+            </div>
+
+            <div class="card-actions">
+                <button mat-icon-button color="primary" aria-label="Editar">
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-icon-button color="warn" aria-label="Eliminar">
+                    <mat-icon>delete</mat-icon>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+}

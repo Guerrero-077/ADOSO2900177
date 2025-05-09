@@ -1,0 +1,24 @@
+a {
+    margin-left: 10px;
+}
+
+/* Estilos base para los enlaces en el toolbar */
+.mat-toolbar a {
+    color: rgba(255, 255, 255, 0.7);
+    /* Texto claro en fondo oscuro */
+    text-decoration: none;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+/* Efecto hover para los enlaces */
+.mat-toolbar a:hover {
+    color: #00bcd4;
+    /* Cyan en hover */
+}
+
+/* Estilo para el enlace activo */
+.mat-toolbar a.active {
+    color: #00bcd4;
+    /* Cyan para destacar el enlace activo */
+    border-bottom: 2px solid #00bcd4;
+}

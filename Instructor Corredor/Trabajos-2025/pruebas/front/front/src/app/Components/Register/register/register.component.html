@@ -1,0 +1,46 @@
+<div class="login-wrapper">
+    <mat-card class="login-card animate-fade-in">
+        <mat-card-header>
+            <mat-card-title class="login-title">Register</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content>
+            <form [formGroup]="formRegister" (ngSubmit)="Register()" class="login-form">
+
+                <mat-form-field appearance="outline" class="full-width">
+                    <mat-label>User Name</mat-label>
+                    <input matInput formControlName="name" placeholder="Ingresa tu userName" required>
+                    <mat-icon matSuffix>person</mat-icon>
+                    <mat-error *ngIf="formRegister.controls['name'].invalid">El name es requerido</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="full-width">
+                    <mat-label>Email de usuario</mat-label>
+                    <input matInput formControlName="email" placeholder="Ingresa tu email" required>
+                    <mat-icon matSuffix>person</mat-icon>
+                    <mat-error *ngIf="formRegister.controls['email'].invalid">El email es requerido</mat-error>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" class="full-width">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput formControlName="password" [type]="hidePassword ? 'password' : 'text'"
+                        placeholder="Ingresa tu contraseña" required>
+                    <button type="button" mat-icon-button matSuffix (click)="hidePassword = !hidePassword">
+                        <mat-icon>{{ hidePassword ? 'visibility_off' : 'visibility' }}</mat-icon>
+                    </button>
+                    <mat-error *ngIf="formRegister.controls['password'].invalid">La contraseña es requerida</mat-error>
+                </mat-form-field>
+
+                <div class="button-container">
+                    <button type="submit" mat-raised-button color="primary" [disabled]="!formRegister.valid"
+                        class="submit-button">
+                        Register
+                    </button>
+
+                    <button mat-flat-button color="warn" routerLink="/login">Login</button>
+                </div>
+
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>
