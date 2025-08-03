@@ -1,0 +1,250 @@
+---
+
+# **Guía Completa de Comandos Git**
+
+Git es un sistema de control de versiones distribuido que permite a los desarrolladores gestionar y hacer un seguimiento de los cambios en su código de manera eficiente. A continuación, se presenta una guía completa sobre los comandos más utilizados en Git, desde la inicialización de un repositorio hasta la administración avanzada de ramas y commits.
+
+---
+
+## **1. Inicialización y Clonación de Repositorios**
+
+### **1.1 Inicializar un Repositorio**
+
+- **Descripción:**  
+  Inicializa un nuevo repositorio de Git en el directorio actual. Este es el primer paso para empezar a utilizar Git en un proyecto. El comando crea un subdirectorio `.git`, donde se almacenarán todos los archivos de control de versiones.  
+  `git init`
+
+- **Uso común:**  
+  Ideal cuando comienzas un nuevo proyecto desde cero y deseas empezar a llevar un historial de versiones.
+
+### **1.2 Clonar un Repositorio Existente**
+
+- **Descripción:**  
+  Clona un repositorio Git existente desde un servidor remoto a tu máquina local. Esto es útil cuando te unes a un proyecto ya existente y deseas obtener una copia del repositorio.  
+  `git clone <url_del_repositorio>`
+
+- **Ejemplo:**  
+  `git clone https://github.com/usuario/proyecto.git`
+
+---
+
+## **2. Gestión de Cambios**
+
+### **2.1 Verificar el Estado de Modificaciones**
+
+- **Descripción:**  
+  El comando `git status` te permite ver los archivos que han sido modificados, los que están en el área de preparación (staging), y aquellos que aún no están siendo rastreados por Git. Es un comando esencial antes de hacer un commit o antes de agregar cambios al área de preparación, ya que proporciona una visión general del estado del repositorio.  
+  `git status`
+
+### **2.2 Agregar Cambios al Área de Preparación**
+
+- **Descripción:**  
+  El comando `git add` es utilizado para mover cambios desde tu directorio de trabajo al área de preparación. El área de preparación es como un “intermediario” donde se colocan los archivos antes de ser confirmados con un commit.  
+  - Para agregar **todos los archivos modificados**:  
+    `git add .`
+  - Para agregar un **archivo específico**:  
+    `git add <archivo>`
+
+- **Ejemplo:**  
+  Si solo deseas agregar un archivo específico:  
+  `git add index.html`
+
+### **2.3 Confirmar Cambios (Commit)**
+
+- **Descripción:**  
+  El comando `git commit` guarda los cambios en el historial del repositorio. Cada commit representa un “punto de control” en el tiempo al que puedes volver más adelante. El mensaje de commit debe ser descriptivo para que tú o tus compañeros de equipo puedan entender rápidamente qué cambios se realizaron.  
+  `git commit -m "Añadí la función de búsqueda"`
+
+- **Uso avanzado:**  
+  Si prefieres escribir un mensaje de commit más largo y detallado en tu editor de texto favorito, puedes configurarlo de esta manera:  
+  `git config --global core.editor "code --wait"`  
+  *(Nota: Reemplaza `code --wait` con tu editor preferido, como `nano`, `vim`, etc.)*
+
+---
+
+## **3. Subir Cambios al Repositorio Remoto**
+
+- **Descripción:**  
+  Una vez que hayas realizado y confirmado cambios en tu repositorio local, debes subirlos al repositorio remoto (como GitHub, GitLab o Bitbucket). Esto asegura que otros desarrolladores puedan acceder a tus cambios.  
+  `git push`
+
+- **Uso:**  
+  Es común ejecutar este comando después de haber hecho uno o varios commits. Sin embargo, debes asegurarte de estar trabajando en la rama correcta antes de hacer un push.
+
+---
+
+## **4. Administración de Historial y Ramas**
+
+### **4.1 Ver el Historial de Commits**
+
+- **Descripción:**  
+  El comando `git log` permite ver un historial detallado de todos los commits realizados en el repositorio. Cada commit incluye información como el autor, la fecha y un identificador único (hash) que se puede usar para revertir o consultar el commit.  
+  `git log`
+
+- **Versión resumida del historial:**  
+  Si prefieres un formato más compacto para el historial, puedes usar el siguiente comando:  
+  `git log --oneline`  
+  Esto muestra un resumen de una línea por cada commit, ideal para obtener una visión rápida del historial.
+
+### **4.2 Viajar entre Commits**
+
+- **Restaurar un archivo a una versión anterior:**  
+  Si deseas revertir un archivo a su estado en un commit anterior, puedes usar el siguiente comando:  
+  `git restore <archivo>`
+
+- **Cambiar a un commit específico:**  
+  Para desplazarte al estado del repositorio en un commit anterior, usa el hash del commit con el comando `git checkout`.  
+  `git checkout <código_del_commit>`
+
+- **Nota:**  
+  El uso de `git checkout` en un commit hará que tu directorio de trabajo esté en un estado “detached”, lo que significa que no estarás en ninguna rama en particular, y cualquier nuevo commit no estará vinculado a una rama a menos que la crees.
+
+### **4.3 Trabajar con Ramas**
+
+Las ramas permiten desarrollar características o solucionar errores de manera aislada sin afectar la rama principal del proyecto.
+
+- **Crear una nueva rama:**  
+  Este comando crea una nueva rama basada en la rama actual.  
+  `git branch <nombre_de_la_nueva_rama>`
+
+- **Listar todas las ramas:**  
+  `git branch`  
+  Muestra todas las ramas locales en el repositorio y resalta la rama en la que te encuentras actualmente.
+
+- **Cambiar a una rama existente:**  
+  Para cambiar de una rama a otra, utiliza `git switch`.  
+  `git switch <nombre_de_la_rama>`
+
+- **Crear y cambiar a una nueva rama en un solo paso:**  
+  Si deseas crear una nueva rama y cambiar a ella inmediatamente, usa el siguiente comando:  
+  `git switch -c <nombre_de_la_nueva_rama>`
+
+- **Renombrar una rama:**  
+  Cambia el nombre de una rama local existente:  
+  `git branch -m <nombre_actual> <nuevo_nombre>`
+
+- **Eliminar una rama:**  
+  Borra una rama que ya no es necesaria.  
+  `git branch -d <nombre_de_la_rama>`  
+  *(Usa `-D` si la rama no ha sido fusionada y deseas forzar su eliminación.)*
+
+---
+
+## **5. Otros Comandos Útiles**
+
+### **5.1 Sincronización con el Repositorio Remoto**
+
+- **Descripción:**  
+  Para obtener los cambios más recientes del repositorio remoto y combinarlos con tu trabajo local, usa el comando `git pull`. Este comando combina los commits remotos con tu rama actual.  
+  `git pull`
+
+### **5.2 Comparar Cambios**
+
+- **Descripción:**  
+  Si necesitas ver las diferencias entre dos commits, ramas o archivos específicos, puedes usar `git diff`. Este comando muestra las líneas que se han agregado, modificado o eliminado.  
+  `git diff <referencia_del_commit_o_rama>`
+
+### **5.3 Eliminar Archivos**
+
+- **Descripción:**  
+  Si deseas eliminar un archivo del repositorio y también del directorio de trabajo, utiliza el siguiente comando:  
+  `git rm <archivo>`
+
+- **Eliminar un archivo del control de versiones, pero mantenerlo en el sistema de archivos:**  
+  Si deseas que Git deje de rastrear un archivo, pero mantenerlo en el disco, puedes usar:  
+  `git rm --cached <archivo>`
+
+### **5.4 Fusionar Ramas**
+
+- **Descripción:**  
+  El comando `git merge` te permite combinar los cambios de una rama en la rama actual. Es común fusionar una rama de desarrollo con la rama principal (main) cuando la nueva funcionalidad está lista para ser integrada.  
+  `git merge <nombre_de_la_rama_a_fusionar>`
+
+---
+
+## **6. Comandos Avanzados**
+
+### **6.1 Guardar Trabajo Temporalmente (Stash)**
+
+- **Descripción:**  
+  Si necesitas cambiar de rama pero no estás listo para hacer un commit de los cambios actuales, puedes guardarlos temporalmente en el stash. Esto te permite hacer cambios sin perder tu trabajo actual.  
+  `git stash`
+
+- **Ver el contenido del stash:**  
+  Lista todos los stashes guardados.  
+  `git stash list`
+
+- **Restaurar el último stash:**  
+  Aplica los cambios guardados en el stash más reciente.  
+  `git stash apply`
+
+### **6.2 Revertir Commits Publicados**
+
+- **Descripción:**  
+  Si ya has subido un commit que contiene errores, puedes revertirlo creando un nuevo commit que deshace los cambios del commit anterior, sin eliminar el historial.  
+  `git revert <código_del_commit>`
+
+### **6.3 Rebase (Reorganización del Historial)**
+
+- **Descripción:**  
+  El comando `git rebase` te permite reorganizar los commits de una rama y aplicarlos sobre otra. Esto es útil para mantener un historial más limpio sin los merges adicionales que crea `git merge`.  
+  `git rebase <nombre_de_la_rama>`
+
+- **Abortar un rebase en progreso:**  
+  Si encuentras conflictos durante un
+
+ rebase, puedes abortar la operación con:  
+  `git rebase --abort`
+
+### **6.4 Limpiar Archivos Innecesarios**
+
+- **Descripción:**  
+  Si tienes archivos no rastreados o generados por compilaciones, puedes eliminarlos del directorio de trabajo usando:  
+  `git clean -f`
+
+### **6.5 Etiquetas (Tags)**
+
+- **Descripción:**  
+  Las etiquetas son útiles para marcar versiones específicas del proyecto. Por ejemplo, puedes etiquetar un commit como la versión `v1.0.0` de tu aplicación.  
+  `git tag <nombre_del_tag>`
+
+- **Listar todas las etiquetas del repositorio:**  
+  `git tag`
+
+- **Subir una etiqueta al repositorio remoto:**  
+  `git push origin <nombre_del_tag>`  
+  *(Para subir todas las etiquetas: `git push --tags`)*
+
+---
+
+## **7. Restablecer Cambios**
+
+### **7.1 Modificar el Último Commit**
+
+- **Descripción:**  
+  Si cometiste un error en el último commit (por ejemplo, olvidaste agregar un archivo o cometiste un error en el mensaje), puedes corregirlo utilizando el comando `git commit --amend`.  
+  `git commit --amend`
+
+- **Ejemplo:**  
+  Si ya has hecho un commit, pero olvidaste incluir un archivo:  
+  `git add archivo_olvidado`  
+  `git commit --amend`
+
+### **7.2 Restablecer Cambios a Diferentes Niveles**
+
+El comando `git reset` te permite deshacer commits, ya sea dejando los archivos modificados en el área de preparación, en el directorio de trabajo o eliminando completamente los cambios. Aquí están las diferentes formas de usar `git reset`:
+
+- **Restablecer de forma suave (mantener los archivos en el área de preparación):**  
+  `git reset --soft <código_del_commit>`
+
+- **Restablecer de forma mixta (mantener los cambios en el directorio de trabajo pero eliminar el commit):**  
+  `git reset --mixed <código_del_commit>`
+
+- **Restablecer de forma completa (eliminar tanto el commit como los cambios en los archivos):**  
+  `git reset --hard <código_del_commit>`
+
+---
+
+Este documento es una guía detallada de los comandos más importantes en Git, diseñada para ayudar a cualquier desarrollador, desde principiantes hasta usuarios avanzados, a gestionar eficientemente su flujo de trabajo y colaborar en proyectos. ¡Úsala como referencia para mejorar tus habilidades con Git!
+
+---
